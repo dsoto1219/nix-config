@@ -20,6 +20,7 @@
     ./hardware-configuration.nix
   ];
 
+
   nixpkgs = {
     # You can add overlays here
     overlays = [
@@ -61,23 +62,72 @@
 
   # FIXME: Add the rest of your current configuration
 
-  # TODO: Set your hostname
-  networking.hostName = "your-hostname";
+  # Use the systemd-boot EFI boot loader.
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
 
-  # TODO: Configure your system-wide user settings (groups, etc), add more users as needed.
+  # Configure network connections interactively with nmcli or nmtui.
+  networking.networkmanager.enable = true;
+
+  # Set your time zone.
+  time.timeZone = "America/New_York";
+
+  # Configure network proxy if necessary
+  # networking.proxy.default = "http://user:password@proxy:port/";
+  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+
+  # Select internationalisation properties.
+  console = {
+    font = "ter-v32n";
+    packages = with pkgs; [ terminus_font ]; # Add the Terminus font package
+    keyMap = "us";
+    # useXkbConfig = true; # use xkb.options in tty.
+  };
+
+  # Enable CUPS to print documents.
+  services.printing.enable = true;
+
+  # Enable sound.
+  services.pulseaudio.enable = true;
+  # OR
+  # services.pipewire = {
+  #   enable = true;
+  #   pulse.enable = true;
+  # };
+
+  # Enable touchpad support (enabled default in most desktopManager).
+  # services.libinput.enable = true;
+
+  # Define a user account. Don't forget to set a password with ‘passwd’.
+  users.users.daniels = {
+    isNormalUser = true;
+    extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+  };
+
+  # List packages installed in system profile.
+  # You can use https://search.nixos.org/ to find more packages (and options).
+  environment.systemPackages = with pkgs; [
+    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    lf
+    wget
+    tmux
+    git
+  ];
+
+  # Some programs need SUID wrappers, can be configured further or are
+  # started in user sessions.
+  # programs.mtr.enable = true;
+  # programs.gnupg.agent = {
+  #   enable = true;
+  #   enableSSHSupport = true;
+  # };
+
+  networking.hostName = "daniels-thinkbook";
+
   users.users = {
-    # FIXME: Replace with your username
-    your-username = {
-      # TODO: You can set an initial password for your user.
-      # If you do, you can skip setting a root password by passing '--no-root-passwd' to nixos-install.
-      # Be sure to change it (using passwd) after rebooting!
-      initialPassword = "correcthorsebatterystaple";
+    daniels = {
       isNormalUser = true;
-      openssh.authorizedKeys.keys = [
-        # TODO: Add your SSH public key(s) here, if you plan on using SSH to connect
-      ];
-      # TODO: Be sure to add any other groups you need (such as networkmanager, audio, docker, etc)
-      extraGroups = ["wheel"];
+      extraGroups = [ "networkmanager" "wheel" ]; # Be sure to add any other groups you need (such as networkmanager, audio, docker, etc)
     };
   };
 
@@ -87,13 +137,23 @@
     enable = true;
     settings = {
       # Opinionated: forbid root login through SSH.
-      PermitRootLogin = "no";
+      # PermitRootLogin = "no";
       # Opinionated: use keys only.
       # Remove if you want to SSH using passwords
-      PasswordAuthentication = false;
+      # PasswordAuthentication = false;
     };
   };
 
+  # List packages installed in system profile.
+  # You can use https://search.nixos.org/ to find more packages (and options).
+  environment.systemPackages = with pkgs; [
+    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    lf
+    wget
+    tmux
+    git
+  ];
+
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
-  system.stateVersion = "23.05";
+  system.stateVersion = "25.11";
 }
