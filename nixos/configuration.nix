@@ -136,6 +136,12 @@
     git
   ];
 
+  # Use Hyprland
+  programs.hyprland = {
+    enable = true;
+    withUWSM = true; # Use Universal Wayland Session Manager---recommended way of launching Hyprland, as it neatly integrates with systemd.
+  };
+
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   system.stateVersion = "25.11";
 }
