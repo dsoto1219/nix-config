@@ -134,6 +134,7 @@
     wget
     tmux
     git
+    kitty
   ];
 
   # Use Hyprland
