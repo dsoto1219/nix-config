@@ -77,9 +77,10 @@
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
   # Select internationalisation properties.
+  i18n.defaultLocale = "en_US.UTF-8";
   console = {
     font = "ter-v32n";
-    # packages = with pkgs; [ terminus_font ]; # Add the Terminus font package
+    packages = with pkgs; [ terminus_font ]; # Add the Terminus font package
     keyMap = "us";
     # useXkbConfig = true; # use xkb.options in tty.
   };
