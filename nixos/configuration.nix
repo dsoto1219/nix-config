@@ -79,7 +79,7 @@
   # Select internationalisation properties.
   console = {
     font = "ter-v32n";
-    packages = with pkgs; [ terminus_font ]; # Add the Terminus font package
+    # packages = with pkgs; [ terminus_font ]; # Add the Terminus font package
     keyMap = "us";
     # useXkbConfig = true; # use xkb.options in tty.
   };
