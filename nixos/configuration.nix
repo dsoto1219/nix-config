@@ -20,7 +20,6 @@
     ./hardware-configuration.nix
   ];
 
-
   nixpkgs = {
     # You can add overlays here
     overlays = [
