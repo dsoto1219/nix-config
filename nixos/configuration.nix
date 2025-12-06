@@ -51,7 +51,6 @@
       # flake-registry = "";
       # Workaround for https://github.com/NixOS/nix/issues/9574
       nix-path = config.nix.nixPath;
-      package = pkgs.nix; # Try to get nix version to 2.4+
     };
     # Opinionated: disable channels
     # channel.enable = false;
