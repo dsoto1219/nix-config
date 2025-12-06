@@ -45,7 +45,11 @@
 
   # Add stuff for your user as you see fit:
   programs.neovim.enable = true;
-  home.packages = with pkgs; [ obsidian ];
+  home.packages = with pkgs; [ 
+    hello cowsay lolcat
+    onedrive onedrivegui 
+    obsidian 
+];
 
   # Enable home-manager and git
   programs.home-manager.enable = true;
