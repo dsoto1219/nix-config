@@ -58,12 +58,16 @@
   };
 
   # Hyprland Configuration
-  wayland.windowManager.hyprland.settings = {
-    bind = 
-      [
-        "$mainMod, F, exec, fullscreen"
-      ];
-    natural_scroll = true;
+  wayland.windowManager.hyprland = {
+    enable = true;
+    settings = {
+      "$mod" = "SUPER"; 
+      bind = 
+        [
+          "$mod, F, fullscreen"
+        ];
+      input.natural_scroll = true;
+    };
   };
 
   home.packages = with pkgs; [ 
