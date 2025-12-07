@@ -134,7 +134,6 @@
     wget
     tmux
     git
-    kitty
   ];
   environment.variables = {
     EDITOR = "vim";
