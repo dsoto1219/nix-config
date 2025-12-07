@@ -61,14 +61,16 @@
   programs.kitty.enable = true;
   wayland.windowManager.hyprland = {
     enable = true;
-    extraConfig = ''
-      $mod = SUPER
-      bind = $mod, F, fullscreen
-
-      input { 
-        natural_scroll = true 
-      }
-    '';
+    settings = {
+      "$mod" = "SUPER"; 
+      bind = [
+        "$mod, F, fullscreen"
+      ];
+      input = { 
+        natural_scroll = true;
+      };
+    };
+    extraConfig = builtins.readFile "~/.config/hyprland.conf";
   };
 
   home.packages = with pkgs; [ 
