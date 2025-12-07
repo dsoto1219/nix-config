@@ -56,6 +56,10 @@
       mini-nvim
     ];
   };
+  home.sessionVariables = {
+    EDITOR = "nvim";
+  };
+
   home.packages = with pkgs; [ 
     hello cowsay lolcat sl cmatrix
     onedrive onedrivegui 
