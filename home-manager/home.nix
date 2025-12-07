@@ -70,7 +70,7 @@
         natural_scroll = true;
       };
     };
-    extraConfig = builtins.readFile "~/.config/hyprland.conf";
+    extraConfig = builtins.readFile "/home/daniels/.config/hyprland.conf";
   };
 
   home.packages = with pkgs; [ 
