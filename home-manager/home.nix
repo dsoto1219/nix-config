@@ -67,6 +67,7 @@
       [
         "$mod, F, exec, fullscreen"
       ];
+    natural_scroll = true;
   };
 
   home.packages = with pkgs; [ 
