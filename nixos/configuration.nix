@@ -136,6 +136,9 @@
     git
     kitty
   ];
+  environment.variables = {
+    EDITOR = "vim";
+  };
 
   # Use Hyprland
   programs.hyprland = {

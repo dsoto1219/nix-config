@@ -56,9 +56,6 @@
       gruvbox-material
     ];
   };
-  home.sessionVariables = {
-    EDITOR = "nvim";
-  };
 
   # Hyprland Configuration
   wayland.windowManager.hyprland.settings = {
