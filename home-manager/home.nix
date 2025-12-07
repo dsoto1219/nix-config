@@ -81,8 +81,10 @@
   programs.home-manager.enable = true;
   programs.git = {
     enable = true;
-    userEmail = "dsotomail1219@gmail.com";
-    userName = "dsoto1219";
+    settings = {
+      user.email = "dsotomail1219@gmail.com";
+      user.name = "dsoto1219";
+    };
     extraConfig = {
       init.defaultBranch = "main";
     };
