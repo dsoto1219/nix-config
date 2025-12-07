@@ -71,6 +71,7 @@
 
   home.packages = with pkgs; [ 
     hello cowsay lolcat sl cmatrix
+    fastfetch
     onedrive onedrivegui 
     obsidian 
   ];
