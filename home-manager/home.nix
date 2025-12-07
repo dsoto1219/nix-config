@@ -65,7 +65,7 @@
     "$mod" = "SUPER";
     bind = 
       [
-        "$mod, F, fullscreen"
+        "$mod, F, exec, fullscreen"
       ];
   };
 
