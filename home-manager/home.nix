@@ -44,7 +44,11 @@
   };
 
   # Add stuff for your user as you see fit:
-  programs.neovim.enable = true;
+  programs.neovim.enable = {
+    enable = true;
+    viAlias = true;
+    vimAlias = true;
+  };
   home.packages = with pkgs; [ 
     hello cowsay lolcat sl cmatrix
     onedrive onedrivegui 
