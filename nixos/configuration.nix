@@ -68,6 +68,10 @@
   # Configure network connections interactively with nmcli or nmtui.
   networking.networkmanager.enable = true;
 
+  # Enable bluetooth
+  hardware.bluetooth.enable = true;
+  services.blueman.enable = true; # Enable gui tools for bluetooth
+
   # Set your time zone.
   time.timeZone = "America/New_York";
 
@@ -149,10 +153,6 @@
     # Use Universal Wayland Session Manager---recommended way of launching Hyprland, as it neatly integrates with systemd.
     # withUWSM = true; 
   };
-
-  # Enable bluetooth
-  hardware.bluetooth.enable = true;
-  services.blueman.enable = true; # Enable gui tools for bluetooth
 
   # Optional: hint electron apps to use Wayland:
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
