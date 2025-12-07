@@ -49,11 +49,11 @@
     viAlias = true;
     vimAlias = true;
     plugins = with pkgs.vimPlugins; [
+      lazy-nvim # package manager
       nvim-lspconfig
       nvim-treesitter.withAllGrammars
       plenary-nvim
       gruvbox-material
-      mini-nvim
     ];
   };
   home.sessionVariables = {
@@ -62,10 +62,9 @@
 
   # Hyprland Configuration
   wayland.windowManager.hyprland.settings = {
-    "$mod" = "SUPER";
     bind = 
       [
-        "$mod, F, exec, fullscreen"
+        "$mainMod, F, exec, fullscreen"
       ];
     natural_scroll = true;
   };
