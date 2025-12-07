@@ -60,6 +60,15 @@
     EDITOR = "nvim";
   };
 
+  # Hyprland Configuration
+  wayland.windowManager.hyprland.settings = {
+    "$mod" = "SUPER";
+    bind = 
+      [
+        "$mod, F, fullscreen"
+      ];
+  };
+
   home.packages = with pkgs; [ 
     hello cowsay lolcat sl cmatrix
     onedrive onedrivegui 
