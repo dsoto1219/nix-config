@@ -79,15 +79,11 @@
 
   # Enable home-manager and git
   programs.home-manager.enable = true;
-  programs.git = {
-    enable = true;
-    settings = {
-      user.email = "dsotomail1219@gmail.com";
-      user.name = "dsoto1219";
-    };
-    extraConfig = {
-      init.defaultBranch = "main";
-    };
+  programs.git.enable = true;
+  programs.git.settings = {
+    user.email = "dsotomail1219@gmail.com";
+    user.name = "dsoto1219";
+    init.defaultBranch = "main";
   };
 
   # Nicely reload system units when changing configs
