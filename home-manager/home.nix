@@ -78,8 +78,10 @@
     obsidian 
   ];
 
-  # Enable home-manager and git
+  # Let home-manager manage itself
   programs.home-manager.enable = true;
+
+  # Let home-manager manage git, too
   programs.git.enable = true;
   programs.git.settings = {
     user.email = "dsotomail1219@gmail.com";
