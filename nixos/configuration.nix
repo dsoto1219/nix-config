@@ -146,8 +146,9 @@
     # withUWSM = true; 
   };
 
+  # Enable bluetooth
   hardware.bluetooth.enable = true;
-  services.blueman.enable = true;
+  services.blueman.enable = true; # Enable gui tools for bluetooth
 
   # Optional: hint electron apps to use Wayland:
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
