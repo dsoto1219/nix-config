@@ -140,6 +140,8 @@
   # Use Hyprland
   programs.hyprland = {
     enable = true;
+    # For flake:
+    package = inputs.hyprland.packages."${pkgs.system}".hyprland; 
     # Use Universal Wayland Session Manager---recommended way of launching Hyprland, as it neatly integrates with systemd.
     # withUWSM = true; 
   };
