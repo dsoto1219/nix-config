@@ -80,7 +80,6 @@
 
   # Let home-manager manage itself
   programs.home-manager.enable = true;
-  home-manager.backupFileExtension = "backup";
 
   # Let home-manager manage git, too
   programs.git.enable = true;
