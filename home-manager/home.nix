@@ -48,6 +48,13 @@
     enable = true;
     viAlias = true;
     vimAlias = true;
+    plugins = with pkgs.vimPlugins; [
+      nvim-lspconfig
+      nvim-treesitter.withAllGrammars
+      plenary-nvim
+      gruvbox-material
+      mini-nvim
+    ];
   };
   home.packages = with pkgs; [ 
     hello cowsay lolcat sl cmatrix
