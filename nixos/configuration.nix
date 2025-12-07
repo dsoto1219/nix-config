@@ -140,8 +140,12 @@
   # Use Hyprland
   programs.hyprland = {
     enable = true;
-    withUWSM = true; # Use Universal Wayland Session Manager---recommended way of launching Hyprland, as it neatly integrates with systemd.
+    # Use Universal Wayland Session Manager---recommended way of launching Hyprland, as it neatly integrates with systemd.
+    # withUWSM = true; 
   };
+
+  # Optional: hint electron apps to use Wayland:
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
   
   programs.firefox.enable = true;
 
