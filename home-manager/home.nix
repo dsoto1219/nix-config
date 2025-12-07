@@ -44,7 +44,7 @@
   };
 
   # Add stuff for your user as you see fit:
-  programs.neovim.enable = {
+  programs.neovim = {
     enable = true;
     viAlias = true;
     vimAlias = true;
@@ -53,7 +53,7 @@
     hello cowsay lolcat sl cmatrix
     onedrive onedrivegui 
     obsidian 
-];
+  ];
 
   # Enable home-manager and git
   programs.home-manager.enable = true;
