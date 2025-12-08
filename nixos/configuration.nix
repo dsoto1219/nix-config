@@ -86,6 +86,7 @@
     packages = with pkgs; [ terminus_font ]; # Add the Terminus font package
     keyMap = "us";
     # useXkbConfig = true; # use xkb.options in tty.
+    earlySetup = true;
   };
 
   # Enable CUPS to print documents.
