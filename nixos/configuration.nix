@@ -138,6 +138,7 @@
     wget
     tmux
     git
+    upower
   ];
   environment.variables = {
     EDITOR = "vim";
