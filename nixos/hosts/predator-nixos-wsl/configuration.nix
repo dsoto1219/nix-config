@@ -67,6 +67,12 @@
     };
   };
 
+  # Automatic upgrading
+  system.autoUpgrade = {
+    enable = true;
+    dates = "weekly";
+  };
+
   # FIXME: Add the rest of your current configuration
 
   # Use the GRUB 2 boot loader.
