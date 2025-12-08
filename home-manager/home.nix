@@ -80,6 +80,7 @@
     fastfetch
     onedrive onedrivegui 
     obsidian 
+    kdePackages.dolphin wofi
   ];
 
   # Let home-manager manage itself
