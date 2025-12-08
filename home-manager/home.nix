@@ -72,6 +72,7 @@
 	};
       };
     };
+    extraConfig = builtins.readFile ./hyprland.conf;
   };
 
   home.packages = with pkgs; [ 
