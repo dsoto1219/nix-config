@@ -89,9 +89,11 @@
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
+  boot.initrd.kernelModules = [ "i915" ]; # Attempt to fix driver issue messing with tty font size
   boot.initrd.systemd.enable = true; # ensure console font below is in the initial ramdisk
 
   # Select internationalisation properties.
+
   i18n.defaultLocale = "en_US.UTF-8";
   console = {
     font = "ter-v32n";
