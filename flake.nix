@@ -24,7 +24,7 @@
     # NixOS configuration entrypoint
     # Available through 'nixos-rebuild --flake .#your-hostname'
     nixosConfigurations = {
-      "daniels-thinkbook" = nixpkgs.lib.nixosSystem {
+      "danim-thinkbook" = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
         # > Our main nixos configuration file <
         modules = [./nixos/configuration.nix];
@@ -34,7 +34,7 @@
     # Standalone home-manager configuration entrypoint
     # Available through 'home-manager --flake .#your-username@your-hostname'
     homeConfigurations = {
-      "daniels@daniels-thinkbook" = home-manager.lib.homeManagerConfiguration {
+      "danim@danim-thinkbook" = home-manager.lib.homeManagerConfiguration {
         # Home-manager requires 'pkgs' instance
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = {inherit inputs;};

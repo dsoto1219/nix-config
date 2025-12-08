@@ -111,10 +111,10 @@
   #   enableSSHSupport = true;
   # };
 
-  networking.hostName = "daniels-thinkbook";
+  networking.hostname = "danim-thinkbook";
 
   users.users = {
-    daniels = {
+    danim = {
       isNormalUser = true;
       extraGroups = [ "networkmanager" "wheel" ]; # Be sure to add any other groups you need (such as networkmanager, audio, docker, etc)
     };
