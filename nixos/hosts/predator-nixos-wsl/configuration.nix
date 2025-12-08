@@ -121,7 +121,7 @@
   #   enableSSHSupport = true;
   # };
 
-  networking.hostname = "nixos";
+  networking.hostName = "nixos";
 
   users.users = {
     danim = {
