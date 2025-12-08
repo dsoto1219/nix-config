@@ -117,7 +117,7 @@
   #   enableSSHSupport = true;
   # };
 
-  networking.hostname = "danim-thinkbook";
+  networking.hostname = "nixos";
 
   users.users = {
     danim = {

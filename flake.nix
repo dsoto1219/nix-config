@@ -29,6 +29,10 @@
         # > Our main nixos configuration file <
         modules = [./nixos/configuration.nix];
       };
+      "nixos" = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs;};
+        modules = [./nixos/configuration.nix];
+      };
     };
 
     # Standalone home-manager configuration entrypoint
@@ -39,6 +43,11 @@
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = {inherit inputs;};
         # > Our main home-manager configuration file <
+        modules = [./home-manager/home.nix];
+      };
+      "danim@nixos" = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        extraSpecialArgs = {inherit inputs;};
         modules = [./home-manager/home.nix];
       };
     };
