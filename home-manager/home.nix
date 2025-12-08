@@ -66,8 +66,10 @@
       bind = [
         "$mod, F, fullscreen"
       ];
-      input = { 
-        natural_scroll = true;
+      input = {
+        touchpad = {
+	  natural_scroll = true;
+	};
       };
     };
   };
