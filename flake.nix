@@ -6,6 +6,9 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
+    # NixOS-WSL
+    nixos-wsl.url = "github:nix-community/NixOS-WSL";
+
     # Hyprland input gives us more control over plugins
     hyprland.url = "github:hyprwm/Hyprland";
 
