@@ -13,6 +13,4 @@
     la = "ls -a";
     ll = "ls -la";
   };
-
-  programs.zsh.shellAliases = cfg.shellAliases;
 }
