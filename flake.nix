@@ -30,7 +30,7 @@
     nixosConfigurations = {
       "danim-thinkbook" = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
-        # > Our main nixos configuration file <
+        # > Our nixos configuration files <
         modules = [
           ./nixos/common/default.nix
           ./nixos/hosts/thinkbook/configuration.nix
