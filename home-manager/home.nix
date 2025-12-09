@@ -14,6 +14,7 @@
 
     # You can also split up your configuration and import pieces of it here:
     # ./nvim.nix
+    ./hypr/hypr.nix
   ];
 
   nixpkgs = {
@@ -57,30 +58,11 @@
     ];
   };
 
-  # Hyprland Configuration
-  programs.kitty.enable = true;
-  wayland.windowManager.hyprland = {
-    enable = true;
-    settings = {
-      "$mod" = "SUPER"; 
-      bind = [
-        "$mod, F, fullscreen"
-      ];
-      input = {
-        touchpad = {
-	  natural_scroll = true;
-	};
-      };
-    };
-    extraConfig = builtins.readFile ./hyprland.conf;
-  };
-
   home.packages = with pkgs; [ 
     hello cowsay lolcat sl cmatrix
     fastfetch
     onedrive onedrivegui 
     obsidian 
-    kdePackages.dolphin wofi
   ];
 
   # Let home-manager manage itself
