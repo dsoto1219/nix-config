@@ -34,6 +34,7 @@
         modules = [./nixos/hosts/thinkbook/configuration.nix];
       };
       "nixos" = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
         specialArgs = {inherit inputs;};
 	modules = [
           nixos-wsl.nixosModules.default # Get WSL modules for this configuration
