@@ -42,7 +42,7 @@
 	modules = [
           nixos-wsl.nixosModules.default # Get WSL modules for this configuration
           ./nixos/common/default.nix
-          ./nixos/hosts/predator-nixos-wsl/configuration.nix
+          ./nixos/hosts/nixos-wsl/configuration.nix
         ];
       };
     };
