@@ -24,6 +24,8 @@
     home-manager,
     ...
   } @ inputs: let
+    system = "x86_64-linux";
+    pkgs = nixpkgs.legacyPackages.${system};
   in {
     # NixOS configuration entrypoint
     # Available through 'nixos-rebuild --flake .#your-hostname'
@@ -38,7 +40,7 @@
         ];
       };
       "nixos" = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
+        inherit system;
         specialArgs = {inherit inputs;};
 	modules = [
           nixos-wsl.nixosModules.default # Get WSL modules for this configuration
@@ -53,13 +55,13 @@
     homeConfigurations = {
       "danim@danim-thinkbook" = home-manager.lib.homeManagerConfiguration {
         # Home-manager requires 'pkgs' instance
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        inherit pkgs;
         extraSpecialArgs = {inherit inputs;};
         # > Our main home-manager configuration file <
         modules = [./home-manager/home.nix];
       };
       "nixos@nixos" = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        inherit pkgs;
         extraSpecialArgs = {inherit inputs;};
         modules = [./home-manager/home.nix];
       };
