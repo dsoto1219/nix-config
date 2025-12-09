@@ -9,7 +9,7 @@
   # You can import other NixOS modules here
   imports = [
     # You can also split up your configuration and import pieces of it here:
-    # ./users.nix
+    ./users.nix
   ];
 
   nixpkgs = {
@@ -65,13 +65,6 @@
 
   # Set your time zone.
   time.timeZone = "America/New_York";
-
-  users.users = {
-    danim = {
-      isNormalUser = true;
-      extraGroups = [ "networkmanager" "wheel" ]; # Be sure to add any other groups you need (such as networkmanager, audio, docker, etc)
-    };
-  };
 
   # This setups a SSH server. Very important if you're setting up a headless system.
   # Feel free to remove if you don't need it.
