@@ -56,6 +56,12 @@
       plenary-nvim
       gruvbox-material
     ];
+    configure = {
+      customRC = ''
+        set number
+	set relativenumber
+      '';
+    };
   };
 
   home.packages = with pkgs; [ 
