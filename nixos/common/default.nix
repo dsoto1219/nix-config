@@ -90,6 +90,7 @@
     tmux
     git
     upower
+    tree
   ];
   environment.variables = {
     EDITOR = "vim";
