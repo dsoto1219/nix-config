@@ -14,4 +14,6 @@
     la = "ls -ap";
     ll = "ls -lap";
   };
+
+  programs.zsh.shellAliases = cfg.shellAliases;
 }
