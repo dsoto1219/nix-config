@@ -74,14 +74,6 @@
   # Let home-manager manage itself
   programs.home-manager.enable = true;
 
-  # Let home-manager manage git, too
-  programs.git.enable = true;
-  programs.git.settings = {
-    user.email = "dsotomail1219@gmail.com";
-    user.name = "dsoto1219";
-    init.defaultBranch = "main";
-  };
-
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
 
