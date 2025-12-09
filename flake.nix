@@ -34,7 +34,7 @@
       };
       "nixos" = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
-        modules = [./nixos/configuration.nix];
+	modules = [./nixos/hosts/predator-nixos-wsl/configuration.nix];
       };
     };
 
