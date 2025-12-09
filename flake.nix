@@ -56,13 +56,29 @@
       "danim@danim-thinkbook" = home-manager.lib.homeManagerConfiguration {
         # Home-manager requires 'pkgs' instance
         inherit pkgs;
-        extraSpecialArgs = {inherit inputs;};
+        extraSpecialArgs = {
+	  inherit inputs;
+	  home = let 
+	    username = "nixos"; 
+	  in {
+	    inherit username;
+	    homeDirectory = "/home/${username}";
+	  };
+	};
         # > Our main home-manager configuration file <
         modules = [./home-manager/home.nix];
       };
       "nixos@nixos" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        extraSpecialArgs = {inherit inputs;};
+        extraSpecialArgs = {
+	  inherit inputs;
+	  home = let 
+	    username = "nixos"; 
+	  in {
+	    inherit username;
+	    homeDirectory = "/home/${username}";
+	  };
+	};
         modules = [./home-manager/home.nix];
       };
     };
