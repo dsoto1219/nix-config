@@ -20,6 +20,7 @@
   outputs = {
     self,
     nixpkgs,
+    nixos-wsl,
     home-manager,
     ...
   } @ inputs: let
@@ -34,7 +35,10 @@
       };
       "nixos" = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
-	modules = [./nixos/hosts/predator-nixos-wsl/configuration.nix];
+	modules = [
+          nixos-wsl.nixosModules.default # Get WSL modules for this configuration
+          ./nixos/hosts/predator-nixos-wsl/configuration.nix
+        ];
       };
     };
 
