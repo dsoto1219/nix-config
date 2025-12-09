@@ -9,7 +9,7 @@
 
 {
   wsl.enable = true;
-  wsl.defaultUser = "danim";
+  wsl.defaultUser = "nixos";
 
   networking.hostName = "nixos";
 }
