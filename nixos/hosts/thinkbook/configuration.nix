@@ -27,11 +27,6 @@
   boot.initrd.kernelModules = [ "i915" ]; # Attempt to fix driver issue messing with tty font size
   boot.initrd.systemd.enable = true; # ensure console font below is in the initial ramdisk
 
-  # Configure network connections interactively with nmcli or nmtui.
-  networking.networkmanager.enable = true;
-
-  # Enable bluetooth
-  hardware.bluetooth.enable = true;
   services.blueman.enable = true; # Enable gui tools for bluetooth
 
   # Configure network proxy if necessary
@@ -47,18 +42,6 @@
     # useXkbConfig = true; # use xkb.options in tty.
     earlySetup = true;
   };
-
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
-
-  # Enable sound.
-  services.pipewire = {
-    enable = true;
-    pulse.enable = true;
-  };
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.libinput.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
