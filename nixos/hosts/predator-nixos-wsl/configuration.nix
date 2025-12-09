@@ -18,7 +18,13 @@
 
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
+
+    # include NixOS-WSL modules
+    <nixos-wsl/modules>
   ];
+
+  wsl.enable = true;
+  wsl.defaultUser = "nixos";
 
   nixpkgs = {
     # You can add overlays here
