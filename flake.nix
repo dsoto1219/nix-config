@@ -31,13 +31,17 @@
       "danim-thinkbook" = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
         # > Our main nixos configuration file <
-        modules = [./nixos/hosts/thinkbook/configuration.nix];
+        modules = [
+          ./nixos/common/default.nix
+          ./nixos/hosts/thinkbook/configuration.nix
+        ];
       };
       "nixos" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = {inherit inputs;};
 	modules = [
           nixos-wsl.nixosModules.default # Get WSL modules for this configuration
+          ./nixos/common/default.nix
           ./nixos/hosts/predator-nixos-wsl/configuration.nix
         ];
       };
