@@ -14,6 +14,7 @@
 
     # You can also split up your configuration and import pieces of it here:
     # ./nvim.nix
+    ./shells.nix
     ./hypr/hypr.nix
   ];
 
