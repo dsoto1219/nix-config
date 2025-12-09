@@ -6,10 +6,6 @@
   pkgs,
   ...
 }: {
-  programs.zsh.enable = true; # want zsh to be the default shell
-
-  environment.shells = with pkgs; [ bash zsh ];
-
   users.users = {
     danim = {
       isNormalUser = true;
