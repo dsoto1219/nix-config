@@ -10,9 +10,8 @@
 
   home.shellAliases = {
     ls = "ls --group-directories-first --color=auto";
-    # -p adds '/' to the end of directories
-    la = "ls -ap";
-    ll = "ls -lap";
+    la = "ls -a";
+    ll = "ls -la";
   };
 
   programs.zsh.shellAliases = cfg.shellAliases;
