@@ -1,14 +1,8 @@
 { config, pkgs, ... } @ inputs:
 {
-  # Add must-have packages from docs
-  home.packages = with pkgs; [ 
-    dunst # notification daemon
-    pipewire wireplumber # pipewire: for screensharing
-    qt5-wayland qt6-wayland # Qt Wayland Support
-    hyprpolkitagent #  authentication agent
-    # nerd fonts specified in ./nixos/common/default.nix
-    kdePackages.dolphin 
-    wofi 
+  home.packages = with pkgs; [
+    kdePackages.dolphin # file manager
+    wofi # menu manager
   ];
 
   # Hyprland Configuration

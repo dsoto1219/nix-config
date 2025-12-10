@@ -6,6 +6,18 @@
   pkgs,
   ...
 }: {
+  # Add must-have packages from docs
+  environment.systemPackages = with pkgs; [ 
+    dunst # notification daemon
+    wireplumber # pipewire: needed for screensharing
+    # qt5-wayland and qt6-wayland should be installed by default (how to check?)
+    hyprpolkitagent #  authentication agent
+    # nerd fonts, including moto, specified in ./nixos/common/default.nix
+  ];
+
+
+  services.pipewire.enable = true;
+
   # Use Hyprland
   programs.hyprland = let
     system = pkgs.stdenv.hostPlatform.system;
