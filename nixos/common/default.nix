@@ -90,7 +90,6 @@
     wget
     tmux
     git
-    upower
     tree
   ];
   environment.variables = {

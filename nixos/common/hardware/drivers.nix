@@ -20,6 +20,9 @@
   # Enable sound.
   services.pipewire.pulse.enable = true;
 
+  # Enable battery tools.
+  services.upower.enable = true;
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.libinput.enable = true;
 }
