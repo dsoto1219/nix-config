@@ -14,6 +14,9 @@
   # Might need to do this in order for hyprpolkitagent to work
   services.polkit.enable = true;
 
+  # Login Manager: ReGreet
+  programs.regreet.enable = true;
+
   # Hyprland Configuration
   programs.kitty.enable = true;
   wayland.windowManager.hyprland = {
