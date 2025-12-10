@@ -36,10 +36,9 @@
   # Needs greetd to be setup
   services.greetd = {
     enable = true;
-    settings = {
-      default_session = {
-        command = "${pkgs.hyprland}/bin/Hyprland --config ~/.config/hypr/hyprland.conf";
-      };
+    settings = rec {
+      initial_session.command = "${pkgs.hyprland}/bin/Hyprland";
+      default_session = initial_session;
     };
   };
 
