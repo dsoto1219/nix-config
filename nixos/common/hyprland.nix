@@ -25,7 +25,7 @@
     # For flake:
     package = inputs.hyprland.packages."${system}".hyprland; 
     # Use Universal Wayland Session Manager---recommended way of launching Hyprland, as it neatly integrates with systemd.
-    # withUWSM = true; 
+    withUWSM = true; 
   };
 
   # Might need to do this in order for hyprpolkitagent to work
