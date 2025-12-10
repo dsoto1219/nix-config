@@ -29,7 +29,7 @@
   };
 
   # Login Manager: ReGreet
-  programs.regreet.enable = true;
+  # programs.regreet.enable = true;
   # services.greetd.enable = true;
 
   # Optional: hint electron apps to use Wayland:
