@@ -38,7 +38,7 @@
     enable = true;
     settings = {
       default_session = {
-        command = "Hyprland --config ${pkgs.hyprland}";
+        command = "${pkgs.hyprland}/bin/Hyprland";
       };
     };
   };
