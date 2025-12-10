@@ -15,7 +15,6 @@
     # nerd fonts, including moto, specified in ./nixos/common/default.nix
   ];
 
-
   services.pipewire.enable = true;
 
   # Use Hyprland
