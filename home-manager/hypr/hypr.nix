@@ -16,6 +16,15 @@
 
   # Login Manager: ReGreet
   programs.regreet.enable = true;
+  # Needs greetd to be setup
+  services.greetd = {
+    enable = true;
+    settings = {
+      default_session = {
+        command = "${pkgs.hyprland}/bin/hyprland";
+      };
+    };
+  };
 
   # Hyprland Configuration
   programs.kitty.enable = true;
