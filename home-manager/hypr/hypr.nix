@@ -22,5 +22,6 @@
     extraConfig = builtins.readFile ./hyprland.conf;
   };
 
+  services.dunst.enable = true; # notification manager
   programs.wofi.enable = true; # menu manager
 }

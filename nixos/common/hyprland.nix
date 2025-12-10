@@ -8,7 +8,7 @@
 }: {
   # Add must-have packages from docs
   environment.systemPackages = with pkgs; [ 
-    dunst # notification daemon
+    # notification daemon set in home-manager
     wireplumber # pipewire: needed for screensharing
     # qt5-wayland and qt6-wayland should be installed by default (how to check?)
     hyprpolkitagent #  authentication agent
