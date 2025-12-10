@@ -102,7 +102,6 @@
     nerd-fonts.droid-sans-mono
     nerd-fonts.noto
     nerd-fonts.hack
-    nerd-fonts.mplus
   ];
 
   # Use Hyprland
