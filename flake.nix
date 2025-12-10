@@ -60,7 +60,6 @@
         # > Our main home-manager configuration file <
         modules = [
 	  ./home-manager/home.nix
-	  ./home-manager/hypr/hypr.nix
 	  ./home-manager/users/danim.nix
 	];
       };
@@ -69,7 +68,6 @@
         extraSpecialArgs = { inherit inputs; };
         modules = [
 	  ./home-manager/home.nix
-	  ./home-manager/hypr/hypr.nix
 	  ./home-manager/users/nixos.nix
 	];
       };
