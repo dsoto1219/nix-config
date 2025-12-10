@@ -21,12 +21,8 @@
   # Docs say that enabling the program enables
   # polkit, xdg-desktop-portal-hyprland,
   # as well as fonts
-  programs.hyprland.enable = true;
-  programs.hyprland = let
-    system = pkgs.stdenv.hostPlatform.system;
-  in {
-    # For flake:
-    package = inputs.hyprland.packages."${system}".hyprland; 
+  programs.hyprland = {
+    enable = true;
     # Use Universal Wayland Session Manager---recommended way of launching Hyprland, as it neatly integrates with systemd.
     withUWSM = true; 
     # xwayland enabled true by default
