@@ -17,15 +17,19 @@
 
   services.pipewire.enable = true;
 
-  # Use Hyprland
+  ## ENABLE HYPRLAND ##
+  # Docs say that enabling the program enables
+  # polkit, xdg-desktop-portal-hyprland,
+  # as well as fonts
+  programs.hyprland.enable = true;
   programs.hyprland = let
     system = pkgs.stdenv.hostPlatform.system;
   in {
-    enable = true;
     # For flake:
     package = inputs.hyprland.packages."${system}".hyprland; 
     # Use Universal Wayland Session Manager---recommended way of launching Hyprland, as it neatly integrates with systemd.
     withUWSM = true; 
+    # xwayland enabled true by default
   };
 
   # Login Manager: ReGreet

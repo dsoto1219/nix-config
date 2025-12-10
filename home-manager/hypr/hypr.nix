@@ -2,7 +2,6 @@
 {
   home.packages = with pkgs; [
     kdePackages.dolphin # file manager
-    wofi # menu manager
   ];
 
   # Hyprland Configuration
@@ -22,4 +21,6 @@
     };
     extraConfig = builtins.readFile ./hyprland.conf;
   };
+
+  programs.wofi.enable = true; # menu manager
 }
