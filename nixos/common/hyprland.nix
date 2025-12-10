@@ -28,9 +28,6 @@
     withUWSM = true; 
   };
 
-  # Might need to do this in order for hyprpolkitagent to work
-  security.polkit.enable = true;
-
   # Login Manager: ReGreet
   programs.regreet.enable = true;
   # Needs greetd to be setup
