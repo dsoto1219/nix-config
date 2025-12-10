@@ -47,5 +47,5 @@
   #   enableSSHSupport = true;
   # };
 
-  networking.hostName = "danim-thinkbook";
+  networking.hostName = "thinkbook";
 }
