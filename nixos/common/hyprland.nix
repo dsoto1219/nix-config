@@ -30,7 +30,14 @@
 
   # Login Manager: ReGreet
   programs.regreet.enable = true;
-  services.greetd.enable = true;
+  # Needs greetd to be setup
+  services.greetd = {
+    enable = true;
+    settings = rec {
+      initial_session.command = "${pkgs.hyprland}/bin/Hyprland";
+      default_session = initial_session;
+    };
+  };
 
   # Optional: hint electron apps to use Wayland:
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
