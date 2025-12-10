@@ -14,6 +14,6 @@
     ll = "ls -la";
 
     # Alias to get battery life info from command line (assuming upower is enabled)
-    bat = "upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E 'state|time to full|percentage'";
+    bat = "upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E 'state|to empty|to full|percentage'";
   };
 }
