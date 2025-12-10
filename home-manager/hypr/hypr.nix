@@ -8,6 +8,7 @@ in {
 
   # Hyprland Configuration
   programs.kitty.enable = true;
+  wayland.windowManager.hyprland.systemd.variables = ["--all"];
   wayland.windowManager.hyprland.settings = {
     "$mod" = "SUPER"; 
     bind = [
