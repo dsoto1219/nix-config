@@ -35,7 +35,7 @@
         # > Our nixos configuration files <
         modules = [
           ./nixos/common/default.nix
-          ./nixos/common/drivers.nix
+          ./nixos/common/hardware/drivers.nix
           ./nixos/hosts/thinkbook/configuration.nix
         ];
       };
