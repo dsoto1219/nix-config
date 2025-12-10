@@ -10,7 +10,7 @@
   environment.systemPackages = with pkgs; [ 
     # notification daemon set in home-manager
     wireplumber # pipewire: needed for screensharing
-    # qt5-wayland and qt6-wayland should be installed by default (how to check?)
+    # qt5-wayland and qt6-wayland should be installed by default
     hyprpolkitagent #  authentication agent
     # nerd fonts, including moto, specified in ./nixos/common/default.nix
   ];
