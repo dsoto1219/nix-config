@@ -31,10 +31,12 @@
   # Login Manager: ReGreet
   # programs.regreet.enable = true;
   services.greetd.enable = true;
-  services.greetd.settings = {
-    default_session = {
+  services.greetd.settings = rec {
+    initial_session = {
       command = "${pkgs.hyprland}/bin/Hyprland";
+      user = "greeter";
     };
+    default_session = initial_session;
   };
 
   # Optional: hint electron apps to use Wayland:
