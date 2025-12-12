@@ -47,7 +47,11 @@
     };
   };
   # Then we can set regreet options
-  programs.regreet.theme.name = "Canta"; 
+  programs.regreet.theme = {
+    name = "Canta"; 
+    package = pkgs.canta-theme;
+  };
+
 
   # Optional: hint electron apps to use Wayland:
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
