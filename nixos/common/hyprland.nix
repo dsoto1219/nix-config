@@ -24,12 +24,13 @@
   programs.hyprland = {
     enable = true;
     # Use Universal Wayland Session Manager---recommended way of launching Hyprland, as it neatly integrates with systemd.
-    withUWSM = true; 
+    withUWSM = true;
     # xwayland enabled true by default
   };
 
   # Login Manager: ReGreet
   programs.regreet.enable = true;
+  # Need to setup greetd first with regreet
   services.greetd.enable = true;
   # Create the hyprland configuration file that the regreet docs tell you to
   environment.etc."greetd/hyprland.conf".text = ''
@@ -45,6 +46,8 @@
       command = "${pkgs.hyprland}/bin/Hyprland --config /etc/greetd/hyprland.conf";
     };
   };
+  # Then we can set regreet options
+  programs.regreet.theme.name = "Canta"; 
 
   # Optional: hint electron apps to use Wayland:
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
