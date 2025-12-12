@@ -44,7 +44,6 @@
   services.greetd.settings = rec {
     default_session = {
       command = "${pkgs.hyprland}/bin/Hyprland --config /etc/greetd/hyprland.conf";
-      user = "greeter";
     };
   };
 
