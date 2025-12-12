@@ -29,8 +29,9 @@
   };
 
   # Login Manager: ReGreet
-  # programs.regreet.enable = true;
+  programs.regreet.enable = true;
   services.greetd.enable = true;
+
   services.greetd.settings = rec {
     initial_session = {
       command = "${pkgs.hyprland}/bin/Hyprland";
