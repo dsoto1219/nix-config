@@ -42,11 +42,10 @@
     }
   '';
   services.greetd.settings = rec {
-    initial_session = {
-      command = "${pkgs.hyprland}/bin/Hyprland";
+    default_session = {
+      command = "${pkgs.hyprland}/bin/Hyprland --config /etc/greetd/hyprland.conf";
       user = "greeter";
     };
-    default_session = initial_session;
   };
 
   # Optional: hint electron apps to use Wayland:
