@@ -15,9 +15,6 @@
     # Home manager
     home-manager.url = "github:nix-community/home-manager/release-25.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
-
-    # Need this since I'm using neovim as a submodule
-    neovim.url = "git+file:/home-manager/nvim";
   };
 
   outputs = {

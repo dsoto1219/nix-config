@@ -45,7 +45,17 @@
     enable = true;
     viAlias = true;
     vimAlias = true;
-    extraConfig = builtins.readFile ./nvim/init.lua;
+    plugins = with pkgs.vimPlugins; [
+      lazy-nvim # package manager
+      nvim-lspconfig
+      nvim-treesitter.withAllGrammars
+      plenary-nvim
+      gruvbox-material
+    ];
+    extraConfig = ''
+      set number
+      set relativenumber
+    '';
   };
 
   home.packages = with pkgs; [ 
