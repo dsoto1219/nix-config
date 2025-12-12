@@ -34,7 +34,7 @@
   # Create the hyprland configuration file that the regreet docs tell you to
   environment.etc."greetd/hyprland.conf".text = ''
     # Minimal config just for the greeter
-    exec-once = regreet; hyprctl dispatch exit
+    exec-once = ${pkgs.regreet}/bin/regreet; hyprctl dispatch exit
     misc {
       disable_hyprland_logo = true
       disable_splash_rendering = true
