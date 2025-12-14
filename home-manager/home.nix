@@ -58,6 +58,7 @@
     vesktop
     weather
     pamixer
+    ruby
   ];
 
   # Let home-manager manage itself
