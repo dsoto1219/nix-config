@@ -13,7 +13,7 @@
     # inputs.nix-colors.homeManagerModule
 
     # NixVim
-    nixvim.homeManagerModules.nixvim
+    inputs.nixvim.homeModules.nixvim
 
     # You can also split up your configuration and import pieces of it here:
     ./nixvim.nix
