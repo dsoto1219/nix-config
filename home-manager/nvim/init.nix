@@ -40,6 +40,7 @@
         src = pkgs.fetchFromGitHub {
           owner = "mason-org";
           repo = "mason.nvim";
+          tag = "v2.1.0";
         };
       })
     ];
