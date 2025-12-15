@@ -4,8 +4,7 @@
 }: {
   viAlias = true;
   vimAlias = true;
-
-  options = {
+  opts = {
     number = true;
     relativenumber = true;
   };
