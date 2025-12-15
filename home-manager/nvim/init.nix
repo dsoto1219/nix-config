@@ -66,12 +66,12 @@
         mode = "n";
         action = "<cmd>nohlsearch<CR>";
 	key = "<Esc>";
-      };
+      }
       {
         mode = "n"; 
 	key = "<leader>q";
 	action = lib.nixvim.lua.toLua.Object "vim.diagnostic.setloclist";
-      };
+      }
     ];
 
     plugins.lazy.enable = true;
