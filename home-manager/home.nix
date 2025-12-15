@@ -48,6 +48,8 @@
     obsidian 
   ];
 
+  programs.nixvim.imports = [ ./nixvim.nix ];
+
   # Let home-manager manage itself
   programs.home-manager.enable = true;
 

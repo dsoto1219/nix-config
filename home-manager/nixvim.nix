@@ -4,9 +4,9 @@
   self,
   ...
 }: {
-  programs.nixvim.enable = true;
+  enable = true;
 
-  programs.nixvim.options = {
+  options = {
     viAlias = true;
     vimAlias = true;
     opts = {
@@ -15,7 +15,7 @@
     };
   };
 
-  programs.nixvim.plugins = {
+  plugins = {
     lualine.enable = true;
   };
 }
