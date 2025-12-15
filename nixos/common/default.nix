@@ -13,9 +13,6 @@
     ./hyprland.nix
     ./shells.nix
     ./users.nix
-
-    # For nixvim
-    inputs.nixvim.homeManagerModules.nixvim
   ];
 
   nixpkgs = {
