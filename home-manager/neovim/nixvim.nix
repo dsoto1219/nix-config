@@ -8,14 +8,11 @@
   opts = {
     number = true;
     relativenumber = true;
+
+    showmode = false; # disabled, lualine handles this
   };
 
-  plugins.lualine = {
-    enable = true;
-    settings = {
-      vim.opt.showmode = false;
-    };
-  };
+  plugins.lualine.enable = true;
 
   colorschemes.moonfly.enable = true;
 }
