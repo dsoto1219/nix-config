@@ -24,6 +24,7 @@
       };
     };
     plugins.guess-indent.enable = true;
+    plugins.vim-surround.enable = true;
 
     colorschemes.moonfly.enable = true;
   };
