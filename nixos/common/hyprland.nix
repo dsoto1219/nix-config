@@ -54,6 +54,11 @@
   programs.regreet.options = {
     background = "../../assets/login-background-mountain.jpeg";
     application_prefer_dark_theme = true;
+    "widget.clock" = {
+      format = "%a %H:%M";
+      resolution = "500ms";
+      label_width = 150;
+    };
   };
 
   # Optional: hint electron apps to use Wayland:
