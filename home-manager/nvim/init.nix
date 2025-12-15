@@ -31,6 +31,7 @@
     plugins.guess-indent.enable = true;
     plugins.conform-nvim.enable = true;
 
+    # A nice, dark colorscheme
     colorschemes.moonfly.enable = true;
   };
 }
