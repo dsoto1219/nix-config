@@ -12,6 +12,9 @@
     # If you want to use home-manager modules from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModule
 
+    # NixVim
+    inputs.nixvim.homeModules.nixvim
+
     # You can also split up your configuration and import pieces of it here:
     ./nixvim.nix
     ./shells.nix
