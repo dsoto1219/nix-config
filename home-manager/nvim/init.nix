@@ -26,6 +26,7 @@
     plugins.guess-indent.enable = true;
     plugins.vim-surround.enable = true;
     plugins.todo-comments.enable = true;
+    plugins.gitsigns.enable = true;
 
     colorschemes.moonfly.enable = true;
   };
