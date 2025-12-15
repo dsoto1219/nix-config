@@ -9,8 +9,8 @@
     viAlias = true;
     vimAlias = true;
     opts = {
-      linenumber = true;
-      relativelinenumber = true;
+      number = true;
+      relativenumber = true;
     };
   };
 
