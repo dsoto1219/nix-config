@@ -1,7 +1,7 @@
 {
-inputs,
-self,
-...
+  inputs,
+  self,
+  ...
 }: let
   nixvim = inputs.nixvim.homeModules.nixvim;
 in {
