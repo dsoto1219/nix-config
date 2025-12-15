@@ -15,7 +15,7 @@
     ./users.nix
 
     # For nixvim
-    inputs.nixvim.homeManagerModules.nixvim
+    inputs.nixvim.homeModules.nixvim
   ];
 
   nixpkgs = {
