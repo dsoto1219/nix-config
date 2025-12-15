@@ -51,7 +51,9 @@
     name = "Canta"; 
     package = pkgs.canta-theme;
   };
-
+  programs.regreet.options = {
+    background = "../../assets/login-background-mountain.jpeg";
+  };
 
   # Optional: hint electron apps to use Wayland:
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
