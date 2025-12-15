@@ -54,6 +54,7 @@
   programs.regreet.settings = {
     background = {
       path = ./../../assets/login-background-mountain.jpg;
+      fit = "Cover";
     };
     GTK = {
       application_prefer_dark_theme = true;
