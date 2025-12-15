@@ -17,7 +17,6 @@
 
     imports = [ ./options.nix ./keymaps.nix ];
 
-    plugins.lazy.enable = true;
     plugins.lualine.enable = true;
 
     colorschemes.moonfly.enable = true;
