@@ -1,7 +1,5 @@
 {
-  inputs,
-  config,
-  self,
+  lib,
   ...
 }: {
   enable = true;
