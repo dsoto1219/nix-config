@@ -2,8 +2,6 @@
   lib,
   ...
 }: {
-  enable = true;
-
   options = {
     viAlias = true;
     vimAlias = true;
