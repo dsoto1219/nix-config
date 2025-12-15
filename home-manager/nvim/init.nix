@@ -20,7 +20,6 @@
     plugins.lualine.enable = true;
     plugins.guess-indent.enable = true;
 
-    colorschemes.gruvbox.enable = true;
     colorschemes.moonfly.enable = true;
   };
 }
