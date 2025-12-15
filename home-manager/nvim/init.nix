@@ -45,7 +45,7 @@
 
       # Sets how neovim will display certain whitspace characters in the editor
       list = true;
-      listchars = { tab = "» "; trail = "·"; nbsp = "␣" };
+      listchars = { tab = "» "; trail = "·"; nbsp = "␣"; };
 
       # Preview substitutions live, as you type!
       inccommand = "split";
