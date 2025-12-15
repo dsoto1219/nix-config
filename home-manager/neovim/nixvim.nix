@@ -2,13 +2,11 @@
   lib,
   ...
 }: {
-  options = {
-    viAlias = true;
-    vimAlias = true;
-    opts = {
-      number = true;
-      relativenumber = true;
-    };
+  viAlias = true;
+  vimAlias = true;
+  opts = {
+    number = true;
+    relativenumber = true;
   };
 
   plugins = {
