@@ -51,7 +51,7 @@
     name = "Canta"; 
     package = pkgs.canta-theme;
   };
-  programs.regreet.options = {
+  programs.regreet.settings = {
     background = "../../assets/login-background-mountain.jpeg";
     application_prefer_dark_theme = true;
     "widget.clock" = {
