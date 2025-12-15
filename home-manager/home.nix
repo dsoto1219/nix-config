@@ -11,11 +11,11 @@
   imports = [
     # If you want to use home-manager modules from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModule
-    inputs.nixvim.homeModules.nixvim
 
     # You can also split up your configuration and import pieces of it here:
     ./shells.nix
     ./hypr/hypr.nix
+    ./neovim/nvim.nix
   ];
 
   nixpkgs = {
@@ -47,9 +47,6 @@
     onedrive onedrivegui 
     obsidian 
   ];
-
-  programs.nixvim.enable = true;
-  programs.nixvim.imports = [ ./nixvim.nix ];
 
   # Let home-manager manage itself
   programs.home-manager.enable = true;
