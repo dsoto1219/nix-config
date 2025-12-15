@@ -14,6 +14,6 @@ self,
   };
 
   programs.nixvim.plugins = {
-    plugins.lualine.enable = true;
+    lualine.enable = true;
   };
 }
