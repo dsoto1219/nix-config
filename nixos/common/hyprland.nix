@@ -53,6 +53,7 @@
   };
   programs.regreet.options = {
     background = "../../assets/login-background-mountain.jpeg";
+    application_prefer_dark_theme = true;
   };
 
   # Optional: hint electron apps to use Wayland:
