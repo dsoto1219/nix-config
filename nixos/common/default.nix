@@ -18,6 +18,8 @@
     inputs.nixvim.homeModules.nixvim
   ];
 
+  programs.nixvim.enable = true;
+
   nixpkgs = {
     # You can add overlays here
     overlays = [
