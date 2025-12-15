@@ -2,10 +2,10 @@
   inputs,
   self,
   ...
-}: let
-  nixvim = inputs.nixvim.homeModules.nixvim;
-in {
-  nixvim.options = {
+}: {
+  programs.nixvim.enable = true;
+
+  programs.nixvim.options = {
     viAlias = true;
     vimAlias = true;
     opts = {
@@ -14,7 +14,7 @@ in {
     };
   };
 
-  nixvim.plugins = {
+  programs.nixvim.plugins = {
     lualine.enable = true;
   };
 }
