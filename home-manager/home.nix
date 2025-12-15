@@ -15,7 +15,7 @@
     # You can also split up your configuration and import pieces of it here:
     ./shells.nix
     ./hypr/hypr.nix
-    ./neovim/nvim.nix
+    ./nvim/init.nix
   ];
 
   nixpkgs = {
