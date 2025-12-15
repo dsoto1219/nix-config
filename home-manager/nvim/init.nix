@@ -1,6 +1,7 @@
 {
   inputs,
   self,
+  pkgs,
   config,
   ...
 }: {
@@ -31,6 +32,10 @@
     plugins.guess-indent.enable = true;
     plugins.conform-nvim.enable = true;
 
+    extraPlugins = [
+      pkgs.vimPlugins.nvim-autopairs
+    ];
+    
     # A nice, dark colorscheme
     colorschemes.moonfly.enable = true;
   };
