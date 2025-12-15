@@ -26,4 +26,6 @@ in {
 
   services.dunst.enable = true; # notification manager
   programs.wofi.enable = true; # menu manager
+
+  programs.waybar.enable = true;
 }
