@@ -18,6 +18,7 @@
     imports = [ ./options.nix ./keymaps.nix ];
 
     plugins.lualine.enable = true;
+    plugins.guess-indent.enable = true;
 
     colorschemes.moonfly.enable = true;
   };
