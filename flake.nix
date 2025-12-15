@@ -73,7 +73,6 @@
 	  ./home-manager/home.nix
 	  ./home-manager/users/danim.nix
 	  hyprland-module
-	  inputs.nixvim.homeModules.nixvim
 	];
       };
       "nixos@nixos" = home-manager.lib.homeManagerConfiguration {
@@ -83,7 +82,6 @@
 	  ./home-manager/home.nix
 	  ./home-manager/users/nixos.nix
 	  hyprland-module
-	  inputs.nixvim.homeModules.nixvim
 	];
       };
     };
