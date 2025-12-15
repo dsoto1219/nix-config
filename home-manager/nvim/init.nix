@@ -23,10 +23,13 @@
         use_icons = true;
       };
     };
-    plugins.guess-indent.enable = true;
     plugins.vim-surround.enable = true;
     plugins.todo-comments.enable = true;
     plugins.gitsigns.enable = true;
+
+    # Style checkers and maintainers
+    plugins.guess-indent.enable = true;
+    plugins.conform-nvim.enable = true;
 
     colorschemes.moonfly.enable = true;
   };
