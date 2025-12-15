@@ -52,8 +52,12 @@
     package = pkgs.canta-theme;
   };
   programs.regreet.settings = {
-    background = ./../../assets/login-background-mountain.jpg;
-    application_prefer_dark_theme = true;
+    background = {
+      path = ./../../assets/login-background-mountain.jpg;
+    };
+    GTK = {
+      application_prefer_dark_theme = true;
+    };
     "widget.clock" = {
       format = "%a %H:%M";
       resolution = "500ms";
