@@ -32,8 +32,16 @@
     plugins.guess-indent.enable = true;
     plugins.conform-nvim.enable = true;
 
+    # LSP: Try auto-setup with mason
     extraPlugins = [
       pkgs.vimPlugins.nvim-autopairs
+      (pkgs.vimUtils.buildVimPlugin {
+        name = "mason";
+        src = pkgs.fetchFromGithub {
+          owner = "mason-org";
+          repo = "mason.nvim";
+        };
+      })
     ];
     
     # A nice, dark colorscheme
