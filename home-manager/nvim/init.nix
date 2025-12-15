@@ -13,6 +13,8 @@
     vimAlias = true;
     vimdiffAlias = true;
 
+    clipboard.register = "unnamedplus";
+
     imports = [ ./options.nix ./keymaps.nix ];
 
     plugins.lazy.enable = true;
