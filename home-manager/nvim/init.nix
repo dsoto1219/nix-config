@@ -37,7 +37,7 @@
       pkgs.vimPlugins.nvim-autopairs
       (pkgs.vimUtils.buildVimPlugin {
         name = "mason";
-        src = pkgs.fetchFromGithub {
+        src = pkgs.fetchFromGitHub {
           owner = "mason-org";
           repo = "mason.nvim";
         };
