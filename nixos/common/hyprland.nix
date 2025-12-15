@@ -52,7 +52,7 @@
     package = pkgs.canta-theme;
   };
   programs.regreet.settings = {
-    background = "../../assets/login-background-mountain.jpeg";
+    background = "../../assets/login-background-mountain.jpg";
     application_prefer_dark_theme = true;
     "widget.clock" = {
       format = "%a %H:%M";
