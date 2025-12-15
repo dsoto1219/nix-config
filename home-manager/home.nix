@@ -12,8 +12,11 @@
     # If you want to use home-manager modules from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModule
 
+    # NixVim
+    nixvim.homeManagerModules.nixvim
+
     # You can also split up your configuration and import pieces of it here:
-    # ./nvim.nix
+    ./nixvim.nix
     ./shells.nix
     ./hypr/hypr.nix
   ];
@@ -41,23 +44,6 @@
   };
 
   # Add stuff for your user as you see fit:
-  programs.neovim = {
-    enable = true;
-    viAlias = true;
-    vimAlias = true;
-    plugins = with pkgs.vimPlugins; [
-      lazy-nvim # package manager
-      nvim-lspconfig
-      nvim-treesitter.withAllGrammars
-      plenary-nvim
-      gruvbox-material
-    ];
-    extraConfig = ''
-      set number
-      set relativenumber
-    '';
-  };
-
   home.packages = with pkgs; [ 
     hello cowsay lolcat sl cmatrix
     fastfetch

@@ -15,6 +15,9 @@
     # Home manager
     home-manager.url = "github:nix-community/home-manager/release-25.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+
+    # nixvim
+    nixvim.url = "github:nix-community/nixvim";
   };
 
   outputs = {
