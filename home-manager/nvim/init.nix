@@ -62,11 +62,13 @@
     };
 
     keymaps = [ 
+      # Clear highlights on search when pressing <Esc> in normal mode
       {
         mode = "n";
         action = "<cmd>nohlsearch<CR>";
 	key = "<Esc>";
       }
+      # Diagnostic keymaps
       {
         mode = "n"; 
 	key = "<leader>q";
