@@ -11,7 +11,7 @@
     {
       mode = "n"; 
       key = "<leader>q";
-      action = lib.nixvim.lua.toLua.Object "vim.diagnostic.setloclist";
+      action = lib.nixvim.lua.toLuaObject "vim.diagnostic.setloclist";
       options = {
         desc = "Open diagnostic [Q]uickfix list";
       };
