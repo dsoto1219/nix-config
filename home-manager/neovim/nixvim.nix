@@ -13,4 +13,6 @@
   plugins = {
     lualine.enable = true;
   };
+
+  colorschemes.moonfly.enable = true;
 }
