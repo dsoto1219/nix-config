@@ -28,6 +28,9 @@
     plugins.todo-comments.enable = true;
     plugins.gitsigns.enable = true;
 
+    # Lazy loading
+    plugins.lz-n.enable = true;
+
     # Style checkers and maintainers
     plugins.guess-indent.enable = true;
     plugins.conform-nvim = {
