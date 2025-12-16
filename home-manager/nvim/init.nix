@@ -45,6 +45,14 @@
       lazyLoad.settings.ft = "markdown";
     };
 
+    plugins.lspconfig.enable = true;
+    lsp.servers = {
+      asm_lsp.enable = true;
+      emmet_language_server.enable = true;
+      rust_analyzer.enable = true;
+      nixd.enable = true;
+    };
+
     extraPlugins = [
       pkgs.vimPlugins.nvim-autopairs
     ];
