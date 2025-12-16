@@ -39,6 +39,12 @@
       lazyLoad.settings.cmd = "Conform";
     };
 
+    # Markdown preview
+    plugins.glow = {
+      enable = true;
+      lazyLoad.settings.ft = "markdown";
+    };
+
     extraPlugins = [
       pkgs.vimPlugins.nvim-autopairs
     ];
