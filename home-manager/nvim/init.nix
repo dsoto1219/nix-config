@@ -35,15 +35,6 @@
     # LSP: Try auto-setup with mason
     extraPlugins = [
       pkgs.vimPlugins.nvim-autopairs
-      (pkgs.vimUtils.buildVimPlugin {
-        name = "mason";
-        src = pkgs.fetchFromGitHub {
-          owner = "mason-org";
-          repo = "mason.nvim";
-          tag = "v2.1.0";
-          hash = "ad7146aa61dcaeb54fa900144d768f040090bff0";
-        };
-      })
     ];
     
     # A nice, dark colorscheme
