@@ -35,7 +35,6 @@
       autoInstall.enable = true;
     };
 
-    # LSP: Try auto-setup with mason
     extraPlugins = [
       pkgs.vimPlugins.nvim-autopairs
     ];
