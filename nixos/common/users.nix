@@ -10,7 +10,7 @@
     users = {
       danim = {
         isNormalUser = true;
-        extraGroups = [ "networkmanager" "wheel" ]; # Be sure to add any other groups you need (such as networkmanager, audio, docker, etc)
+        extraGroups = [ "networkmanager" "wheel" "input" ]; # Be sure to add any other groups you need (such as networkmanager, audio, docker, etc)
       };
     };
     defaultUserShell = pkgs.zsh;
