@@ -41,6 +41,7 @@
           owner = "mason-org";
           repo = "mason.nvim";
           tag = "v2.1.0";
+          hash = "ad7146aa61dcaeb54fa900144d768f040090bff0";
         };
       })
     ];
