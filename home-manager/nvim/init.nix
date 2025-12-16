@@ -30,7 +30,10 @@
 
     # Style checkers and maintainers
     plugins.guess-indent.enable = true;
-    plugins.conform-nvim.enable = true;
+    plugins.conform-nvim = {
+      enable = true;
+      autoInstall.enable = true;
+    };
 
     # LSP: Try auto-setup with mason
     extraPlugins = [
