@@ -28,4 +28,5 @@ in {
   programs.wofi.enable = true; # menu manager
 
   programs.waybar.enable = true;
+  services.hyprpaper.enable = true; # dynamic wallpaper manager
 }
