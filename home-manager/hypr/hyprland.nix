@@ -28,6 +28,27 @@ in {
   programs.wofi.enable = true; # menu manager
 
   programs.waybar.enable = true;
+  programs.waybar.settings = {
+    mainBar.position = "bottom";
+    modules-center = [
+      "mpd",
+      "idle_inhibitor",
+      "pulseaudio",
+      "network",
+      "power-profiles-daemon",
+      "cpu",
+      "memory",
+      "temperature",
+      "backlight",
+      "keyboard-state",
+      "sway/language",
+      "battery",
+      "battery#bat2",
+      "clock",
+      "tray",
+      "custom/power"
+    ];
+  };
   services.hyprpaper.enable = true; # dynamic wallpaper manager
   programs.waylogout.enable = true; # dynamic wallpaper manager
 }
