@@ -32,21 +32,21 @@ in {
     mainBar = {
       position = "bottom";
       modules-center = [
-        "mpd",
-        "idle_inhibitor",
-        "pulseaudio",
-        "network",
-        "power-profiles-daemon",
-        "cpu",
-        "memory",
-        "temperature",
-        "backlight",
-        "keyboard-state",
-        "sway/language",
-        "battery",
-        "battery#bat2",
-        "clock",
-        "tray",
+        "mpd"
+        "idle_inhibitor"
+        "pulseaudio"
+        "network"
+        "power-profiles-daemon"
+        "cpu"
+        "memory"
+        "temperature"
+        "backlight"
+        "keyboard-state"
+        "sway/language"
+        "battery"
+        "battery#bat2"
+        "clock"
+        "tray"
         "custom/power"
       ];
       "keyboard-state": {
