@@ -39,10 +39,7 @@
     };
 
     # Markdown preview
-    plugins.glow = {
-      enable = true;
-      lazyLoad.settings.ft = "markdown";
-    };
+    plugins.glow.enable = true;
 
     plugins.lspconfig.enable = true;
     lsp.servers = {
