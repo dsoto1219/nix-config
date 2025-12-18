@@ -36,6 +36,15 @@
     plugins.conform-nvim = {
       enable = true;
       autoInstall.enable = true;
+      settings.formatters_by_ft = {
+        cpp = [ "clang_format" ];
+        nix = [ "nixfmt" ];
+	"_" = [
+	  "squeeze_blanks"
+	  "trim_whitespace"
+	  "trim_newlines"
+	];
+      };
     };
 
     # Markdown preview
