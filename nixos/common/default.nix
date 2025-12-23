@@ -92,7 +92,7 @@
     git
     tree
     godot
-    zip
+    zip unzip
   ];
   environment.variables = {
     EDITOR = "vim";
