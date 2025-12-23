@@ -91,6 +91,7 @@
     tmux
     git
     tree
+    godot
   ];
   environment.variables = {
     EDITOR = "vim";
