@@ -91,7 +91,6 @@
     tmux
     git
     tree
-    godot
     zip unzip
   ];
   environment.variables = {
