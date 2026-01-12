@@ -13,6 +13,7 @@
     ./hyprland.nix
     ./shells.nix
     ./users.nix
+    ./cachix.nix
   ];
 
   nixpkgs = {
