@@ -11,7 +11,7 @@
   # Configure network connections interactively with nmcli or nmtui.
   networking.networkmanager.enable = true;
   environment.systemPackages = with pkgs; [
-    networkmanagerapplet
+    networkmanagerapplet # enable nmapplet & nm-connection-editor
   ];
   networking.networkmanager.wifi.powersave = true;
 
