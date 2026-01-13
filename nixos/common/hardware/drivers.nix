@@ -14,6 +14,8 @@
     networkmanagerapplet # enable nmapplet & nm-connection-editor
   ];
   networking.networkmanager.wifi.powersave = true;
+  # Enable wpa_gui and wpa_cli
+  networking.wireless.enable = true;
 
   # Enable bluetooth
   hardware.bluetooth.enable = true;
