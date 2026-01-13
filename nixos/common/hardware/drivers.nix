@@ -13,6 +13,7 @@
   environment.systemPackages = with pkgs; [
     networkmanagerapplet
   ];
+  networking.networkmanager.wifi.powersave = true;
 
   # Enable bluetooth
   hardware.bluetooth.enable = true;
