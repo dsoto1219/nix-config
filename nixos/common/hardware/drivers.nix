@@ -10,6 +10,9 @@
 }: {
   # Configure network connections interactively with nmcli or nmtui.
   networking.networkmanager.enable = true;
+  environment.systemPackages = with pkgs; [
+    networkmanagerapplet
+  ];
 
   # Enable bluetooth
   hardware.bluetooth.enable = true;
