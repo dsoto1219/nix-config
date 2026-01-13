@@ -46,6 +46,7 @@
     fastfetch
     onedrive onedrivegui 
     obsidian 
+    zotero
   ];
 
   # Let home-manager manage itself
