@@ -14,7 +14,6 @@ in {
       "$mod" = "SUPER"; 
       bind = [
         "$mod, F, fullscreen"
-        "$mod, L, exec, wofi --sort-order-alphabetical"
       ];
       input = {
         touchpad = {
