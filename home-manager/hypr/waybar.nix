@@ -48,7 +48,7 @@
       };
       memory = {
         interval = 30;
-        format = "  {}%";
+        format = "  {}%";
         format-alt = " {used:0.1f}G";
         max-length = 10;
       };
@@ -68,7 +68,7 @@
         spacing = 10;
       };
       network = {
-        format = "󰖩 {essid}";
+        format = "󰖩  {essid}";
         format-disconnected = "󰖪 disconnected";
       };
       clock = {
