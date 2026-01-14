@@ -69,10 +69,10 @@
       };
       network = {
         format = "󰖩  {essid}";
-        format-disconnected = "󰖪 disconnected";
+        format-disconnected = "󰖪  disconnected";
       };
       clock = {
-        format = " {:%I:%M %p   %m/%d} ";
+        format = "  {:%I:%M %p    %m/%d} ";
         tooltip-format = ''
           <big>{:%Y %B}</big>
           <tt><small>{calendar}</small></tt>'';
