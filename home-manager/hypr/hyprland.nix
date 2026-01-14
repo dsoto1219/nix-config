@@ -14,6 +14,7 @@ in {
       "$mod" = "SUPER"; 
       bind = [
         "$mod, F, fullscreen"
+        "$mod, L, exec, wofi --sort-order-alphabetical"
       ];
       input = {
         touchpad = {
@@ -26,6 +27,9 @@ in {
 
   services.dunst.enable = true; # notification manager
   programs.wofi.enable = true; # menu manager
+  programs.wofi.settings = {
+    mode = "drun";
+  };
 
   imports = [ ./waybar.nix ];
   services.hyprpaper.enable = true; # dynamic wallpaper manager
