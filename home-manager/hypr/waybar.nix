@@ -78,7 +78,7 @@
           <tt><small>{calendar}</small></tt>'';
       };
       pulseaudio = {
-        format = "{icon} {volume}%";
+        format = "{icon}   {volume}%";
         tooltip = false;
         format-muted = " Muted";
         on-click = "pamixer -t";
