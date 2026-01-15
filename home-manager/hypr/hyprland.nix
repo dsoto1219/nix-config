@@ -16,11 +16,11 @@ in {
       bind = [
         "$mod, F, fullscreen"
         # Screenshot a window with SUPER + PrintScr
-        "bind = $mod, PRINT, exec, hyprshot -m window"
+        "$mod, PRINT, exec, hyprshot -m window"
         # Screenshot a monitor with PrintScr
-        "bind = , PRINT, exec, hyprshot -m output"
+        "PRINT, exec, hyprshot -m output"
         # Screenshot a region with SUPER + Shift + S
-        "bind = $shiftMod, S, exec, hyprshot -m region" 
+        "$shiftMod, S, exec, hyprshot -m region" 
       ];
       input = {
         touchpad = {
