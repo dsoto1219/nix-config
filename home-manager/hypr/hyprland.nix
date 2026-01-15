@@ -26,9 +26,6 @@ in {
 
   services.dunst.enable = true; # notification manager
   programs.wofi.enable = true; # menu manager
-  programs.wofi.settings = {
-    mode = "drun";
-  };
 
   imports = [ ./waybar.nix ];
   services.hyprpaper.enable = true; # dynamic wallpaper manager
