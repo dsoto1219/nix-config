@@ -18,7 +18,7 @@ in {
         # Screenshot a window with SUPER + PrintScr
         "$mod, PRINT, exec, hyprshot -m window"
         # Screenshot a monitor with PrintScr
-        "PRINT, exec, hyprshot -m output"
+        ", PRINT, exec, hyprshot -m output"
         # Screenshot a region with SUPER + Shift + S
         "$shiftMod, S, exec, hyprshot -m region" 
       ];
