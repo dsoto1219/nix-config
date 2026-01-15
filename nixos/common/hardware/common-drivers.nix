@@ -12,6 +12,7 @@
   networking.networkmanager.enable = true;
   environment.systemPackages = with pkgs; [
     networkmanagerapplet # enable nmapplet & nm-connection-editor
+    libinput # for debugging input issues
   ];
   networking.networkmanager.wifi.powersave = true;
 
