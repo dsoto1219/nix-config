@@ -4,6 +4,7 @@ let
 in {
   home.packages = with pkgs; [
     kdePackages.dolphin # file manager
+    hyprshot
   ];
 
   # Hyprland Configuration
@@ -14,6 +15,12 @@ in {
       "$mod" = "SUPER"; 
       bind = [
         "$mod, F, fullscreen"
+        # Screenshot a window with SUPER + PrintScr
+        "bind = $mainMod, PRINT, exec, hyprshot -m window"
+        # Screenshot a monitor with PrintScr
+        "bind = , PRINT, exec, hyprshot -m output"
+        # Screenshot a region with SUPER + Shift + S
+        "bind = $shiftMod, S, exec, hyprshot -m region" 
       ];
       input = {
         touchpad = {
