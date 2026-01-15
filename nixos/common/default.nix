@@ -53,7 +53,7 @@
     registry = lib.mapAttrs (_: flake: {inherit flake;}) flakeInputs;
     nixPath = lib.mapAttrsToList (n: _: "${n}=flake:${n}") flakeInputs;
 
-    trustedUsers = [ "root" "@wheel" ];
+    trusted-users = [ "root" "@wheel" ];
 
     # Garbage collection
     gc = {
