@@ -3,6 +3,7 @@
 
   nixConfig = {
     extra-substituters = [
+      "https://cache.nixos.org"
       "https://nix-community.cachix.org"
       "https://nixpkgs-python.cachix.org"
       "https://hyprland.cachix.org"
