@@ -13,6 +13,7 @@ in {
   wayland.windowManager.hyprland = {
     settings = {
       "$mod" = "SUPER"; 
+      "$shiftMod" = "SUPER, Shift"; 
       bind = [
         "$mod, F, fullscreen"
         # Screenshot a window with SUPER + PrintScr
