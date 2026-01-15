@@ -16,7 +16,7 @@ in {
       bind = [
         "$mod, F, fullscreen"
         # Screenshot a window with SUPER + PrintScr
-        "bind = $mainMod, PRINT, exec, hyprshot -m window"
+        "bind = $mod, PRINT, exec, hyprshot -m window"
         # Screenshot a monitor with PrintScr
         "bind = , PRINT, exec, hyprshot -m output"
         # Screenshot a region with SUPER + Shift + S
