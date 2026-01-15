@@ -48,6 +48,7 @@
     obsidian 
     zotero
     zathura
+    mission-center
   ];
 
   # Let home-manager manage itself
