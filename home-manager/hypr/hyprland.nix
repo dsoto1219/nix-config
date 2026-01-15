@@ -29,5 +29,5 @@ in {
 
   imports = [ ./waybar.nix ];
   services.hyprpaper.enable = true; # dynamic wallpaper manager
-  programs.waylogout.enable = true; # dynamic wallpaper manager
+  programs.waylogout.enable = true;
 }
