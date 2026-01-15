@@ -47,6 +47,7 @@
     onedrive onedrivegui 
     obsidian 
     zotero
+    zathura
   ];
 
   # Let home-manager manage itself
