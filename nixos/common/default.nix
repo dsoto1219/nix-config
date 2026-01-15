@@ -93,6 +93,7 @@
     git
     tree
     zip unzip
+    htop
   ];
   environment.variables = {
     EDITOR = "vim";
