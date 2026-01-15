@@ -47,7 +47,7 @@
         modules = [
           ./nixos/common/default.nix
           ./nixos/common/hardware/common-drivers.nix
-          ./nixos/common/hardware/fingerprint.nix
+          # ./nixos/common/hardware/fingerprint.nix
           ./nixos/common/hardware/tablets.nix
           ./nixos/hosts/thinkbook/configuration.nix
         ];
