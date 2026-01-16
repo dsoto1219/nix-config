@@ -2,7 +2,7 @@
 {
   # Helpful packages
   environment.systemPackages = with pkgs; [
-    libfprint
+    libfprint libfprint-tod
   ];
 
   services.fprintd.enable = true;
