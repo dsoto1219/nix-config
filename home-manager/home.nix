@@ -49,7 +49,6 @@
     zotero
     zathura
     mission-center
-    code2prompt
   ];
 
   # Let home-manager manage itself
