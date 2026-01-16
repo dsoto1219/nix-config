@@ -1,15 +1,13 @@
 { pkgs, ... }:
 {
-  # Helpful packages
   environment.systemPackages = with pkgs; [
     libfprint libfprint-tod
   ];
 
-  services.fprintd.enable = true;
-  services.fprintd.tod.enable = true;
+  services.fprintd = {
+    enable = true;
+    package = pkgs.open-fprintd;
+  };
 
-  # services.fprintd.tod.driver = pkgs.libfprint-2-tod1-vfs0090; 
-  # If the vfs0090 Driver does not work, use the following driver
-  services.fprintd.tod.driver = pkgs.libfprint-2-tod1-goodix;
   security.pam.services.login.fprintAuth = true;
 }
