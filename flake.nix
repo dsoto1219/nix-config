@@ -85,19 +85,19 @@
         extraSpecialArgs = { inherit inputs; };
         # > Our main home-manager configuration file <
         modules = [
-	  ./home-manager/home.nix
-	  ./home-manager/users/danim.nix
-	  hyprland-module
-	];
+          ./home-manager/home.nix
+          ./home-manager/users/danim.nix
+          hyprland-module
+        ];
       };
       "nixos@nixos" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         extraSpecialArgs = { inherit inputs; };
         modules = [
-	  ./home-manager/home.nix
-	  ./home-manager/users/nixos.nix
-	  hyprland-module
-	];
+          ./home-manager/home.nix
+          ./home-manager/users/nixos.nix
+          hyprland-module
+        ];
       };
     };
   };
