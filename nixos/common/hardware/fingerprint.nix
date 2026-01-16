@@ -1,10 +1,5 @@
 { pkgs, ... }:
 {
-  # Helpful packages
-  environment.systemPackages = with pkgs; [
-    libfprint
-  ];
-
   services.fprintd.enable = true;
   # services.fprintd.tod.enable = true;
 
