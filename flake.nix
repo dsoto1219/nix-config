@@ -31,11 +31,6 @@
 
     # nixvim
     nixvim.url = "github:nix-community/nixvim";
-
-    nixos-06cb-009a-fingerprint-sensor = {
-      url = "github:ahbnr/nixos-06cb-009a-fingerprint-sensor?ref=24.11";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs = {
@@ -66,7 +61,6 @@
           ./nixos/common/default.nix
           ./nixos/common/hardware/common-drivers.nix
           ./nixos/common/hardware/fingerprint.nix
-          inputs.nixos-06cb-009a-fingerprint-sensor.nixosModules."06cb-009a-fingerprint-sensor"
           ./nixos/common/hardware/tablets.nix
           ./nixos/hosts/thinkbook/configuration.nix
         ];
