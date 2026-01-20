@@ -44,13 +44,15 @@
   home.packages = with pkgs; [ 
     hello cowsay lolcat sl cmatrix
     fastfetch
-    onedrive onedrivegui 
+    onedrivegui 
     obsidian 
     zotero
     zathura
     mission-center
     code2prompt
   ];
+
+  services.onedrive.enable = true;
 
   # Let home-manager manage itself
   programs.home-manager.enable = true;
