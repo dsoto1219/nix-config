@@ -10,6 +10,13 @@
     # example = prev.example.overrideAttrs (oldAttrs: rec {
     # ...
     # });
+    libfprint = prev.libfprintd.overrideAttrrs (oldAttrs: {
+      postPatch = (oldAttrs.postPatch or "") + ''
+        # Add 55a4 goodix device driver
+        sed -i 's/\(.*0x5840.*\)/ { .vid = 0x27cd, .pid = 0x55a4 },\n\1/'
+          libfprint/drivers/goodixmoc/goodix.c
+      '';
+    });
   };
 
   # When applied, the unstable nixpkgs set (declared in the flake inputs) will
