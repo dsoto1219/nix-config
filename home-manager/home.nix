@@ -50,6 +50,7 @@
     zathura
     mission-center
     code2prompt
+    kdePackages.wacomtablet
   ];
 
   programs.onedrive.enable = true;
