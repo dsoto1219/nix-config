@@ -2,6 +2,7 @@
 {
   environment.systemPackages = with pkgs; [
     libfprint libfprint-tod
+    fprintd   fprintd-tod
   ];
 
   services.fprintd = {
