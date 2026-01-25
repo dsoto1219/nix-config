@@ -51,6 +51,7 @@
       };
     };
   in {
+    overlays = import ./overlays {inherit inputs;};
     # NixOS configuration entrypoint
     # Available through 'nixos-rebuild --flake .#your-hostname'
     nixosConfigurations = {
