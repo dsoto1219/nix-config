@@ -1,13 +1,9 @@
 { pkgs, ... }:
 {
-  environment.systemPackages = with pkgs; [
-    libfprint libfprint-tod
-    fprintd   fprintd-tod
-  ];
-
   services.fprintd = {
     enable = true;
-    package = pkgs.open-fprintd;
+    tod.enable = true;
+    tod.driver = pkgs.libfprint-2-tod1-goodix;
   };
 
   security.pam.services.login.fprintAuth = true;
