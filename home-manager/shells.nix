@@ -7,6 +7,7 @@
 }: {
   programs.zsh.enable = true;
   programs.zsh.initContent = ''
+    setopt autocd
     CASE_SENSITIVE = "true";
   '';
   programs.starship.enable = true;
