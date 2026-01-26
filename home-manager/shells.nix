@@ -6,7 +6,7 @@
   ...
 }: {
   programs.zsh.enable = true;
-  programs.zsh.initConfig = {
+  programs.zsh.initContent = {
     CASE_SENSITIVE = "true";
   };
   programs.starship.enable = true;
