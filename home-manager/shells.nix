@@ -6,6 +6,9 @@
   ...
 }: {
   programs.zsh.enable = true;
+  programs.zsh.initConfig = {
+    CASE_SENSITIVE = "true";
+  };
   programs.starship.enable = true;
 
   home.shellAliases = {
