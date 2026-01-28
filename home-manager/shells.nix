@@ -6,6 +6,7 @@
   ...
 }: {
   programs.zsh.enable = true;
+  programs.zsh.autocd = true;
   programs.zsh.completionInit = ''
    autoload -U compinit && compinit
    zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}';
