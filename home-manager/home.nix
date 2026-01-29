@@ -50,6 +50,7 @@
     zathura
     mission-center
     code2prompt
+    vesktop
   ];
 
   programs.onedrive.enable = true;
