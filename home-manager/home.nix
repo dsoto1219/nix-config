@@ -45,7 +45,7 @@
     hello cowsay lolcat sl cmatrix
     fastfetch
     onedrivegui 
-    obsidian 
+    # obsidian 
     zotero
     zathura
     mission-center
@@ -53,7 +53,7 @@
     vesktop
   ];
 
-  programs.onedrive.enable = true;
+  # programs.onedrive.enable = true;
 
   # Let home-manager manage itself
   programs.home-manager.enable = true;
