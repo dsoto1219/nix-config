@@ -45,6 +45,7 @@
     hello cowsay lolcat sl cmatrix
     fastfetch
     # onedrivegui 
+    onedriver
     obsidian 
     zotero
     zathura
@@ -53,10 +54,7 @@
     vesktop
   ];
 
-  programs.onedrive = {
-    enable = true;
-    package = pkgs.onedriver;
-  };
+  # programs.onedrive.enable = true;
 
   # Let home-manager manage itself
   programs.home-manager.enable = true;
