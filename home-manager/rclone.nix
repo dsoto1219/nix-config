@@ -13,8 +13,8 @@
     Service = {
       Type = "notify";
       ExecStartPre = "${pkgs.coreutils}/bin/mkdir -p ~/${directory}/";
-      ExecStart = "${pkgs.rclone}/bin/rclone --vfs-cache-mode writes --ignore-checksum mount ${remote-name}: ~/${directory}";
-      ExecStop="/run/wrappers/bin/fusermount -u %h/${directory}/%i";
+      ExecStart = "${pkgs.rclone}/bin/rclone --vfs-cache-mode writes --verbose --ignore-checksum mount ${remote-name}: ~/${directory}";
+      ExecStop="/run/wrappers/bin/fusermount -u --verbose %h/${directory}/%i";
     };
     Install.WantedBy = [ "default.target" ];
   };
