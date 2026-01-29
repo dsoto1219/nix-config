@@ -14,6 +14,7 @@
 
     # You can also split up your configuration and import pieces of it here:
     ./shells.nix
+    ./rclone.nix
     ./hypr/hyprland.nix
     ./nvim/init.nix
   ];
@@ -44,7 +45,6 @@
   home.packages = with pkgs; [ 
     hello cowsay lolcat sl cmatrix
     fastfetch
-    rclone
     obsidian 
     zotero
     zathura
