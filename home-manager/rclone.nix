@@ -2,7 +2,7 @@
 {
   home.packages = with pkgs; [ rclone ];
 
-  systemd.user.services.rclone-mount-onedrive = let 
+  systemd.user.services.rclonemount-onedrive = let 
     remote-name = "remote";
     directory = "OneDrive";
   in {
