@@ -99,6 +99,7 @@
     tree
     zip unzip
     htop
+    ripgrep
   ];
   environment.variables = {
     EDITOR = "vim";
