@@ -37,6 +37,5 @@ in {
 
   imports = [ ./waybar.nix ];
   services.hyprpaper.enable = true; # dynamic wallpaper manager
-  programs.swaylock.enable = true; # lockout screen manager
   programs.waylogout.enable = true;
 }
