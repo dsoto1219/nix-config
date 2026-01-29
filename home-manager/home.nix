@@ -44,7 +44,7 @@
   home.packages = with pkgs; [ 
     hello cowsay lolcat sl cmatrix
     fastfetch
-    # onedrivegui 
+    onedrivegui 
     onedriver ocamlPackages.gstreamer
     obsidian 
     zotero
