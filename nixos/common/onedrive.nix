@@ -5,4 +5,9 @@
   environment.systemPackages = with pkgs; [
     onedriver
   ];
+
+  services.onedrive = {
+    enable = true;
+    package = pkgs.onedriver;
+  };
 }
