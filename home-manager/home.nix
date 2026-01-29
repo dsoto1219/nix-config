@@ -53,7 +53,10 @@
     vesktop
   ];
 
-  # programs.onedrive.enable = true;
+  programs.onedrive = {
+    enable = true;
+    package = pkgs.onedriver;
+  };
 
   # Let home-manager manage itself
   programs.home-manager.enable = true;
