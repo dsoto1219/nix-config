@@ -45,7 +45,7 @@
     hello cowsay lolcat sl cmatrix
     fastfetch
     # onedrivegui 
-    onedriver
+    onedriver ocamlPackages.gstreamer
     obsidian 
     zotero
     zathura
