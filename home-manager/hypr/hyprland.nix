@@ -34,7 +34,7 @@ in {
 
   services.dunst.enable = true; # notification manager
   programs.wofi.enable = true; # menu manager
-  programs.hypridle.enable = true;
+  services.hypridle.enable = true;
   programs.hyprlock.enable = true;
 
   imports = [ ./waybar.nix ];
