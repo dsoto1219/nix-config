@@ -44,12 +44,6 @@
   home.packages = with pkgs; [ 
     hello cowsay lolcat sl cmatrix
     fastfetch
-    onedrivegui 
-    ## onedriver Packages
-    onedriver
-    webkitgtk_6_0
-    gst_all_1.gstreamer gst_all_1.gst-plugins-base gst_all_1.gst-plugins-good gst_all_1.gst-plugins-bad
-    ## End onedriver packages
     rclone
     obsidian 
     zotero
@@ -58,12 +52,6 @@
     code2prompt
     vesktop
   ];
-
-  # programs.onedrive.enable = true;
-  xdg.configFile."onedriver" = {
-    source = ./onedriver_config.yml;
-    target = "onedriver/config.yml";
-  };
 
   # Let home-manager manage itself
   programs.home-manager.enable = true;
