@@ -56,8 +56,8 @@
 
   # programs.onedrive.enable = true;
   xdg.configFile."onedriver" = {
-    source = ./onedriver_config.yaml;
-    target = "onedriver/config.yaml";
+    source = ./onedriver_config.yml;
+    target = "onedriver/config.yml";
   };
 
   # Let home-manager manage itself
