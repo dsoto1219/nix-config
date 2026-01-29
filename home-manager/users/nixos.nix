@@ -5,7 +5,7 @@
   pkgs,
   ...
 }: let
-username = "nixos";
+  username = "nixos";
 in {
   home = {
     inherit username;
