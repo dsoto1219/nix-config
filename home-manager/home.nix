@@ -44,8 +44,8 @@
   home.packages = with pkgs; [ 
     hello cowsay lolcat sl cmatrix
     fastfetch
-    onedrivegui 
-    # obsidian 
+    # onedrivegui 
+    obsidian 
     zotero
     zathura
     mission-center
