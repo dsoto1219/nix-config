@@ -7,7 +7,7 @@
     directory = "OneDrive";
   in {
     Unit = {
-      Description = "Autostart for rclone filesystem mounting.";
+      Description = "rclone mount onedrive";
       After = [ "network-online.target" ];
     };
     Service = {
