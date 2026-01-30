@@ -11,7 +11,7 @@
       After = [ "network-online.target" ];
     };
     Service = {
-      Type = "notify";
+      Type = "simple";
       ExecStartPre = "${pkgs.coreutils}/bin/mkdir -p %h/${directory}/";
       ExecStart = "${pkgs.rclone}/bin/rclone --vfs-cache-mode writes --verbose --ignore-checksum mount ${remote-name}: %h/${directory}/";
       ExecStop="/run/wrappers/bin/fusermount -u --verbose %h/${directory}/%i";
