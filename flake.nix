@@ -60,7 +60,6 @@
         # > Our nixos configuration files <
         modules = [
           ./nixos/common/default.nix
-          # ./nixos/common/onedrive.nix
           ./nixos/common/hardware/common-drivers.nix
           ./nixos/common/hardware/tablets.nix
           ./nixos/hosts/thinkbook/fingerprint.nix
