@@ -14,6 +14,8 @@
       Type = "simple";
       ExecStartPre = "${pkgs.coreutils}/bin/mkdir -p %h/${directory}/";
       ExecStart = ''${pkgs.rclone}/bin/rclone mount \
+        --config %h/.config/rclone/rclone.conf \
+        --cache-dir %h/.cache/rclone/ \
         --vfs-cache-mode writes -vv \
         --no-checksum --no-modtime --no-seek \
         ${remote-name}: %h/${directory}/
