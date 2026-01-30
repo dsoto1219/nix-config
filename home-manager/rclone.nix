@@ -17,8 +17,8 @@
         --config %h/.config/rclone/rclone.conf \
         --cache-dir %h/.cache/rclone/ \
         --vfs-cache-mode writes -vv \
-        --vfs-read-chunk-size 4M
-        --vfs-read-chunk-streams 16
+        --vfs-read-chunk-size 4M \
+        --vfs-read-chunk-streams 16 \
         --no-checksum --no-modtime --no-seek \
         ${remote-name}: %h/${directory}/
       '';
