@@ -8,7 +8,7 @@
   };
 
   xdg.configFile.onedriver = {
-    source = ./onedriver_config.yml
+    source = ./onedriver_config.yml;
     target = "onedriver/config.yml";
   };
 }
