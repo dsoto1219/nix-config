@@ -45,6 +45,7 @@
   home.packages = with pkgs; [ 
     hello cowsay lolcat sl cmatrix
     fastfetch
+    onedriver
     obsidian 
     zotero
     zathura
