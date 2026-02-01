@@ -14,6 +14,7 @@
 
     # You can also split up your configuration and import pieces of it here:
     ./shells.nix
+    ./onedriver.nix
     ./rclone.nix
     ./hypr/hyprland.nix
     ./nvim/init.nix
@@ -45,7 +46,6 @@
   home.packages = with pkgs; [ 
     hello cowsay lolcat sl cmatrix
     fastfetch
-    onedriver
     obsidian 
     zotero
     zathura
@@ -53,11 +53,6 @@
     code2prompt
     vesktop
   ];
-
-  programs.onedrive = {
-    enable = true;
-    package = pkgs.onedriver;
-  };
 
   # Let home-manager manage itself
   programs.home-manager.enable = true;
