@@ -37,7 +37,7 @@ in {
   services.hypridle.enable = true;
 
   programs.hyprlock.enable = true;
-  xdg.configFile.hyprlock.target = "hypr/hyprlock.conf";
+  xdg.configFile.hyprlock.source = ./hypr/hyprlock.conf;
 
   imports = [ ./waybar.nix ];
   services.hyprpaper.enable = true; # dynamic wallpaper manager
