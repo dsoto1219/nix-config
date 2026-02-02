@@ -35,7 +35,9 @@ in {
   services.dunst.enable = true; # notification manager
   programs.wofi.enable = true; # menu manager
   services.hypridle.enable = true;
+
   programs.hyprlock.enable = true;
+  xdg.configFile.hyprlock.target = "hypr/hyprlock.conf";
 
   imports = [ ./waybar.nix ];
   services.hyprpaper.enable = true; # dynamic wallpaper manager
