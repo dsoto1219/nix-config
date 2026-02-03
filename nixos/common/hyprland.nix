@@ -32,7 +32,7 @@
   services.greetd.enable = true;
   services.greetd.settings = {
     default_session = {
-      command = "${pkgs.hyprland}/bin/start-hyprland";
+      command = "${pkgs.hyprland}/bin/Hyprland";
     };
   };
 
