@@ -13,7 +13,7 @@
     onedriver = prev.onedriver.overrideAttrs (
       newAttrs: oldAttrs: {
         version = "0.15.0";
-        src = inputs.pkgs.fetchFromGitHub {
+        src = final.pkgs.fetchFromGitHub {
           inherit (oldAttrs.src) owner repo;
           rev = "v${newAttrs.version}";
           hash = "sha256-mtNlnNnF/fc3hn3sXG2vyK1Wwsxp8fVGfMZ6SvMAT6I=";
