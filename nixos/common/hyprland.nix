@@ -32,7 +32,7 @@
   services.greetd.enable = true;
   services.greetd.settings = {
     default_session = {
-      command = "${pkgs.hyprland}/bin/Hyprland --config /etc/greetd/hyprland.conf > /dev/null/ 2>&1";
+      command = "${pkgs.hyprland}/bin/start-hyprland";
     };
   };
 
