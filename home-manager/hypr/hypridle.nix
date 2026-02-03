@@ -1,7 +1,7 @@
 { ... }:
 {
-    services.hyprlock.enable = true;
-    services.hyprlock.settings = {
+    services.hypridle.enable = true;
+    services.hypridle.settings = {
         general = {
           lock_cmd = "notify-send \"lock!\"";                 # dbus/sysd lock command (loginctl lock-session)
             unlock_cmd = "notify-send \"unlock!\"";           # same as above, but unlock
