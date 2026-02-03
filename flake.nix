@@ -55,6 +55,7 @@
     # Accessible through 'nix build', 'nix shell', etc
     packages = import ./pkgs nixpkgs.legacyPackages.${system};
 
+    # Your custom packages and modifications, exported as overlays
     overlays = import ./overlays {inherit inputs;};
     # NixOS configuration entrypoint
     # Available through 'nixos-rebuild --flake .#your-hostname'
