@@ -1,5 +1,5 @@
 # This file defines overlays
-{inputs, ...}: {
+{ inputs, pkgs, ... }: {
   # This one brings our custom packages from the 'pkgs' directory (commented out because I haven't added that directory yet)
   # additions = final: _prev: import ../pkgs final.pkgs;
 
@@ -10,6 +10,24 @@
     # example = prev.example.overrideAttrs (oldAttrs: rec {
     # ...
     # });
+    onedriver = prev.onedriver.overrideAttrs (
+      newAttrs: oldAttrs: {
+        version = "0.15.0";
+        src = pkgs.fetchFromGitHub {
+          inherit (oldAttrs.src) owner repo;
+          rev = "v${newAttrs.version}";
+          hash = "sha256-mtNlnNnF/fc3hn3sXG2vyK1Wwsxp8fVGfMZ6SvMAT6I=";
+        };
+        # new dependencies hash got from: nixpkgs-update-log
+        # https://nixpkgs-update-logs.nix-community.org/onedriver/2026-01-31.log
+        vendorHash = "sha256-Ifcmf9AtZnrjgTPQnof/ap0TY19zHVftm5N4JgvbAgs=";
+        # Desktop file name changed in:
+        # https://github.com/jstaf/onedriver/commit/4377d7562089b7725957e371671e86130322ff54
+        postInstall =
+          builtins.replaceStrings [ "resources/onedriver.desktop" ] [ "resources/onedriver-launcher.desktop" ]
+            oldAttrs.postInstall;
+      }
+    );
   };
 
   # When applied, the unstable nixpkgs set (declared in the flake inputs) will
