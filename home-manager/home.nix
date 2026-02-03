@@ -46,6 +46,7 @@
     hello cowsay lolcat sl cmatrix
     fastfetch
     obsidian 
+    kdePackages.ksshaskpass # for obsidian-git auth
     zotero
     zathura
     mission-center
