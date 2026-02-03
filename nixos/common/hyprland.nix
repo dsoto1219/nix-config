@@ -28,14 +28,6 @@
     # xwayland enabled true by default
   };
 
-  # Need to setup greetd first with regreet
-  services.greetd.enable = true;
-  services.greetd.settings = {
-    default_session = {
-      command = "${pkgs.hyprland}/bin/Hyprland --config ~/.config/hypr/hyprland.conf";
-    };
-  };
-
   # Optional: hint electron apps to use Wayland:
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 }
