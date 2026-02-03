@@ -43,6 +43,12 @@ in {
     target = "hypr/hyprlock.conf";
   };
 
+  programs.hypridle.enable = true;
+  xdg.configFile.hypridle = {
+    source = ./conf/hypridle.conf;
+    target = "hypr/hypridle.conf";
+  };
+
   services.hyprpaper.enable = true; # dynamic wallpaper manager
   programs.wlogout.enable = true;
 }
