@@ -32,14 +32,14 @@ in {
     extraConfig = builtins.readFile ./conf/hyprland.conf;
   };
 
+  imports = [ ./waybar.nix ./hypridle.nix ];
+
   services.dunst.enable = true; # notification manager
   programs.wofi.enable = true; # menu manager
-  services.hypridle.enable = true;
 
   programs.hyprlock.enable = true;
   xdg.configFile.hyprlock.source = ./conf/hyprlock.conf;
 
-  imports = [ ./waybar.nix ];
   services.hyprpaper.enable = true; # dynamic wallpaper manager
   programs.wlogout.enable = true;
 }
