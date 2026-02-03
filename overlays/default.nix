@@ -1,5 +1,5 @@
 # This file defines overlays
-{ inputs, pkgs, ... }: {
+{ inputs, ... }: {
   # This one brings our custom packages from the 'pkgs' directory (commented out because I haven't added that directory yet)
   # additions = final: _prev: import ../pkgs final.pkgs;
 
@@ -13,7 +13,7 @@
     onedriver = prev.onedriver.overrideAttrs (
       newAttrs: oldAttrs: {
         version = "0.15.0";
-        src = pkgs.fetchFromGitHub {
+        src = inputs.pkgs.fetchFromGitHub {
           inherit (oldAttrs.src) owner repo;
           rev = "v${newAttrs.version}";
           hash = "sha256-mtNlnNnF/fc3hn3sXG2vyK1Wwsxp8fVGfMZ6SvMAT6I=";
