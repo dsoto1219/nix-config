@@ -32,7 +32,7 @@ in {
     extraConfig = builtins.readFile ./conf/hyprland.conf;
   };
 
-  imports = [ ./waybar.nix ./hypridle.nix ];
+  imports = [ ./waybar.nix ];
 
   services.dunst.enable = true; # notification manager
   programs.wofi.enable = true; # menu manager
