@@ -28,8 +28,6 @@
     # xwayland enabled true by default
   };
 
-  # Login Manager: ReGreet
-  programs.regreet.enable = true;
   # Need to setup greetd first with regreet
   services.greetd.enable = true;
   services.greetd.settings = {
