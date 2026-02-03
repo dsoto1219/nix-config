@@ -38,7 +38,10 @@ in {
   programs.wofi.enable = true; # menu manager
 
   programs.hyprlock.enable = true;
-  xdg.configFile.hyprlock.source = ./conf/hyprlock.conf;
+  xdg.configFile.hyprlock = {
+    source = ./conf/hyprlock.conf;
+    target = "hypr/hyprlock.conf";
+  };
 
   services.hyprpaper.enable = true; # dynamic wallpaper manager
   programs.wlogout.enable = true;
