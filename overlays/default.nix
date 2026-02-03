@@ -16,7 +16,7 @@
         src = final.pkgs.fetchFromGitHub {
           inherit (oldAttrs.src) owner repo;
           rev = "v${newAttrs.version}";
-          hash = "sha256-mtNlnNnF/fc3hn3sXG2vyK1Wwsxp8fVGfMZ6SvMAT6I=";
+          hash = "sha256-DCxF52CtA9KAP+yz5Rgzc/nUAXtZwfYAVU7oHREJlRY=";
         };
         # new dependencies hash got from: nixpkgs-update-log
         # https://nixpkgs-update-logs.nix-community.org/onedriver/2026-01-31.log
