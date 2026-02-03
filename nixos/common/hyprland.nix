@@ -32,37 +32,9 @@
   programs.regreet.enable = true;
   # Need to setup greetd first with regreet
   services.greetd.enable = true;
-  # Create the hyprland configuration file that the regreet docs tell you to
-  environment.etc."greetd/hyprland.conf".text = ''
-    # Minimal config just for the greeter
-    exec-once = ${pkgs.regreet}/bin/regreet; hyprctl dispatch exit
-    misc {
-      disable_hyprland_logo = true
-      disable_splash_rendering = true
-    }
-  '';
-  services.greetd.settings = rec {
+  services.greetd.settings = {
     default_session = {
-      command = "${pkgs.hyprland}/bin/Hyprland --config /etc/greetd/hyprland.conf";
-    };
-  };
-  # Then we can set regreet options
-  programs.regreet.theme = {
-    name = "Canta"; 
-    package = pkgs.canta-theme;
-  };
-  programs.regreet.settings = {
-    background = {
-      path = ./../../assets/login-background-mountain.jpg;
-      fit = "Cover";
-    };
-    GTK = {
-      application_prefer_dark_theme = true;
-    };
-    "widget.clock" = {
-      format = "%a %H:%M";
-      resolution = "500ms";
-      label_width = 150;
+      command = "${pkgs.hyprland}/bin/Hyprland --config /etc/greetd/hyprland.conf > /dev/null/ 2>&1";
     };
   };
 
