@@ -43,7 +43,7 @@ in {
     target = "hypr/hyprlock.conf";
   };
 
-  programs.hypridle.enable = true;
+  services.hypridle.enable = true;
   xdg.configFile.hypridle = {
     source = ./conf/hypridle.conf;
     target = "hypr/hypridle.conf";
