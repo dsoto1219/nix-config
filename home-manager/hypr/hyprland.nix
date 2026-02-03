@@ -29,7 +29,7 @@ in {
         };
       };
     };
-    extraConfig = builtins.readFile ./hyprland.conf;
+    extraConfig = builtins.readFile ./conf/hyprland.conf;
   };
 
   services.dunst.enable = true; # notification manager
@@ -37,7 +37,7 @@ in {
   services.hypridle.enable = true;
 
   programs.hyprlock.enable = true;
-  xdg.configFile.hyprlock.source = ./hyprlock.conf;
+  xdg.configFile.hyprlock.source = ./conf/hyprlock.conf;
 
   imports = [ ./waybar.nix ];
   services.hyprpaper.enable = true; # dynamic wallpaper manager
