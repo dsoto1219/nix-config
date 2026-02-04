@@ -29,9 +29,8 @@
   };
 
   # Autologin: https://discourse.nixos.org/t/how-to-enable-login-screen-and-start-hyperland-after-login/37775
-  services.xserver.enable = true;
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.displayManager.sddm.wayland.enable = true;
+  services.displayManager.sddm.enable = true;
+  services.displayManager.sddm.wayland.enable = true;
 
   # Optional: hint electron apps to use Wayland:
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
