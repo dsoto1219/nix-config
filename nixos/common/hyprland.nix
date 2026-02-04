@@ -27,7 +27,7 @@
     withUWSM = true;
     # xwayland enabled true by default
   };
-  services.displayManager.autoLogin.enable = true;
+  services.displayManager.autoLogin.user = "danim";
 
   # Optional: hint electron apps to use Wayland:
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
