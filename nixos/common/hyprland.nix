@@ -39,6 +39,7 @@ in {
   services.greetd.settings = {
     default_session = {
       command = "start-hyprland";
+      user = "danim";
     };
   };
 
