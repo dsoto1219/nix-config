@@ -15,4 +15,5 @@
 
     credential.helper = "libsecret";
   };
+  programs.git.lfs.enable = true;
 }
