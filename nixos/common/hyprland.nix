@@ -7,7 +7,7 @@
   ...
 }: let
   system = pkgs.stdenv.hostPlatform.system;
-  hyprland-pkg = inputs.hyprland.packages.${system}.hyprland;
+  hyprland-pkgs = inputs.hyprland.packages.${system};
 in {
   # Add must-have packages from docs
   environment.systemPackages = with pkgs; [ 
@@ -27,9 +27,9 @@ in {
   programs.hyprland = {
     enable = true;
     # set the flake package
-    package = hyprland-pkg;
+    package = hyprland-pkgs.hyprland;
     # make sure to also set the portal package, so that they are in sync
-    portalPackage = hyprland-pkg.xdg-desktop-portal-hyprland;
+    portalPackage = hyprland-pkgs.xdg-desktop-portal-hyprland;
     # Use Universal Wayland Session Manager---recommended way of launching Hyprland, as it neatly integrates with systemd.
     withUWSM = true;
     # xwayland enabled true by default
@@ -38,7 +38,7 @@ in {
   services.greetd.enable = true;
   services.greetd.settings = {
     default_session = {
-      command = "${hyprland-pkg}/bin/start-hyprland";
+      command = "${hyprland-pkgs.hyprland}/bin/start-hyprland";
     };
   };
 
