@@ -5,7 +5,10 @@
   config,
   pkgs,
   ...
-}: {
+}: let
+  system = pkgs.stdenv.hostPlatform.system;
+  hyprland-pkg = inputs.hyprland.packages.${system}.hyprland;
+in {
   # Add must-have packages from docs
   environment.systemPackages = with pkgs; [ 
     # notification daemon set in home-manager
@@ -24,17 +27,20 @@
   programs.hyprland = {
     enable = true;
     # set the flake package
-    package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+    package = hyprland-pkg;
     # make sure to also set the portal package, so that they are in sync
-    portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+    portalPackage = hyprland-pkg.xdg-desktop-portal-hyprland;
     # Use Universal Wayland Session Manager---recommended way of launching Hyprland, as it neatly integrates with systemd.
     withUWSM = true;
     # xwayland enabled true by default
   };
 
-  # Autologin: https://discourse.nixos.org/t/how-to-enable-login-screen-and-start-hyperland-after-login/37775
-  services.displayManager.sddm.enable = true;
-  services.displayManager.sddm.wayland.enable = true;
+  services.greetd.enable = true;
+  services.greetd.settings = {
+    default_session = {
+      command = "${hyprland-pkg}/bin/start-hyprland";
+    };
+  };
 
   # Optional: hint electron apps to use Wayland:
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
