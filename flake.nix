@@ -42,6 +42,14 @@
   } @ inputs: let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
+    hyprland-module = { 
+      wayland.windowManager.hyprland = {
+        enable = true;
+        # set the flake package
+        package = inputs.hyprland.packages."${system}".hyprland; 
+        portalPackage = inputs.hyprland.packages."${system}".xdg-desktop-portal-hyprland; 
+      };
+    };
   in {
     # Your custom packages
     # Accessible through 'nix build', 'nix shell', etc
@@ -87,6 +95,7 @@
         modules = [
           ./home-manager/home.nix
           ./home-manager/users/danim.nix
+          hyprland-module
         ];
       };
       "nixos@nixos" = home-manager.lib.homeManagerConfiguration {
@@ -95,6 +104,7 @@
         modules = [
           ./home-manager/home.nix
           ./home-manager/users/nixos.nix
+          hyprland-module
         ];
       };
     };

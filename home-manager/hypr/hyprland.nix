@@ -9,13 +9,8 @@ in {
 
   # Hyprland Configuration
   programs.kitty.enable = true;
+  wayland.windowManager.hyprland.systemd.variables = ["--all"];
   wayland.windowManager.hyprland = {
-    enable = true;
-    # set the flake package
-    package = pkgs.hyprland;
-    # package = inputs.hyprland.packages."${system}".hyprland; 
-    # portalPackage = inputs.hyprland.packages."${system}".xdg-desktop-portal-hyprland; 
-    systemd.variables = ["--all"];
     settings = {
       "$mod" = "SUPER"; 
       "$shiftMod" = "SUPER shift"; 
