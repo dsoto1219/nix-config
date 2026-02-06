@@ -69,7 +69,7 @@
     network = {
       format = "󰖩  {essid}";
       format-disconnected = "󰖪  disconnected";
-      exec = "nm-applet"
+      exec = "nm-applet";
     };
     clock = {
       format = "  {:%I:%M %p    %m/%d} ";
