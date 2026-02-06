@@ -69,7 +69,6 @@
     network = {
       format = "󰖩  {essid}";
       format-disconnected = "󰖪  disconnected";
-      on-click = "nm-applet";
     };
     clock = {
       format = "  {:%I:%M %p    %m/%d} ";
