@@ -8,6 +8,7 @@
   home.packages = with pkgs; [
     kdePackages.dolphin # file manager
     hyprshot
+    hyprshutdown
   ];
 
   # Hyprland Configuration
