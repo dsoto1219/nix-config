@@ -56,6 +56,7 @@
     code2prompt
     vesktop
     weather
+    pamixer
   ];
 
   # Let home-manager manage itself
