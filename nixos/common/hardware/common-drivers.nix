@@ -25,7 +25,7 @@
   services.printing.enable = true;
 
   # Enable sound.
-  hardware.pulseaudio.enable = true;
+  services.pipewire.pulse.enable = true;
 
   # Enable battery tools.
   services.upower.enable = true;
