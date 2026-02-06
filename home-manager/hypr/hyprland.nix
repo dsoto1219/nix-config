@@ -14,8 +14,7 @@
   # Hyprland Configuration
   programs.kitty.enable = true;
   wayland.windowManager.hyprland = let
-    system = pkgs.stdenv.hostPlatform.system;
-    hyprland-pkgs = inputs.hyprland.packages."${system}";
+    hyprland-pkgs = inputs.hyprland.packages."${pkgs.stdenv.hostPlatform.system}";
   in {
     enable = true;
     # set the flake package
