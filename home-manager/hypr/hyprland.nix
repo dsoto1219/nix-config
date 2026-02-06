@@ -1,9 +1,7 @@
 { inputs, lib, config, pkgs, ... }:
-let
-  system = pkgs.stdenv.hostPlatform.system;
-in {
+{
   imports = [
-    inputs.hyprland.packages."${system}"
+    inputs.hyprland.packages
     ./waybar.nix
   ];
 
@@ -15,6 +13,7 @@ in {
   # Hyprland Configuration
   programs.kitty.enable = true;
   wayland.windowManager.hyprland = let
+    system = pkgs.stdenv.hostPlatform.system;
     hyprland-pkgs = inputs.hyprland.packages."${system}";
   in {
     enable = true;
