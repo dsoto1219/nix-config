@@ -55,6 +55,7 @@
     mission-center
     code2prompt
     vesktop
+    weather
   ];
 
   # Let home-manager manage itself
