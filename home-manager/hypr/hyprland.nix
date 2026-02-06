@@ -2,6 +2,11 @@
 let
   system = pkgs.stdenv.hostPlatform.system;
 in {
+  imports = [
+    inputs.hyprland.packages."${system}"
+    ./waybar.nix
+  ];
+
   home.packages = with pkgs; [
     kdePackages.dolphin # file manager
     hyprshot
@@ -9,8 +14,14 @@ in {
 
   # Hyprland Configuration
   programs.kitty.enable = true;
-  wayland.windowManager.hyprland.systemd.variables = ["--all"];
-  wayland.windowManager.hyprland = {
+  wayland.windowManager.hyprland = let
+    hyprland-pkgs = inputs.hyprland.packages."${system}";
+  in {
+    enable = true;
+    # set the flake package
+    package = hyprland-pkgs.hyprland; 
+    portalPackage = hyprland-pkgs.xdg-desktop-portal-hyprland; 
+    systemd.variables = ["--all"];
     settings = {
       "$mod" = "SUPER"; 
       "$shiftMod" = "SUPER shift"; 
@@ -31,8 +42,6 @@ in {
     };
     extraConfig = builtins.readFile ./conf/hyprland.conf;
   };
-
-  imports = [ ./waybar.nix ];
 
   services.dunst.enable = true; # notification manager
   programs.wofi.enable = true; # menu manager
