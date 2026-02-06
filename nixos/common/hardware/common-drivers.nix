@@ -26,6 +26,7 @@
 
   # Enable sound.
   services.pipewire.pulse.enable = true;
+  hardware.pulseaudio.enable = true;
 
   # Enable battery tools.
   services.upower.enable = true;
