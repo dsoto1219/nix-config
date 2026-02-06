@@ -36,12 +36,13 @@
   outputs = {
     self,
     nixpkgs,
+    nixpkgs-unstable,
     nixos-wsl,
     home-manager,
     ...
   } @ inputs: let
     system = "x86_64-linux";
-    pkgs = nixpkgs.legacyPackages.${system};
+    pkgs = nixpkgs-unstable.legacyPackages.${system};
   in {
     # Your custom packages
     # Accessible through 'nix build', 'nix shell', etc
