@@ -1,4 +1,4 @@
-{ config, inputs, pkgs, ... }:
+{ inputs, lib, config, pkgs, ... }:
 let
   system = pkgs.stdenv.hostPlatform.system;
 in {
