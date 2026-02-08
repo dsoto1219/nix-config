@@ -7,6 +7,8 @@
 {
   wayland.windowManager.hyprland.settings = {
     "$mainMod" = "SUPER"; # Sets "Windows" key as main modifier
+    "$mod" = "SUPER"; 
+    "$shiftMod" = "SUPER shift"; 
 
     # Example binds, see https://wiki.hypr.land/Configuring/Binds/ for more
     bind = [
@@ -18,6 +20,15 @@
       "$mainMod, R, exec, $men"
       "$mainMod, P, pseudo, # dwindl"
       "$mainMod, J, togglesplit, # dwindl"
+      "$mod, F, fullscreen"
+
+      # hyprshot
+      # Screenshot a window with SUPER + PrintScr
+      "$mod, PRINT, exec, hyprshot -m window"
+      # Screenshot a monitor with PrintScr
+      ", PRINT, exec, hyprshot -m output"
+      # Screenshot a region with SUPER + Shift + S
+      "$shiftMod, S, exec, hyprshot -m region" 
 
       # Move focus with mainMod + arrow keys
       "$mainMod, left, movefocus, "

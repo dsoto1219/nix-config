@@ -21,19 +21,6 @@
     package = hyprland-pkgs.hyprland; 
     portalPackage = hyprland-pkgs.xdg-desktop-portal-hyprland; 
     systemd.variables = ["--all"];
-    settings = {
-      "$mod" = "SUPER"; 
-      "$shiftMod" = "SUPER shift"; 
-      bind = [
-        "$mod, F, fullscreen"
-        # Screenshot a window with SUPER + PrintScr
-        "$mod, PRINT, exec, hyprshot -m window"
-        # Screenshot a monitor with PrintScr
-        ", PRINT, exec, hyprshot -m output"
-        # Screenshot a region with SUPER + Shift + S
-        "$shiftMod, S, exec, hyprshot -m region" 
-      ];
-    };
     extraConfig = builtins.readFile ./conf/hyprland.conf;
   };
 
