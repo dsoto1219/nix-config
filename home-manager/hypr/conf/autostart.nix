@@ -11,7 +11,7 @@
       "hyprlock || hyprctl dispatch exit"
       # "$terminal"
       "waybar & hyprpaper"
-      # "nm-applet &"
+      "nm-applet &"
       "systemctl --user start hyprpolkitagent"
       "hypridle"
     ];
