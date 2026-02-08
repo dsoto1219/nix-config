@@ -13,7 +13,7 @@
     {
       "label" = "shutdown";
       # https://github.com/hyprwm/Hyprland/blob/main/example/hyprland.conf @ line 240
-      "action" = "hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch exit & shutdown";
+      "action" = "hyprshutdown --verbose >/dev/null 2>&1 && hyprshutdown --verbose --post-cmd shutdown || hyprctl dispatch exit";
       "text" = "Shutdown";
       "keybind" = "s";
     }
