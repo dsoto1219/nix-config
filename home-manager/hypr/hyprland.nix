@@ -33,11 +33,6 @@
         # Screenshot a region with SUPER + Shift + S
         "$shiftMod, S, exec, hyprshot -m region" 
       ];
-      input = {
-        touchpad = {
-          natural_scroll = true;
-        };
-      };
     };
     extraConfig = builtins.readFile ./conf/hyprland.conf;
   };
