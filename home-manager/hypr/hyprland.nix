@@ -49,13 +49,13 @@
 
   programs.hyprlock.enable = true;
   xdg.configFile.hyprlock = {
-    source = ./conf/hyprlock.conf;
+    source = ./hyprlock.conf;
     target = "hypr/hyprlock.conf";
   };
 
   services.hypridle.enable = true;
   xdg.configFile.hypridle = {
-    source = ./conf/hypridle.conf;
+    source = ./hypridle.conf;
     target = "hypr/hypridle.conf";
   };
 
