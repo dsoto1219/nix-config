@@ -2,6 +2,7 @@
 {
   imports = [
     ./waybar.nix
+    ./wlogout.nix
   ];
 
   home.packages = with pkgs; [
@@ -29,7 +30,5 @@
       ",path = ../../../assets/planet-bottom.jpg"
     ];
   };
-
-  programs.wlogout.enable = true;
 }
 
