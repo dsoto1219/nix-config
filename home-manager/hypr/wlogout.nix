@@ -19,9 +19,15 @@
     }
     {
       "label" = "reboot";
-      "action" = "hyprctl reload";
+      "action" = "hyprshutdown --verbose";
       "text" = "Reload Hyprland";
       "keybind" = "h";
+    }
+    {
+      "label" = "suspend";
+      "action" = "hyprshutdown --verbose --post-cmd hyprctl dispatch exit";
+      "text" = "Exit Hyprland";
+      "keybind" = "H";
     }
     {
       "label" = "reboot";
