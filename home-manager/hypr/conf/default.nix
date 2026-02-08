@@ -5,6 +5,7 @@
     ./my-programs.nix
     ./autostart.nix
     ./environment-variables.nix
+    ./permissions.nix
     ./input.nix
     ./keybinds.nix
   ];
