@@ -7,6 +7,7 @@
 
   home.packages = with pkgs; [
     unstable.hyprshutdown
+    brightnessctl
   ];
 
   services.dunst.enable = true; # notification manager
