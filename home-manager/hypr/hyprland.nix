@@ -3,7 +3,13 @@
   imports = [
     inputs.hyprland.homeManagerModules.default # this shouldn't work---it's not how the docs say to do it---but it does
     ./waybar.nix
+
+    # 
     ./conf/monitors.nix
+    ./conf/my-programs.nix
+    ./conf/autostart.nix
+    ./conf/input.nix
+    ./conf/keybinds.nix
   ];
 
   home.packages = with pkgs; [
