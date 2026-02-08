@@ -7,7 +7,6 @@
 
   home.packages = with pkgs; [
     kdePackages.dolphin # file manager
-    hyprshot
     unstable.hyprshutdown
   ];
 
@@ -43,7 +42,9 @@
   };
 
   services.dunst.enable = true; # notification manager
-  programs.wofi.enable = true; # menu manager
+  programs.wofi.enable = true; # menu manager 
+
+  programs.hyprshot.enable = true; # screenshot manager
 
   programs.hyprlock.enable = true;
   xdg.configFile.hyprlock = {
