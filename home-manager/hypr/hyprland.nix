@@ -8,14 +8,9 @@
     ./extra
   ];
 
-  # Hyprland Configuration
-  wayland.windowManager.hyprland = let
-    hyprland-pkgs = inputs.hyprland.packages."${pkgs.stdenv.hostPlatform.system}";
-  in {
+  # Enable hyprland
+  wayland.windowManager.hyprland = {
     enable = true;
-    # set the flake package
-    package = hyprland-pkgs.hyprland; 
-    portalPackage = hyprland-pkgs.xdg-desktop-portal-hyprland; 
     systemd.variables = ["--all"];
   };
 }
