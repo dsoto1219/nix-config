@@ -31,6 +31,9 @@
 
     # nixvim
     nixvim.url = "github:nix-community/nixvim";
+
+    # nix-colors
+    nix-colors.url = "github:misterio77/nix-colors";
   };
 
   outputs = {
