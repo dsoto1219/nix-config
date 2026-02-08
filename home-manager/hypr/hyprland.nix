@@ -45,7 +45,7 @@
   services.hyprpaper.enable = true; # dynamic wallpaper manager
   services.hyprpaper.settings = {
     wallpaper = [
-      ",../../../assets/planet-bottom.jpg"
+      "DP-1,../../../assets/planet-bottom.jpg"
     ];
   };
 }
