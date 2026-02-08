@@ -12,15 +12,20 @@
 
     # Example binds, see https://wiki.hypr.land/Configuring/Binds/ for more
     bind = [
+      # Default
       "$mainMod, Q, exec, $terminal"
       "$mainMod, C, killactive"
-      "$mainMod, M, exec, wlogout"
+      # "$mainMod, M, exit"
       "$mainMod, E, exec, $fileManager"
       "$mainMod, V, togglefloating"
       "$mainMod, R, exec, $menu"
       "$mainMod, P, pseudo, # dwindle"
       "$mainMod, J, togglesplit, # dwindle"
+
+      # Custom
       "$mod, F, fullscreen"
+      # Bind power key to logout: https://github.com/hyprwm/Hyprland/issues/2614#issuecomment-2395597405
+      "$mod, XF86PowerOff, exec, wlogout"
 
       # hyprshot
       # Screenshot a window with SUPER + PrintScr
