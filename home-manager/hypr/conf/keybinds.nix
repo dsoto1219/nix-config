@@ -14,7 +14,7 @@
     bind = [
       "$mainMod, Q, exec, $terminal"
       "$mainMod, C, killactive"
-      "$mainMod, M, wlogout"
+      "$mainMod, M, exec, wlogout"
       "$mainMod, E, exec, $fileManager"
       "$mainMod, V, togglefloating"
       "$mainMod, R, exec, $menu"
