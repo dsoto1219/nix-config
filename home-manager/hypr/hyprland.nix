@@ -7,7 +7,6 @@
   ];
 
   home.packages = with pkgs; [
-    kdePackages.dolphin # file manager
     unstable.hyprshutdown
   ];
 
