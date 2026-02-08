@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   programs.wlogout.enable = true;
 
@@ -32,7 +32,9 @@
   ];
 
   # Default style.css found at https://github.com/ArtsyMacaw/wlogout/blob/master/style.css
-  programs.wlogout.style = ''
+  programs.wlogout.style = let 
+    icons-dir = "${pkgs.wlogout}/share/wlogout/icons";
+  in ''
     * {
         background-image: none;
         box-shadow: none;
@@ -61,27 +63,27 @@
     }
 
     #lock {
-        background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+        background-image: image(url("${icons-dir}/lock.png"), url("${icons-dir}/lock.png"));
     }
 
     #logout {
-        background-image: image(url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+        background-image: image(url("${icons-dir}/logout.png"), url("${icons-dir}/logout.png"));
     }
 
     #suspend {
-        background-image: image(url("/usr/share/wlogout/icons/suspend.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
+        background-image: image(url("${icons-dir}/suspend.png"), url("${icons-dir}/suspend.png"));
     }
 
     #hibernate {
-        background-image: image(url("/usr/share/wlogout/icons/hibernate.png"), url("/usr/local/share/wlogout/icons/hibernate.png"));
+        background-image: image(url("${icons-dir}/hibernate.png"), url("${icons-dir}/hibernate.png"));
     }
 
     #shutdown {
-        background-image: image(url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+        background-image: image(url("${icons-dir}/shutdown.png"), url("${icons-dir}/shutdown.png"));
     }
 
     #reboot {
-        background-image: image(url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+        background-image: image(url("${icons-dir}/reboot.png"), url("${icons-dir}/reboot.png"));
     }
   '';
 }
