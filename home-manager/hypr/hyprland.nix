@@ -12,7 +12,6 @@
   ];
 
   # Hyprland Configuration
-  programs.kitty.enable = true;
   wayland.windowManager.hyprland = let
     hyprland-pkgs = inputs.hyprland.packages."${pkgs.stdenv.hostPlatform.system}";
   in {
@@ -25,8 +24,6 @@
   };
 
   services.dunst.enable = true; # notification manager
-  programs.wofi.enable = true; # menu manager 
-
   programs.hyprshot.enable = true; # screenshot manager
 
   programs.hyprlock.enable = true;
