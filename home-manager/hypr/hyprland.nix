@@ -21,7 +21,6 @@
     package = hyprland-pkgs.hyprland; 
     portalPackage = hyprland-pkgs.xdg-desktop-portal-hyprland; 
     systemd.variables = ["--all"];
-    extraConfig = builtins.readFile ./conf/hyprland.conf;
   };
 
   services.dunst.enable = true; # notification manager
