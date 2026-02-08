@@ -14,7 +14,7 @@
 
     # You can also split up your configuration and import pieces of it here:
     ./shells.nix
-    # ./onedriver.nix
+    ./onedriver.nix
     ./nix-colors.nix
     ./hypr/hyprland.nix
     ./nvim/init.nix
