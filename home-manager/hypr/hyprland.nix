@@ -16,6 +16,7 @@
     brightnessctl
     kdePackages.dolphin # file manager
     hyprlauncher
+    wl-clipboard
   ];
 
   programs.kitty.enable = true;
