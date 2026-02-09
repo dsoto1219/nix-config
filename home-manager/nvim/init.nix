@@ -39,7 +39,7 @@
       settings.formatters_by_ft = {
         cpp = [ "clang_format" ];
         nix = [ "nixfmt" ];
-	"_" = [
+"_" = [
 	  "squeeze_blanks"
 	  "trim_whitespace"
 	  "trim_newlines"
@@ -61,6 +61,40 @@
     extraPlugins = [
       pkgs.vimPlugins.nvim-autopairs
     ];
+
+    plugins.lint.enable = true;
+    plugins.lint.lintersByFt = {
+      clojure = [
+        "clj-kondo"
+      ];
+      dockerfile = [
+        "hadolint"
+      ];
+      inko = [
+        "inko"
+      ];
+      janet = [
+        "janet"
+      ];
+      json = [
+        "jsonlint"
+      ];
+      markdown = [
+        "vale"
+      ];
+      rst = [
+        "vale"
+      ];
+      ruby = [
+        "ruby"
+      ];
+      terraform = [
+        "tflint"
+      ];
+      text = [
+        "vale"
+      ];
+    };
     
     # A nice, dark colorscheme
     colorschemes.moonfly.enable = true;
