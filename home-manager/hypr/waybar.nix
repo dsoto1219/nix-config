@@ -63,8 +63,7 @@
     };
     tray = {
       icon-size = 13;
-      tooltip = false;
-      spacing = 10;
+      tooltip = true;
     };
     network = {
       format = "{essid}";
