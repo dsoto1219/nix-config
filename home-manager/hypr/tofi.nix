@@ -152,7 +152,7 @@
     # Window background color
     background-color = lib.mkDefault "#1B1D1E";
     # Width of the border outlines in pixels.
-    outline-width = lib.mkDefault 4;
+    # outline-width = lib.mkDefault 4;
     # Border outline color
     outline-color = lib.mkDefault "#080800";
     # Width of the border in pixels.
