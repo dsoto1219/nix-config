@@ -106,15 +106,15 @@
       #####################
 
       # Refer to https://wiki.hypr.land/Configuring/Variables/
-      general = lib.mkDefault {
+      general = {
         gaps_in = 5;
         gaps_out = 20;
 
         border_size = 2;
 
         # https://wiki.hypr.land/Configuring/Variables/#variable-types for info about colors
-        "col.active_border" = "rgba(33ccffee) rgba(00ff99ee) 45deg";
-        "col.inactive_border" = "rgba(595959aa)";
+        "col.active_border" = lib.mkDefault "rgba(33ccffee) rgba(00ff99ee) 45deg";
+        "col.inactive_border" = lib.mkDefault "rgba(595959aa)";
 
         # Set to true enable resizing windows by clicking and dragging on borders and gaps
         resize_on_border = false;
@@ -126,7 +126,7 @@
       };
 
       # https://wiki.hypr.land/Configuring/Variables/#decoration
-      decoration = lib.mkDefault {
+      decoration = {
         rounding = 10;
         rounding_power = 2;
 
@@ -201,7 +201,7 @@
       # windowrule = rounding 0, floating:0, onworkspace:f[1]
 
       # See https://wiki.hypr.land/Configuring/Dwindle-Layout/ for more
-      dwindle = lib.mkDefault {
+      dwindle = {
         pseudotile = true; # Master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
         preserve_split = true; # You probably want this
       };
