@@ -30,7 +30,7 @@
     }
     {
       "label" = "reboot";
-      "action" = "hyprshutdown --verbose >/dev/null 2>&1 && hyprshutdown --verbose --post-cmd 'reboot' || hyprctl dispatch exit && reboot";
+      "action" = "hyprshutdown --verbose --post-cmd 'reboot'";
       "text" = "Reboot System";
       "keybind" = "r";
     }
