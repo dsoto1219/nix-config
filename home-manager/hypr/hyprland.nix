@@ -21,7 +21,6 @@
   ];
 
   programs.kitty.enable = true;
-  services.dunst.enable = true; # notification manager
   programs.hyprshot.enable = true; # screenshot manager
 
   # Hyprland Configuration
