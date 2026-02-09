@@ -68,26 +68,26 @@
     #     Radius of background box corners in pixels
     # Prompt text theme
     #  prompt-color = #FFFFFF
-    # prompt-background = lib.mkDefault "#00000000";
-    # prompt-background-padding = lib.mkDefault 0;
-    # prompt-background-corner-radius = lib.mkDefault 0;
+    prompt-background = lib.mkDefault "#00000000";
+    prompt-background-padding = lib.mkDefault 0;
+    prompt-background-corner-radius = lib.mkDefault 0;
 
     # Placeholder text theme
-    # placeholder-color = lib.mkDefault "#FFFFFFA8";
-    # placeholder-background = lib.mkDefault "#00000000";
-    # placeholder-background-padding = lib.mkDefault 0;
-    # placeholder-background-corner-radius = lib.mkDefault 0;
+    placeholder-color = lib.mkDefault "#FFFFFFA8";
+    placeholder-background = lib.mkDefault "#00000000";
+    placeholder-background-padding = lib.mkDefault 0;
+    placeholder-background-corner-radius = lib.mkDefault 0;
 
     # Input text theme
     # input-color = #FFFFFF
-    # input-background = lib.mkDefault "#00000000";
-    # input-background-padding = lib.mkDefault 0;
-    # input-background-corner-radius = lib.mkDefault 0;
+    input-background = lib.mkDefault "#00000000";
+    input-background-padding = lib.mkDefault 0;
+    input-background-corner-radius = lib.mkDefault 0;
     # Default result text theme
     # default-result-color = #FFFFFF
-    # default-result-background = lib.mkDefault "#00000000";
-    # default-result-background-padding = lib.mkDefault 0;
-    # default-result-background-corner-radius = lib.mkDefault 0;
+    default-result-background = lib.mkDefault "#00000000";
+    default-result-background-padding = lib.mkDefault 0;
+    default-result-background-corner-radius = lib.mkDefault 0;
     # Alternate (even-numbered) result text theme
     #
     # If unspecified, these all default to the corresponding
@@ -98,18 +98,18 @@
     # alternate-result-background-padding = 0
     # alternate-result-background-corner-radius = 0
     # Selection text
-    # selection-color = lib.mkDefault "#F92672";
-    # selection-background = lib.mkDefault "#00000000";
-    # selection-background-padding = lib.mkDefault 0;
-    # selection-background-corner-radius = lib.mkDefault 0;
+    selection-color = lib.mkDefault "#F92672";
+    selection-background = lib.mkDefault "#00000000";
+    selection-background-padding = lib.mkDefault 0;
+    selection-background-corner-radius = lib.mkDefault 0;
     # Matching portion of selection text
-    # selection-match-color = lib.mkDefault "#00000000";
+    selection-match-color = lib.mkDefault "#00000000";
     ### Text cursor theme
     #
     # Style of the optional text cursor.
     #
     # Supported values: bar, block, underscore
-    # text-cursor-style = lib.mkDefault "bar";
+    text-cursor-style = lib.mkDefault "bar";
     # Color of the text cursor
     #
     # If unspecified, defaults to the same as input-color
@@ -119,7 +119,7 @@
     # If unspecified, defaults to the same as background-color
     # text-cursor-background = #000000
     # Corner radius of the text cursor
-    # text-cursor-corner-radius = lib.mkDefault 0;
+    text-cursor-corner-radius = lib.mkDefault 0;
     # Thickness of the bar and underscore text cursors.
     #
     # If unspecified, defaults to a font-dependent value when
@@ -129,20 +129,20 @@
     ### Text layout
     #
     # Prompt to display.
-    # prompt-text = "run: ";
+    prompt-text = "run: ";
     # Extra horizontal padding between prompt and input.
-    # prompt-padding = lib.mkDefault 0;
+    prompt-padding = lib.mkDefault 0;
     # Placeholder input text.
-    # placeholder-text = "";
+    placeholder-text = "";
     # Maximum number of results to display.
     # If 0, tofi will draw as many results as it can fit in the window.
-    # num-results = lib.mkDefault 0;
+    num-results = lib.mkDefault 0;
     # Spacing between results in pixels. Can be negative.
-    # result-spacing = lib.mkDefault 0;
+    result-spacing = lib.mkDefault 0;
     # List results horizontally.
-    # horizontal = lib.mkDefault false;
+    horizontal = lib.mkDefault false;
     # Minimum width of input in horizontal mode.
-    # min-input-width = lib.mkDefault 0;
+    min-input-width = lib.mkDefault 0;
     #
     ### Window theming
     #
@@ -150,22 +150,22 @@
     width = lib.mkDefault 1280;
     height = lib.mkDefault 720;
     # Window background color
-    # background-color = lib.mkDefault "#1B1D1E";
+    background-color = lib.mkDefault "#1B1D1E";
     # Width of the border outlines in pixels.
-    # outline-width = lib.mkDefault 4;
+    outline-width = lib.mkDefault 4;
     # Border outline color
-    # outline-color = lib.mkDefault "#080800";
+    outline-color = lib.mkDefault "#080800";
     # Width of the border in pixels.
-    # border-width = lib.mkDefault 12;
+    border-width = lib.mkDefault 12;
     # Border color
-    # border-color = lib.mkDefault "#F92672";
+    border-color = lib.mkDefault "#F92672";
     # Radius of window corners in pixels.
-    # corner-radius = lib.mkDefault 0;
+    corner-radius = lib.mkDefault 0;
     # Padding between borders and text. Can be pixels or a percentage.
-    # padding-top = lib.mkDefault 8;
-    # padding-bottom = lib.mkDefault 8;
-    # padding-left = lib.mkDefault 8;
-    # padding-right = lib.mkDefault 8;
+    padding-top = lib.mkDefault 8;
+    padding-bottom = lib.mkDefault 8;
+    padding-left = lib.mkDefault 8;
+    padding-right = lib.mkDefault 8;
     # Whether to clip text drawing to be within the specified padding. This
     # is mostly important for allowing text to be inset from the border,
     # while still allowing text backgrounds to reach right to the edge.
@@ -194,10 +194,11 @@
     exclusive-zone = "-1";
     # Window offset from edge of screen. Only has an effect when anchored
     # to the relevant edge. Can be pixels or a percentage.
-    # margin-top = 0;
-    # margin-bottom = 0;
-    # margin-left = 0;
-    # margin-right = 0;
+    margin-top = 0;
+    margin-bottom = 0;
+    margin-left = 0;
+    margin-right = 0;
+    #
     ### Behaviour
     #
     # Hide the mouse cursor.
