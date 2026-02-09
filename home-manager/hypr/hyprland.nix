@@ -388,10 +388,6 @@
   services.dunst.enable = true; # notification manager
   programs.hyprshot.enable = true; # screenshot manager
 
-  programs.hyprlock.enable = true;
-  xdg.configFile.hyprlock = { source = ./hyprlock.conf; target = "hypr/hyprlock.conf";
-  };
-
   services.hyprpaper.enable = true; # dynamic wallpaper manager
   services.hyprpaper.settings = {
     preload = [
