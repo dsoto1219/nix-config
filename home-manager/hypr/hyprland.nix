@@ -7,7 +7,7 @@
     ./hypridle.nix
     ./hyprlock.nix
     ./hyprpanel.nix
-    ./hyprpaper.nix
+    # ./hyprpaper.nix
     ./wlogout.nix
   ];
 
