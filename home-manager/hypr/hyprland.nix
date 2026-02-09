@@ -357,40 +357,39 @@
     # See https://wiki.hypr.land/Configuring/Window-Rules/ for more
     # See https://wiki.hypr.land/Configuring/Workspace-Rules/ for workspace rules
 
-    # Can't figure out how to port the new window syntax yet, and I don't want to use the shorthands
-    extraConfig = ''
-      # Example windowrules that are useful
+    # Example windowrules that are useful
+    windowrule = [
 
-      windowrule {
       # Ignore maximize requests from all apps. You'll probably like this.
-      name = suppress-maximize-events
-      match:class = .*
+      {
+        name = "suppress-maximize-events";
+        "match:class" = ".*";
 
-      suppress_event = maximize
+        suppress_event = "maximize";
       }
 
-      windowrule {
       # Fix some dragging issues with XWayland
-      name = fix-xwayland-drags
-      match:class = ^$
-      match:title = ^$
-      match:xwayland = true
-      match:float = true
-      match:fullscreen = false
-      match:pin = false
+      {
+        name = "fix-xwayland-drags";
+        "match:class" = "^$";
+        "match:title" = "^$";
+        "match:xwayland" = true;
+        "match:float" = true;
+        "match:fullscreen" = false;
+        "match:pin" = false;
 
-      no_focus = true
+        no_focus = true;
       }
 
       # Hyprland-run windowrule
-      windowrule {
-      name = move-hyprland-run
+      {
+        name = "move-hyprland-run";
 
-      match:class = hyprland-run
+        "match:class" = "hyprland-run";
 
-      move = 20 monitor_h-120
-      float = yes
+        move = "20 monitor_h-120";
+        float = "yes";
       }
-    '';
+    ];
   };
 }
