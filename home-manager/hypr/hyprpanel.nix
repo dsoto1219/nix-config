@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ inputs, lib, ... }:
 {
   programs.hyprpanel.enable = true;
 
@@ -36,7 +36,7 @@
 
       theme.bar.transparent = true;
 
-      theme.font = {
+      theme.font = lib.mkDefault {
         name = "CaskaydiaCove NF";
         size = "16px";
       };
