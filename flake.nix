@@ -62,7 +62,6 @@
         specialArgs = {inherit inputs;};
         # > Our nixos configuration files <
         modules = [
-          inputs.stylix.nixosModules.stylix
           ./nixos/common/default.nix
           ./nixos/common/hardware/common-drivers.nix
           ./nixos/common/hardware/tablets.nix
