@@ -37,12 +37,12 @@
         "inputFieldDots, 1, 2, linear"
       ];
     };
-    background = lib.mkDefault {
+    background = {
       monitor = "";
       path = "screenshot";
       blur_passes = 3;
     };
-    input-field = lib.mkDefault [
+    input-field = [
       {
         monitor = "";
         size = "20%, 5%";
@@ -53,7 +53,7 @@
         check_color = "rgba(00ff99ee) rgba(ff6633ee) 120deg";
         fail_color = "rgba(ff6633ee) rgba(ff0066ee) 40deg";
 
-        font_color = lib.mkDefault "rgb(143, 143, 143)";
+        font_color = "rgb(143, 143, 143)";
         fade_on_empty = false;
         rounding = 15;
 
