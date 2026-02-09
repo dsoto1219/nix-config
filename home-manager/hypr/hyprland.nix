@@ -50,7 +50,7 @@
       # Set programs that you use
       "$terminal" = "kitty";
       "$fileManager" = "dolphin";
-      "$menu" = "tofi";
+      "$menu" = "tofi-drun";
 
       #################
       ### AUTOSTART ###
