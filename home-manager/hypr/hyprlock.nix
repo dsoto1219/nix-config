@@ -37,7 +37,7 @@
         "inputFieldDots, 1, 2, linear"
       ];
     };
-    background = {
+    background = lib.mkDefault {
       monitor = "";
       path = "screenshot";
       blur_passes = 3;
