@@ -20,6 +20,8 @@
         };
       };
 
+      panels.size = lib.mkForce 64;
+
       bar.launcher.autoDetectIcon = true;
       bar.workspaces.show_icons = true;
 
