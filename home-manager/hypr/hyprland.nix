@@ -4,6 +4,8 @@
     inputs.hyprland.homeManagerModules.default # this shouldn't work---it's not how the docs say to do it---but it does
 
     # Other config files
+    ./hypridle.nix
+    ./hyprlock.nix
     ./waybar.nix
     ./wlogout.nix
   ];
