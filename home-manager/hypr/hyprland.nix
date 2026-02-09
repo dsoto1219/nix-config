@@ -43,7 +43,8 @@
   services.hyprpaper.enable = true; # dynamic wallpaper manager
   services.hyprpaper.settings = {
     wallpaper = [
-      "DP-1,~/nix-config/assets/planet-bottom.jpg"
+      # By default/fallback
+      ",~/nix-config/assets/planet-bottom.jpg"
     ];
   };
 }
