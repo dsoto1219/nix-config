@@ -6,8 +6,8 @@
     # Other config files
     ./hypridle.nix
     ./hyprlock.nix
+    ./hyprpanel.nix
     ./hyprpaper.nix
-    ./waybar.nix
     ./wlogout.nix
   ];
 
