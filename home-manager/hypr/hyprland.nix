@@ -61,7 +61,7 @@
       exec-once = [
         "hyprlock || hyprctl dispatch exit"
         # "$terminal"
-        "hyprpanel & hyprpaper"
+        "waybar & hyprpaper"
         "nm-applet &"
         "systemctl --user start hyprpolkitagent"
         "hypridle"
