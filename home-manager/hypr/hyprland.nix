@@ -7,6 +7,7 @@
     ./hypridle.nix
     ./hyprlock.nix
     ./hyprpanel.nix
+    ./tofi.nix
     ./wlogout.nix
   ];
 
@@ -20,7 +21,6 @@
 
   programs.kitty.enable = true;
   programs.hyprshot.enable = true; # screenshot manager
-  programs.tofi.enable = true;
 
   # Hyprland Configuration
   wayland.windowManager.hyprland = let
