@@ -392,12 +392,6 @@
   xdg.configFile.hyprlock = { source = ./hyprlock.conf; target = "hypr/hyprlock.conf";
   };
 
-  services.hypridle.enable = true;
-  xdg.configFile.hypridle = {
-    source = ./hypridle.conf;
-    target = "hypr/hypridle.conf";
-  };
-
   services.hyprpaper.enable = true; # dynamic wallpaper manager
   services.hyprpaper.settings = {
     preload = [
