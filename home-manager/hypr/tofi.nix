@@ -104,77 +104,75 @@
     selection-background-corner-radius = lib.mkDefault 0;
     # Matching portion of selection text
     selection-match-color = lib.mkDefault "#00000000";
-    
-    #
     ### Text cursor theme
     #
     # Style of the optional text cursor.
     #
     # Supported values: bar, block, underscore
     text-cursor-style = lib.mkDefault "bar";
-        # Color of the text cursor
+    # Color of the text cursor
     #
     # If unspecified, defaults to the same as input-color
     # text-cursor-color = #FFFFFF
-        # Color of text behind the text cursor when text-cursor-style = block
+    # Color of text behind the text cursor when text-cursor-style = block
     #
     # If unspecified, defaults to the same as background-color
     # text-cursor-background = #000000
-        # Corner radius of the text cursor
+    # Corner radius of the text cursor
     text-cursor-corner-radius = lib.mkDefault 0;
-        # Thickness of the bar and underscore text cursors.
+    # Thickness of the bar and underscore text cursors.
     #
     # If unspecified, defaults to a font-dependent value when
     # text-cursor-style = underscore, or to 2 otherwise.
     # text-cursor-thickness = 2
-      #
+    #
     ### Text layout
     #
     # Prompt to display.
     prompt-text = "run: ";
-        # Extra horizontal padding between prompt and input.
+    # Extra horizontal padding between prompt and input.
     prompt-padding = lib.mkDefault 0;
-        # Placeholder input text.
+    # Placeholder input text.
     placeholder-text = "";
-        # Maximum number of results to display.
+    # Maximum number of results to display.
     # If 0, tofi will draw as many results as it can fit in the window.
     num-results = lib.mkDefault 0;
-        # Spacing between results in pixels. Can be negative.
+    # Spacing between results in pixels. Can be negative.
     result-spacing = lib.mkDefault 0;
-        # List results horizontally.
+    # List results horizontally.
     horizontal = lib.mkDefault false;
-        # Minimum width of input in horizontal mode.
+    # Minimum width of input in horizontal mode.
     min-input-width = lib.mkDefault 0;
-      #
+    #
     ### Window theming
     #
     # Width and height of the window. Can be pixels or a percentage.
     width = lib.mkDefault 1280;
     height = lib.mkDefault 720;
-        # Window background color
+    # Window background color
     background-color = lib.mkDefault "#1B1D1E";
-        # Width of the border outlines in pixels.
+    # Width of the border outlines in pixels.
     outline-width = lib.mkDefault 4;
-        # Border outline color
+    # Border outline color
     outline-color = lib.mkDefault "#080800";
-        # Width of the border in pixels.
+    # Width of the border in pixels.
     border-width = lib.mkDefault 12;
-        # Border color
+    # Border color
     border-color = lib.mkDefault "#F92672";
-        # Radius of window corners in pixels.
+    # Radius of window corners in pixels.
     corner-radius = lib.mkDefault 0;
-        # Padding between borders and text. Can be pixels or a percentage.
+    # Padding between borders and text. Can be pixels or a percentage.
     padding-top = lib.mkDefault 8;
     padding-bottom = lib.mkDefault 8;
     padding-left = lib.mkDefault 8;
     padding-right = lib.mkDefault 8;
-        # Whether to clip text drawing to be within the specified padding. This
+    # Whether to clip text drawing to be within the specified padding. This
     # is mostly important for allowing text to be inset from the border,
     # while still allowing text backgrounds to reach right to the edge.
     clip-to-padding = true;
-        # Whether to scale the window by the output's scale factor.
+    # Whether to scale the window by the output's scale factor.
     scale = true;
-      #
+    #
     ### Window positioning
     #
     # The name of the output to appear on. An empty string will use the
