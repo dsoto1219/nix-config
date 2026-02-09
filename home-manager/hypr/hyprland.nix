@@ -43,7 +43,7 @@
   services.hyprpaper.enable = true; # dynamic wallpaper manager
   services.hyprpaper.settings = {
     wallpaper = [
-      "eDP-1,~/nix-config/assets/planet-bottom.jpg"
+      "DP-1,~/nix-config/assets/planet-bottom.jpg"
     ];
   };
 }
