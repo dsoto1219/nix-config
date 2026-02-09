@@ -45,6 +45,9 @@
     };
   };
 
+  stylix.enable = true;
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
+
   # Add stuff for your user as you see fit:
   home.packages = with pkgs; [ 
     hello cowsay lolcat sl cmatrix
