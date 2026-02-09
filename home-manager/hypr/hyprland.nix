@@ -14,13 +14,13 @@
     unstable.hyprshutdown
     brightnessctl
     kdePackages.dolphin # file manager
-    hyprlauncher
     wl-clipboard
     udiskie
   ];
 
   programs.kitty.enable = true;
   programs.hyprshot.enable = true; # screenshot manager
+  programs.tofi.enable = true;
 
   # Hyprland Configuration
   wayland.windowManager.hyprland = let
@@ -50,7 +50,7 @@
       # Set programs that you use
       "$terminal" = "kitty";
       "$fileManager" = "dolphin";
-      "$menu" = "hyprlauncher";
+      "$menu" = "tofi";
 
       #################
       ### AUTOSTART ###
