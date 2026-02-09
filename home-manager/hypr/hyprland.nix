@@ -340,10 +340,49 @@
         ", XF86AudioPrev, exec, playerctl previous"
       ];
     };
-    # Also include windows and workspaces
-    # Can't figure out how to port the new window syntax yet, and
-    # I don't want to use the shorthands
-    extraConfig = builtins.readFile ./windows-and-workspaces.conf;
+
+    ##############################
+    ### WINDOWS AND WORKSPACES ###
+    ##############################
+
+    # See https://wiki.hypr.land/Configuring/Window-Rules/ for more
+    # See https://wiki.hypr.land/Configuring/Workspace-Rules/ for workspace rules
+
+    # Can't figure out how to port the new window syntax yet, and I don't want to use the shorthands
+    extraConfig = ''
+      # Example windowrules that are useful
+
+      windowrule {
+      # Ignore maximize requests from all apps. You'll probably like this.
+      name = suppress-maximize-events
+      match:class = .*
+
+      suppress_event = maximize
+      }
+
+      windowrule {
+      # Fix some dragging issues with XWayland
+      name = fix-xwayland-drags
+      match:class = ^$
+      match:title = ^$
+      match:xwayland = true
+      match:float = true
+      match:fullscreen = false
+      match:pin = false
+
+      no_focus = true
+      }
+
+      # Hyprland-run windowrule
+      windowrule {
+      name = move-hyprland-run
+
+      match:class = hyprland-run
+
+      move = 20 monitor_h-120
+      float = yes
+      }
+    '';
   };
 
   services.dunst.enable = true; # notification manager
