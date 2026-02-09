@@ -31,9 +31,7 @@
   programs.hyprshot.enable = true; # screenshot manager
 
   programs.hyprlock.enable = true;
-  xdg.configFile.hyprlock = {
-    source = ./hyprlock.conf;
-    target = "hypr/hyprlock.conf";
+  xdg.configFile.hyprlock = { source = ./hyprlock.conf; target = "hypr/hyprlock.conf";
   };
 
   services.hypridle.enable = true;
@@ -45,7 +43,7 @@
   services.hyprpaper.enable = true; # dynamic wallpaper manager
   services.hyprpaper.settings = {
     wallpaper = [
-      "eDP-1,../../../assets/planet-bottom.jpg"
+      "eDP-1,~/nix-config/assets/planet-bottom.jpg"
     ];
   };
 }
