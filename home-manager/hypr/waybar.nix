@@ -64,7 +64,6 @@
     tray = {
       icon-size = 13;
       tooltip = false;
-      spacing = 10;
     };
     network = {
       format = "{essid}";
