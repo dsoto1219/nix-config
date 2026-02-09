@@ -6,6 +6,7 @@
     # Other config files
     ./hypridle.nix
     ./hyprlock.nix
+    ./hyprpaper.nix
     ./waybar.nix
     ./wlogout.nix
   ];
@@ -389,15 +390,4 @@
 
   services.dunst.enable = true; # notification manager
   programs.hyprshot.enable = true; # screenshot manager
-
-  services.hyprpaper.enable = true; # dynamic wallpaper manager
-  services.hyprpaper.settings = {
-    preload = [
-      "~/nix-config/assets/planet-bottom.jpg"
-    ];
-    wallpaper = [
-      # By default/fallback
-      ",~/nix-config/assets/planet-bottom.jpg"
-    ];
-  };
 }
