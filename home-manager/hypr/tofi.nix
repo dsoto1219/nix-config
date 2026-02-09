@@ -156,7 +156,7 @@
     # Border outline color
     outline-color = lib.mkDefault "#080800";
     # Width of the border in pixels.
-    border-width = lib.mkDefault 12;
+    # border-width = lib.mkDefault 12; 
     # Border color
     border-color = lib.mkDefault "#F92672";
     # Radius of window corners in pixels.
