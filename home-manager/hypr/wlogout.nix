@@ -24,7 +24,7 @@
     }
     {
       "label" = "suspend";
-      "action" = "hyprshutdown --verbose --post-cmd hyprctl dispatch exit";
+      "action" = "hyprshutdown --verbose --post-cmd 'hyprctl dispatch exit'";
       "text" = "Exit Hyprland";
       "keybind" = "H";
     }
