@@ -75,7 +75,7 @@
     # Placeholder text theme
     placeholder-color = lib.mkDefault "#FFFFFFA8";
     placeholder-background = lib.mkDefault "#00000000";
-    placeholder-background-padding = lib.mkDefault0;
+    placeholder-background-padding = lib.mkDefault 0;
     placeholder-background-corner-radius = lib.mkDefault 0;
 
     # Input text theme
