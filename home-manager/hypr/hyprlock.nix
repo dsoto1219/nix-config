@@ -3,7 +3,7 @@
 
   programs.hyprlock.enable = true;
 
-  programs.hyprlock.settings = {
+  programs.hyprlock.settings = lib.mkDefault {
     # sample hyprlock.conf
     # for more configuration options, refer https://wiki.hyprland.org/Hypr-Ecosystem/hyprlock
     #
