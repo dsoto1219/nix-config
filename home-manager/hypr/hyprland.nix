@@ -65,7 +65,6 @@
         "nm-applet &"
         "systemctl --user start hyprpolkitagent"
         "hypridle"
-        "hyprlauncher -d"
         "udiskie"
         # https://github.com/hyprwm/Hyprland/issues/2614#issuecomment-2395597405
         "systemd-inhibit --who=\"Hyprland config\" --why=\"wlogout keybind\" --what=handle-power-key --mode=block sleep infinity & echo $! > /tmp/.hyprland-systemd-inhibit"
