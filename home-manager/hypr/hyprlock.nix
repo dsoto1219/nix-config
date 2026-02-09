@@ -74,7 +74,6 @@
         valign = "center";
       }
     ];
-  };
 
     label = [
       # TIME
@@ -111,4 +110,5 @@
         valign = "center";
       }
     ];
+  };
 }
