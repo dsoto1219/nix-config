@@ -7,7 +7,6 @@
     ./hypridle.nix
     ./hyprlock.nix
     ./tofi.nix
-    ./wlogout.nix
   ];
 
   home.packages = with pkgs; [
