@@ -18,6 +18,8 @@
       "custom/divider"
       "memory"
       "custom/media"
+      "custom/divider"
+      "custom/file-manager"
     ];
     modules-center = [ "hyprland/window" ];
     modules-right = [
@@ -128,6 +130,11 @@
       format = "_";
       interval = "once";
       tooltip = false;
+    };
+    "custom/file-manager" = {
+      "format" = " ";
+      "on-click" = "sleep 0.1 && dolphin";
+      "tooltip" = false; 
     };
     "custom/media" = {
       "format" = "{icon} {text}";
