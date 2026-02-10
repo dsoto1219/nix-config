@@ -30,6 +30,7 @@
       "battery"
       "custom/divider"
       "clock"
+      "custom/power"
     ];
     "hyprland/window" = { format = "{}"; };
     "wlr/workspaces" = {
@@ -112,6 +113,18 @@
       format = "_";
       interval = "once";
       tooltip = false;
+    };
+    "custom/power" = {
+      "format" = "⏻ ";
+      "tooltip"= false;
+      "menu" = "on-click";
+      "menu-file" = "$HOME/.config/waybar/power_menu.xml"; # Menu file in resources folder
+      "menu-actions" = {
+        "shutdown" = "shutdown";
+        "reboot" = "reboot";
+        "suspend" = "systemctl suspend";
+        "hibernate" = "systemctl hibernate";
+      };
     };
   }];
 }
