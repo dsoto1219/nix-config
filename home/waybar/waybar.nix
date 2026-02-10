@@ -85,8 +85,16 @@
       tooltip = false;
     };
     network = {
-      format = "{essid}";
-      format-disconnected = "󰖪  disconnected";
+        interface = "wlp2s0";
+        format = "{ifname}";
+        format-wifi = "{essid} ({signalStrength}%) ";
+        format-ethernet = "{ipaddr}/{cidr} 󰊗";
+        format-disconnected = "disconnected";
+        tooltip-format = "{ifname} via {gwaddr} 󰊗";
+        tooltip-format-wifi = "{essid} ({signalStrength}%) ";
+        tooltip-format-ethernet = "{ifname} ";
+        tooltip-format-disconnected = "Disconnected";
+        max-length = 50;
     };
     clock = {
       format = "  {:%I:%M %p    %m/%d} ";
