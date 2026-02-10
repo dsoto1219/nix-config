@@ -147,8 +147,8 @@
     ### Window theming
     #
     # Width and height of the window. Can be pixels or a percentage.
-    width = lib.mkDefault 1280;
-    height = lib.mkDefault 720;
+    width = lib.mkDefault 640;
+    height = lib.mkDefault 360;
     # Window background color
     background-color = lib.mkDefault "#1B1D1E";
     # Width of the border outlines in pixels.
