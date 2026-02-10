@@ -7,7 +7,6 @@
     ./hypridle.nix
     ./hyprlock.nix
     ./tofi.nix
-    ./waybar.nix
     ./wlogout.nix
   ];
 
