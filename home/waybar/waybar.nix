@@ -142,7 +142,7 @@
       # "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" # Filter player based on name
     };
     "custom/power" = {
-      "format" = "⏻ ";
+      "format" = "⏻  ";
       "tooltip"= false;
       "menu" = "on-click";
       "menu-file" = "${./power_menu.xml}"; # Menu file in resources folder
