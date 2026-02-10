@@ -42,8 +42,8 @@
       path = lib.mkDefault "screenshot";
       blur_passes = 3;
     };
-    input-field = lib.mkDefault [
-      {
+    input-field = [
+      lib.mkDefault {
         monitor = "";
         size = "20%, 5%";
         outline_thickness = 3;
