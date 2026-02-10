@@ -271,7 +271,7 @@
         # Custom
         "$mod, F, fullscreen"
         # Bind power key to logout: https://github.com/hyprwm/Hyprland/issues/2614#issuecomment-2395597405
-        ", XF86PowerOff, exec, wlogout"
+        ", XF86PowerOff, exec, hyprshutdown --post-cmd 'poweroff'"
 
         # hyprshot
         # Screenshot a window with SUPER + PrintScr
