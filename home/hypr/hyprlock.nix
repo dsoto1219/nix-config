@@ -39,7 +39,7 @@
     };
     background = {
       monitor = "";
-      path = "screenshot";
+      path = lib.mkDefault "screenshot";
       blur_passes = 3;
     };
     input-field = lib.mkDefault [
