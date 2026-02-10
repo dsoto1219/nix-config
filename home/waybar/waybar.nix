@@ -89,7 +89,7 @@
         format = "{ifname}";
         format-wifi = "{essid} ({signalStrength}%) ";
         format-ethernet = "{ipaddr}/{cidr} 󰊗";
-        format-disconnected = "disconnected";
+        format-disconnected = ""; # Empty means no icon
         tooltip-format = "{ifname} via {gwaddr} 󰊗";
         tooltip-format-wifi = "{essid} ({signalStrength}%) ";
         tooltip-format-ethernet = "{ifname} ";
