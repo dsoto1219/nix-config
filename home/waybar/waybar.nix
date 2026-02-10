@@ -29,6 +29,7 @@
       "pulseaudio"
       "custom/divider"
       "battery"
+      "battery#bat2"
       "custom/divider"
       "clock"
       "custom/power"
@@ -41,7 +42,24 @@
       all-outputs = true;
       on-click = "activate";
     };
-    battery = { format = "󰁹 {}%"; };
+    battery = {
+      "states" = {
+        # "good" = 95;
+        warning = 30;
+        critical = 15;
+      };
+      format = "{capacity}% {icon}";
+      format-full = "{capacity}% {icon}";
+      format-charging = "{capacity}% ";
+      format-plugged = "{capacity}% ";
+      format-alt = "{time} {icon}";
+      # "format-good" = "", // An empty format will hide the module
+      # "format-full": "",
+      format-icons = ["" "" "" "" ""];
+    };
+    "battery#bat2" = {
+        bat = "BAT2";
+    };
     cpu = {
       interval = 10;
       format = "󰻠 {}%";
