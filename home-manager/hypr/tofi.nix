@@ -147,7 +147,7 @@
     ### Window theming
     #
     # Width and height of the window. Can be pixels or a percentage.
-    width = lib.mkDefault 640;
+    width = lib.mkForce 640;
     height = lib.mkDefault 360;
     # Window background color
     background-color = lib.mkDefault "#1B1D1E";
