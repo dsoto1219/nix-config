@@ -3,7 +3,7 @@
 
   programs.hyprlock.enable = true;
 
-  programs.hyprlock.settings = lib.mkDefault {
+  programs.hyprlock.settings = {
     # sample hyprlock.conf
     # for more configuration options, refer https://wiki.hyprland.org/Hypr-Ecosystem/hyprlock
     #
@@ -42,7 +42,7 @@
       path = "screenshot";
       blur_passes = 3;
     };
-    input-field = [
+    input-field = lib.mkDefault [
       {
         monitor = "";
         size = "20%, 5%";
