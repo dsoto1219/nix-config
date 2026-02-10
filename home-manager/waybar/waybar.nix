@@ -120,8 +120,8 @@
       "menu" = "on-click";
       "menu-file" = "${./power_menu.xml}"; # Menu file in resources folder
       "menu-actions" = {
-        "shutdown" = "shutdown";
-        "reboot" = "reboot";
+        "shutdown" = "hyprshutdown --post-cmd 'poweroff'";
+        "reboot" = "hyprshutdown --post-cmd 'reboot'";
         "suspend" = "systemctl suspend";
         "hibernate" = "systemctl hibernate";
       };
