@@ -120,7 +120,7 @@
       scroll-step = 5;
     };
     "custom/divider" = {
-      format = " | ";
+      format = "|";
       interval = "once";
       tooltip = false;
     };
