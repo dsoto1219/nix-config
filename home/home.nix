@@ -64,6 +64,7 @@
     weather
     pamixer
     ruby
+    lazygit
   ];
 
   programs.emacs = {
