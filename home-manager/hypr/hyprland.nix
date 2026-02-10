@@ -266,7 +266,7 @@
         "$mainMod, V, togglefloating"
         "$mainMod, R, exec, pkill $menu || $menu"
         "$mainMod, P, pseudo, # dwindle"
-        "$mainMod, J, togglesplit, # dwindle"
+        "$shiftMod, J, togglesplit, # dwindle"
 
         # Custom
         "$mod, F, fullscreen"
@@ -282,10 +282,10 @@
         "$shiftMod, S, exec, hyprshot -m region" 
 
         # Move focus with mainMod + arrow keys
-        "$mainMod, left, movefocus, h"
-        "$mainMod, right, movefocus, l"
-        "$mainMod, up, movefocus, k"
-        "$mainMod, down, movefocus, j"
+        "$mainMod, H, movefocus, l"
+        "$mainMod, L, movefocus, r"
+        "$mainMod, J, movefocus, u"
+        "$mainMod, K, movefocus, d"
 
         # Switch workspaces with mainMod + [0-9]
         "$mainMod, 1, workspace, 1"
