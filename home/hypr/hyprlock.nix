@@ -57,7 +57,7 @@
         fade_on_empty = false;
         rounding = 15;
 
-        font_family = "$font";
+        font_family = lib.mkDefault "$font";
         placeholder_text = "Input password...";
         fail_text = "$PAMFAIL";
 
@@ -99,16 +99,16 @@
         valign = "top";
       }
 
-      {
-        monitor = "";
-        text = "$LAYOUT[en,ru]";
-        font_size = 24;
-        onclick = "hyprctl switchxkblayout all next";
-
-        position = "250, -20";
-        halign = "center";
-        valign = "center";
-      }
+      # {
+      #   monitor = "";
+      #   text = "$LAYOUT[en,ru]";
+      #   font_size = 24;
+      #   onclick = "hyprctl switchxkblayout all next";
+      #
+      #   position = "250, -20";
+      #   halign = "center";
+      #   valign = "center";
+      # }
     ];
   };
 }
