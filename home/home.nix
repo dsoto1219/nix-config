@@ -64,8 +64,10 @@
     weather
     pamixer
     ruby
-    emacs
   ];
+
+  programs.emacs.enable = true;
+  programs.emacs.extraConfig = ./.emacs.d/init.el;
 
   # Let home-manager manage itself
   programs.home-manager.enable = true;
