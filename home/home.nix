@@ -72,7 +72,6 @@
   stylix.enable = true;
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
   stylix.image = ../assets/house-in-middle-of-mountain.jpg;
-  stylix.targets.firefox.profileNames = [ "danimationso.0@gmail.com" ];
 
   # Let home-manager manage itself
   programs.home-manager.enable = true;
