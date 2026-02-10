@@ -11,9 +11,6 @@
    autoload -U compinit && compinit
    zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}';
   '';
-  programs.zsh.antidote.plugins = [
-    "hkupty/ssh-agent"
-  ];
   programs.starship.enable = true;
 
   home.shellAliases = {
