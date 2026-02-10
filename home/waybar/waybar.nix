@@ -132,8 +132,8 @@
       tooltip = false;
     };
     "custom/file-manager" = {
-      "format" = " ";
-      "on-click" = "sleep 0.1 && dolphin";
+      "format" = "  ";
+      "on-click" = "dolphin";
       "tooltip" = false; 
     };
     "custom/media" = {
