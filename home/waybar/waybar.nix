@@ -114,6 +114,18 @@
       interval = "once";
       tooltip = false;
     };
+    "custom/media" = {
+      "format" = "{icon} {text}";
+      "return-type" = "json";
+      "max-length" = 40;
+      "format-icons" = {
+        "spotify" = "";
+        "default" = "🎜";
+      };
+      "escape" = true;
+      "exec" = "${./mediaplayer.py} 2> /dev/null"; # Script in resources folder
+      # "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" # Filter player based on name
+    };
     "custom/power" = {
       "format" = "⏻ ";
       "tooltip"= false;
