@@ -12,7 +12,7 @@
     modules-left = [
       "hyprland/workspaces"
       "custom/divider"
-      "custom/weather"
+      # "custom/weather"
       "custom/divider"
       "cpu"
       "custom/divider"
@@ -56,12 +56,12 @@
       format = "󰖨  {}";
       device = "acpi_video0";
     };
-    "custom/weather" = {
-      tooltip = true;
-      format = "{}";
-      restart-interval = 300;
-      exec = "/home/roastbeefer/.cargo/bin/weather";
-    };
+    # "custom/weather" = {
+    #   tooltip = true;
+    #   format = "{}";
+    #   restart-interval = 300;
+    #   exec = "/home/roastbeefer/.cargo/bin/weather";
+    # };
     tray = {
       icon-size = 13;
       tooltip = false;
