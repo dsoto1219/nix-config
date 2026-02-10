@@ -11,7 +11,7 @@
     height = 0;
     modules-left = [
       "hyprland/workspaces"
-      "custom/divider"
+      # "custom/divider"
       # "custom/weather"
       "custom/divider"
       "cpu"
