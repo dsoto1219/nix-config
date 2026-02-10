@@ -32,6 +32,7 @@
       "custom/divider"
       "clock"
       "custom/power"
+      "custom/endright"
     ];
     "hyprland/window" = { format = "{}"; };
     "wlr/workspaces" = {
