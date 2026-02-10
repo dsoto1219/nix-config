@@ -111,6 +111,11 @@
         default = [ "" "" "" ];
       };
     };
+    "pulseaudio/slider" = {
+      min = 0;
+      max = 100;
+      orientation = "horizontal";
+    };
     "pulseaudio#microphone" = {
       format = "{format_source}";
       tooltip = false;
