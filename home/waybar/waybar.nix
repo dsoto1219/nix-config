@@ -11,6 +11,7 @@
     height = 0;
     modules-left = [
       "hyprland/workspaces"
+      "custom/file-manager"
       # "custom/divider"
       # "custom/weather"
       "custom/divider"
@@ -19,7 +20,6 @@
       "memory"
       "custom/media"
       "custom/divider"
-      "custom/file-manager"
     ];
     modules-center = [ "hyprland/window" ];
     modules-right = [
@@ -146,10 +146,10 @@
       tooltip = false;
     };
     "custom/file-manager" = {
+      format = "   ";
       "on-click" = "dolphin";
       "tooltip" = true; 
       "tooltip-format" = "File Manager"; 
-      format = " ";
     };
     "custom/media" = {
       "format" = "{icon} {text}";
