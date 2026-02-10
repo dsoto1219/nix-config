@@ -134,7 +134,8 @@
     "custom/file-manager" = {
       "format" = "  ";
       "on-click" = "dolphin";
-      "tooltip" = false; 
+      "tooltip" = true; 
+      "tooltip-format" = "File Manager"; 
     };
     "custom/media" = {
       "format" = "{icon} {text}";
