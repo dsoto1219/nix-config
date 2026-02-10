@@ -17,6 +17,7 @@
       "cpu"
       "custom/divider"
       "memory"
+      "custom/media"
     ];
     modules-center = [ "hyprland/window" ];
     modules-right = [
