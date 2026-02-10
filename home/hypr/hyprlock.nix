@@ -42,38 +42,36 @@
       path = lib.mkDefault "screenshot";
       blur_passes = 3;
     };
-    input-field = [
-      lib.mkDefault {
-        monitor = "";
-        size = "20%, 5%";
-        outline_thickness = 3;
-        inner_color = "rgba(0, 0, 0, 0.0)"; # no fill
+    input-field = {
+      monitor = "";
+      size = "20%, 5%";
+      outline_thickness = 3;
+      inner_color = lib.mkDefault "rgba(0, 0, 0, 0.0)"; # no fill
 
-        outer_color = "rgba(33ccffee) rgba(00ff99ee) 45deg";
-        check_color = "rgba(00ff99ee) rgba(ff6633ee) 120deg";
-        fail_color = "rgba(ff6633ee) rgba(ff0066ee) 40deg";
+      outer_color = lib.mkDefault "rgba(33ccffee) rgba(00ff99ee) 45deg";
+      check_color = lib.mkDefault "rgba(00ff99ee) rgba(ff6633ee) 120deg";
+      fail_color = lib.mkDefault "rgba(ff6633ee) rgba(ff0066ee) 40deg";
 
-        font_color = "rgb(143, 143, 143)";
-        fade_on_empty = false;
-        rounding = 15;
+      font_color = "rgb(143, 143, 143)";
+      fade_on_empty = false;
+      rounding = 15;
 
-        font_family = lib.mkDefault "$font";
-        placeholder_text = "Input password...";
-        fail_text = "$PAMFAIL";
+      font_family = lib.mkDefault "$font";
+      placeholder_text = "Input password...";
+      fail_text = "$PAMFAIL";
 
-        # uncomment to use a letter instead of a dot to indicate the typed password
-        # dots_text_format = *
-        # dots_size = 0.4
-        dots_spacing = 0.3;
+      # uncomment to use a letter instead of a dot to indicate the typed password
+      # dots_text_format = *
+      # dots_size = 0.4
+      dots_spacing = 0.3;
 
-        # uncomment to use an input indicator that does not show the password length (similar to swaylock's input indicator)
-        # hide_input = true
+      # uncomment to use an input indicator that does not show the password length (similar to swaylock's input indicator)
+      # hide_input = true
 
-        position = "0, -20";
-        halign = "center";
-        valign = "center";
-      }
-    ];
+      position = "0, -20";
+      halign = "center";
+      valign = "center";
+    };
 
     label = [
       # TIME
