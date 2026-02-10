@@ -146,7 +146,7 @@
       tooltip = false;
     };
     "custom/file-manager" = {
-      format = "   ";
+      format = "   ";
       "on-click" = "dolphin";
       "tooltip" = true; 
       "tooltip-format" = "File Manager"; 
