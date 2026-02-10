@@ -87,12 +87,7 @@
       # PasswordAuthentication = false;
     };
   };
-  # Autostart ssh: https://discourse.nixos.org/t/how-to-set-up-a-system-wide-ssh-agent-that-would-work-on-all-terminals/14156/11?u=dsoto1219
-  programs.ssh.startAgent = true; 
-  xdg.configFile."environment.d" = {
-    text = "SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent";
-    target = "environment.d/ssh-agent.conf";
-  };
+  programs.ssh.startAgent = true; # Autostart ssh
 
   # List packages installed in system profile.
   # You can use https://search.nixos.org/ to find more packages (and options).
