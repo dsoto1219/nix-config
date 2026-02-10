@@ -69,7 +69,7 @@
   programs.emacs = {
     enable = true;
     package = pkgs.emacs-gtk;
-    emacs.extraConfig = builtins.readFile ./.emacs.d/init.el;
+    extraConfig = builtins.readFile ./.emacs.d/init.el;
   };
 
   # Let home-manager manage itself
