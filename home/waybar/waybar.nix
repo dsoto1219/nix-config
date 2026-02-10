@@ -149,8 +149,7 @@
       "on-click" = "dolphin";
       "tooltip" = true; 
       "tooltip-format" = "File Manager"; 
-      format-icons = [" " " "];
-      swap-icon-label = true;
+      format = " ";
     };
     "custom/media" = {
       "format" = "{icon} {text}";
