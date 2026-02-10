@@ -77,12 +77,12 @@
       #############################
 
       # See https://wiki.hypr.land/Configuring/Environment-variables/
-      env = let 
-        cursor_size = "24";
-      in [
-        "XCURSOR_SIZE,${cursor_size}"
-        "HYPRCURSOR_SIZE,${cursor_size}"
-      ];
+      # env = let 
+      #   cursor_size = "24";
+      # in [
+      #   "XCURSOR_SIZE,${cursor_size}"
+      #   "HYPRCURSOR_SIZE,${cursor_size}"
+      # ];
 
       ###################
       ### PERMISSIONS ###
@@ -395,7 +395,7 @@
     # x11.enable = true;
     package = pkgs.bibata-cursors;
     name = "Bibata-Modern-Classic";
-    # size = 16;
+    size = 16;
   };
 
   gtk = {
