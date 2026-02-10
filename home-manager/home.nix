@@ -16,6 +16,7 @@
     # You can also split up your configuration and import pieces of it here:
     ./shells.nix
     ./onedriver.nix
+    ./waybar/waybar.nix
     ./hypr/hyprland.nix
     ./nvim/init.nix
   ];
