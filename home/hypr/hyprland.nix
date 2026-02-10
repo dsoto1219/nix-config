@@ -271,7 +271,7 @@
 
         # Custom
         "$mod, F, fullscreen"
-        "$mod, D, exec, hyprpicker --autocopy"
+        "$mod, D, exec, pkill hyprpicker || hyprpicker --autocopy"
         # Bind power key to logout: https://github.com/hyprwm/Hyprland/issues/2614#issuecomment-2395597405
         ", XF86PowerOff, exec, hyprshutdown --post-cmd 'poweroff'"
 
