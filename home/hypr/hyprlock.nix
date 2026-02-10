@@ -79,7 +79,7 @@
         monitor = "";
         text = "$TIME"; # ref. https://wiki.hyprland.org/Hypr-Ecosystem/hyprlock/#variable-substitution
         font_size = 90;
-        font_family = "$font";
+        font_family = lib.mkDefault "$font";
 
         position = "-30, 0";
         halign = "right";
@@ -90,7 +90,7 @@
         monitor = "";
         text = "cmd[update:60000] date +\"%A, %d %B %Y\""; # update every 60 seconds
         font_size = 25;
-        font_family = "$font";
+        font_family = lib.mkDefault "$font";
 
         position = "-30, -150";
         halign = "right";
