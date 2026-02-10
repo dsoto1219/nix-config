@@ -65,8 +65,8 @@
           ./nixos/common/default.nix
           ./nixos/common/hardware/common-drivers.nix
           ./nixos/common/hardware/tablets.nix
-          ./nixos/hosts/thinkbook/fingerprint.nix
-          ./nixos/hosts/thinkbook/configuration.nix
+          ./nixos/thinkbook/fingerprint.nix
+          ./nixos/thinkbook/configuration.nix
         ];
       };
       "nixos" = nixpkgs.lib.nixosSystem {
@@ -75,7 +75,7 @@
 	modules = [
           nixos-wsl.nixosModules.default # Get WSL modules for this configuration
           ./nixos/common/default.nix
-          ./nixos/hosts/nixos-wsl/configuration.nix
+          ./nixos/nixos-wsl/configuration.nix
         ];
       };
     };
