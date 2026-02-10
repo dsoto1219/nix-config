@@ -66,8 +66,11 @@
     ruby
   ];
 
-  programs.emacs.enable = true;
-  programs.emacs.extraConfig = builtins.readFile ./.emacs.d/init.el;
+  programs.emacs = {
+    enable = true;
+    package = pkgs.emacs-gtk;
+    emacs.extraConfig = builtins.readFile ./.emacs.d/init.el;
+  };
 
   # Let home-manager manage itself
   programs.home-manager.enable = true;
