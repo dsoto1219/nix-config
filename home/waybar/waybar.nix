@@ -132,10 +132,10 @@
       tooltip = false;
     };
     "custom/file-manager" = {
-      "format" = "  ";
       "on-click" = "dolphin";
       "tooltip" = true; 
       "tooltip-format" = "File Manager"; 
+      format-icons = [" " " "];
     };
     "custom/media" = {
       "format" = "{icon} {text}";
