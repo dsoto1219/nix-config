@@ -29,6 +29,7 @@
       "backlight"
       "custom/divider"
       "pulseaudio"
+      "pulseaudio/slider"
       "custom/divider"
       "battery"
       "custom/divider"
