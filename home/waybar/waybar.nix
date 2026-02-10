@@ -136,6 +136,7 @@
       "tooltip" = true; 
       "tooltip-format" = "File Manager"; 
       format-icons = [" " " "];
+      swap-icon-label = true;
     };
     "custom/media" = {
       "format" = "{icon} {text}";
