@@ -29,7 +29,6 @@
       "pulseaudio"
       "custom/divider"
       "battery"
-      "battery#bat2"
       "custom/divider"
       "clock"
       "custom/power"
@@ -56,9 +55,6 @@
       # "format-good" = "", // An empty format will hide the module
       # "format-full": "",
       format-icons = ["" "" "" "" ""];
-    };
-    "battery#bat2" = {
-        bat = "BAT2";
     };
     cpu = {
       interval = 10;
