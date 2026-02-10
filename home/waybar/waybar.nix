@@ -53,7 +53,7 @@
       format-alt = "{time} {icon}";
       # "format-good" = "", // An empty format will hide the module
       # "format-full": "",
-      format-icons = ["" "" "" "" ""];
+      format-icons = [" " " " " " " " " "];
     };
     cpu = {
       interval = 10;
