@@ -62,11 +62,11 @@
         specialArgs = {inherit inputs;};
         # > Our nixos configuration files <
         modules = [
-          ./nixos/common/default.nix
-          ./nixos/common/hardware/common-drivers.nix
-          ./nixos/common/hardware/tablets.nix
-          ./nixos/thinkbook/fingerprint.nix
-          ./nixos/thinkbook/configuration.nix
+          ./hosts/common/default.nix
+          ./hosts/common/hardware/common-drivers.nix
+          ./hosts/common/hardware/tablets.nix
+          ./hosts/thinkbook/fingerprint.nix
+          ./hosts/thinkbook/configuration.nix
         ];
       };
       "nixos" = nixpkgs.lib.nixosSystem {
@@ -74,8 +74,8 @@
         specialArgs = {inherit inputs;};
 	modules = [
           nixos-wsl.nixosModules.default # Get WSL modules for this configuration
-          ./nixos/common/default.nix
-          ./nixos/nixos-wsl/configuration.nix
+          ./hosts/common/default.nix
+          ./hosts/nixos-wsl/configuration.nix
         ];
       };
     };
@@ -89,16 +89,16 @@
         extraSpecialArgs = { inherit inputs; };
         # > Our main home-manager configuration file <
         modules = [
-          ./home-manager/home.nix
-          ./home-manager/users/danim.nix
+          ./home/home.nix
+          ./home/users/danim.nix
         ];
       };
       "nixos@nixos" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         extraSpecialArgs = { inherit inputs; };
         modules = [
-          ./home-manager/home.nix
-          ./home-manager/users/nixos.nix
+          ./home/home.nix
+          ./home/users/nixos.nix
         ];
       };
     };
