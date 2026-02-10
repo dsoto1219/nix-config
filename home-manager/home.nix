@@ -64,6 +64,7 @@
     weather
     pamixer
     ruby
+    emacs
   ];
 
   # Let home-manager manage itself
