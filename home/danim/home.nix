@@ -21,6 +21,8 @@ in {
     pamixer
   ];
 
+  programs.firefox.enable = true;
+
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
   stylix.image = ../assets/sekiro-vs-father.png;
 }
