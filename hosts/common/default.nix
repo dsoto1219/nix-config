@@ -9,7 +9,6 @@
   # You can import other NixOS modules here
   imports = [
     # You can also split up your configuration and import pieces of it here:
-    ./git.nix
     ./hyprland.nix
     ./shells.nix
     ./users.nix

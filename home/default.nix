@@ -14,6 +14,7 @@
     inputs.stylix.homeModules.stylix
 
     # You can also split up your configuration and import pieces of it here:
+    ./git.nix
     ./shells.nix
     ./nvim/init.nix
   ];
