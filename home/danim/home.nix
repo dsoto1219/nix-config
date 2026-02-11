@@ -1,0 +1,26 @@
+# Add things specific to the user danim here
+{ pkgs, ... }: let
+  username = "danim";
+in {
+  home.username = username;
+  home.homeDirectory = "/home/${username}";
+
+  imports = [
+    ./onedriver/onedriver.nix
+    ./waybar/waybar.nix
+    ./hypr/hyprland.nix
+  ];
+
+  # Add stuff for your user as you see fit:
+  home.packages = with pkgs; [ 
+    obsidian 
+    kdePackages.ksshaskpass # for obsidian-git auth
+    zotero
+    mission-center
+    vesktop
+    pamixer
+  ];
+
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
+  stylix.image = ../assets/sekiro-vs-father.png;
+}

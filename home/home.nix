@@ -15,9 +15,6 @@
 
     # You can also split up your configuration and import pieces of it here:
     ./shells.nix
-    ./onedriver/onedriver.nix
-    ./waybar/waybar.nix
-    ./hypr/hyprland.nix
     ./nvim/init.nix
   ];
 
@@ -50,15 +47,9 @@
   home.packages = with pkgs; [ 
     hello cowsay lolcat sl cmatrix fastfetch
     yazi
-    obsidian 
-    kdePackages.ksshaskpass # for obsidian-git auth
-    zotero
     zathura
-    mission-center
     code2prompt
-    vesktop
     weather
-    pamixer
     ruby
     lazygit
     ffmpeg
@@ -71,8 +62,6 @@
   };
 
   stylix.enable = true;
-  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
-  stylix.image = ../assets/sekiro-vs-father.png;
 
   # Let home-manager manage itself
   programs.home-manager.enable = true;
