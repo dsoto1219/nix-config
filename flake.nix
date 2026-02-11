@@ -89,16 +89,14 @@
         extraSpecialArgs = { inherit inputs; };
         # > Our main home-manager configuration file <
         modules = [
-          ./home/home.nix
-          ./home/users/danim.nix
+          ./home/danim/home.nix
         ];
       };
       "nixos@nixos" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         extraSpecialArgs = { inherit inputs; };
         modules = [
-          ./home/home.nix
-          ./home/users/nixos.nix
+          ./home/nixos-wsl/home.nix
         ];
       };
     };
