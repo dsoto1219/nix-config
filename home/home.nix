@@ -61,6 +61,7 @@
     pamixer
     ruby
     lazygit
+    ffmpeg
   ];
 
   programs.emacs = {
