@@ -54,6 +54,7 @@
     ruby
     lazygit
     ffmpeg
+    devenv
   ];
 
   programs.emacs = {
