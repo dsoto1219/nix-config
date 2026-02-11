@@ -71,7 +71,7 @@
       max-length = 10;
     };
     backlight = {
-      format = "󰖨  {}";
+      format = "󰖨 {}";
       device = "acpi_video0";
     };
     # "custom/weather" = {
