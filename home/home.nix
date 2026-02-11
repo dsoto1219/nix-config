@@ -72,7 +72,7 @@
 
   stylix.enable = true;
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
-  stylix.image = ../assets/sekiro-vs-father.jpg;
+  stylix.image = ../assets/sekiro-vs-father.png;
 
   # Let home-manager manage itself
   programs.home-manager.enable = true;
