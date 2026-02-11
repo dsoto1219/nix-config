@@ -89,7 +89,7 @@
       {
         monitor = "";
         text = "cmd[update:60000] date +\"%A, %d %B %Y\""; # update every 60 seconds
-        font_size = lib.mkdefault 25;
+        font_size = lib.mkDefault 25;
         font_family = lib.mkDefault "$font";
 
         position = "-30, -150";
