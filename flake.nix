@@ -89,6 +89,7 @@
         extraSpecialArgs = { inherit inputs; };
         # > Our main home-manager configuration file <
         modules = [
+          ./home
           ./home/danim/home.nix
         ];
       };
@@ -96,6 +97,7 @@
         inherit pkgs;
         extraSpecialArgs = { inherit inputs; };
         modules = [
+          ./home
           ./home/nixos-wsl/home.nix
         ];
       };
