@@ -105,14 +105,6 @@
     EDITOR = "vim";
   };
 
-  # Load nerd fonts
-  fonts.packages = with pkgs; [
-    nerd-fonts.fira-code
-    nerd-fonts.droid-sans-mono
-    nerd-fonts.noto
-    nerd-fonts.hack
-  ];
-  
   programs.firefox.enable = true;
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
