@@ -60,10 +60,7 @@
         specialArgs = {inherit inputs;};
         # > Our nixos configuration files <
         modules = [
-          ./hosts/common/default.nix
-          ./hosts/common/hardware/common-drivers.nix
-          ./hosts/common/hardware/tablets.nix
-          ./hosts/thinkbook/fingerprint.nix
+          ./hosts
           ./hosts/thinkbook/configuration.nix
         ];
       };
@@ -72,7 +69,7 @@
         specialArgs = {inherit inputs;};
 	modules = [
           nixos-wsl.nixosModules.default # Get WSL modules for this configuration
-          ./hosts/common/default.nix
+          ./hosts
           ./hosts/nixos-wsl/configuration.nix
         ];
       };
