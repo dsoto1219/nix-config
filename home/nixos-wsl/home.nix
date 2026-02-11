@@ -11,5 +11,7 @@ in {
     inherit username;
     homeDirectory = "/home/${username}";
   };
+
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-storm.yaml";
 }
 
