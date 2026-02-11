@@ -14,6 +14,12 @@
 
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
+
+    ./common-drivers.nix
+    ./fingerprint.nix
+    ./hyprland.nix
+    ./tablets.nix
+    ./users.nix
   ];
 
   # Use the systemd-boot EFI boot loader.
