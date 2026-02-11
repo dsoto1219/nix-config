@@ -67,7 +67,7 @@
       "nixos" = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = {inherit inputs;};
-	modules = [
+        modules = [
           nixos-wsl.nixosModules.default # Get WSL modules for this configuration
           ./hosts
           ./hosts/nixos-wsl/configuration.nix
