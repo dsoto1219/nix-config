@@ -18,7 +18,7 @@
       # "$mainMod, M, exit"
       "$mainMod, E, exec, $fileManager"
       "$mainMod, V, togglefloating"
-      "$mainMod, R, exec, pkill $menu || $menu"
+      "$mainMod, R, exec, pkill $menuProgram || $menuCommand"
       "$mainMod, P, pseudo, # dwindle"
       "$shiftMod, J, togglesplit, # dwindle"
 
