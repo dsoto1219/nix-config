@@ -55,6 +55,9 @@
     lazygit
     ffmpeg
     devenv
+
+    # Fonts
+    nerd-fonts.jetbrains-mono
   ];
 
   programs.emacs = {
@@ -62,6 +65,8 @@
     package = pkgs.emacs-gtk;
     extraConfig = builtins.readFile ./.emacs.d/init.el;
   };
+
+  fonts.fontconfig.enable = true;
 
   stylix.enable = true;
 
