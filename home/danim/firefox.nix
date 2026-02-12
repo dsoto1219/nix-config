@@ -18,7 +18,7 @@
         privateDefault = "ecosia";
         order = ["ecosia" "ddg" "google"];
         engines = {
-          kagi = {
+          ecosia = {
             name = "ecosia";
             urls = [{
               template = "https://ecosia.org/search?q=";}
