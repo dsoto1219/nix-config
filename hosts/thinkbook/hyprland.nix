@@ -15,7 +15,6 @@ in {
     wireplumber # pipewire: needed for screensharing
     # qt5-wayland and qt6-wayland should be installed by default
     hyprpolkitagent #  authentication agent
-    # nerd fonts, including moto, specified in ./nixos/common/default.nix
   ];
 
   services.pipewire.enable = true;
