@@ -71,7 +71,7 @@
         "hypridle"
         "udiskie"
         # https://github.com/hyprwm/Hyprland/issues/2614#issuecomment-2395597405
-        "systemd-inhibit --who=\"Hyprland config\" --why=\"wlogout keybind\" --what=handle-power-key --mode=block sleep infinity & echo $! > /tmp/.hyprland-systemd-inhibit"
+        "systemd-inhibit --who=\"Hyprland config\" --why=\"Hyprland power key keybind\" --what=handle-power-key --mode=block sleep infinity & echo $! > /tmp/.hyprland-systemd-inhibit"
       ];
       exec-shutdown = [
         "kill -9 \"$(cat /tmp/.hyprland-systemd-inhibit)\""
