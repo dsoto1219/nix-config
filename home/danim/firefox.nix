@@ -9,6 +9,11 @@
   # programs.browserpass.enable = true;
   # ^ not needed, firefox manages passwords on its own
 
+  stylix.targets.firefox = {
+    profileNames = [ "danim" ];
+    colorTheme.enable = true;
+  };
+
   programs.firefox = {
     enable = true;
     profiles.danim = {

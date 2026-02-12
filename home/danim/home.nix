@@ -32,6 +32,5 @@ in {
       name = "Bibata-Modern-Classic";
       size = 16;
     };
-    targets.firefox.profileNames = [ "danim" ];
   };
 }
