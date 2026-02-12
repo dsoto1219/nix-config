@@ -27,7 +27,6 @@
     #
     # font-features = "smcp, c2sc" (all small caps)
     # font-features = "liga 0" (disable ligatures)
-    font-features = lib.mkDefault "";
 
     # Comma separated list of OpenType font variation settings to apply
     # to variable fonts. The format is similar to the CSS
@@ -37,7 +36,6 @@
     #
     # font-variations = "wght 900" (Extra bold)
     # font-variations = "wdth 25, slnt -10" (Narrow and slanted)
-    font-variations = lib.mkDefault "";
 
     # Perform font hinting. Only applies when a path to a font has been
     # specified via `font`. Disabling font hinting speeds up text
@@ -133,7 +131,7 @@
     # Extra horizontal padding between prompt and input.
     prompt-padding = lib.mkDefault 0;
     # Placeholder input text.
-    placeholder-text = "";
+    # placeholder-text = ""; #
     # Maximum number of results to display.
     # If 0, tofi will draw as many results as it can fit in the window.
     num-results = lib.mkDefault 0;
@@ -177,7 +175,7 @@
     #
     # The name of the output to appear on. An empty string will use the
     # default output chosen by the compositor.
-    output = "";
+    # output = "";
     # Location on screen to anchor the window to.
     #
     # Supported values: top-left, top, top-right, right, bottom-right,
@@ -218,7 +216,7 @@
     # algorithm.
     #
     # Supported values: normal, prefix, fuzzy
-    matching-algorithm = "normal";
+    # matching-algorithm = "normal";
     # If true, require a match to allow a selection to be made. If false,
     # making a selection with no matches will print input to stdout.
     # In drun mode, this is always true.
@@ -236,7 +234,7 @@
     hidden-character = "*";
     # If true, use physical keys for shortcuts, regardless of the current
     # keyboard layout. If false, use the current layout's keys.
-    physical-keybindings = true;
+    # physical-keybindings = true;
     # Instead of printing the selected entry, print the 1-based index of
     # the selection. This option has no effect in run or drun mode. If
     # require-match is set to false, non-matching input will still result
