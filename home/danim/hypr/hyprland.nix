@@ -53,7 +53,7 @@
       # Set programs that you use
       "$terminal" = "kitty";
       "$fileManager" = "dolphin";
-      "$menu" = "rofi";
+      "$menu" = "rofi -show drun";
 
       #################
       ### AUTOSTART ###
