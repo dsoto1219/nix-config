@@ -31,7 +31,7 @@
       extensions.packages = with pkgs.inputs.firefox-addons; [
         ublock-origin
       ];
-      bookmarks = {};
+      # bookmarks = {};
       settings = {
         "browser.startup.homepage" = "about:home";
 
@@ -101,7 +101,7 @@
         # Disable fx accounts
         "identity.fxaccounts.enabled" = false;
         # Disable "save password" prompt
-        "signon.rememberSignons" = false;
+        # "signon.rememberSignons" = false;
         # Harden
         "privacy.trackingprotection.enabled" = true;
         "dom.security.https_only_mode" = true;
