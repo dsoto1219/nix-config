@@ -9,11 +9,11 @@
     # Related config files
     ./hypridle.nix
     ./hyprlock.nix
-    ./tofi.nix
   ];
 
   home.packages = with pkgs; [
     unstable.hyprshutdown
+    rofi # application launcher
     hyprpicker
     brightnessctl
     kdePackages.dolphin # file manager
@@ -53,7 +53,7 @@
       # Set programs that you use
       "$terminal" = "kitty";
       "$fileManager" = "dolphin";
-      "$menu" = "tofi-drun";
+      "$menu" = "rofi";
 
       #################
       ### AUTOSTART ###
