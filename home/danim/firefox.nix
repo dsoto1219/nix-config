@@ -3,6 +3,7 @@
 {
   pkgs,
   lib,
+  inputs,
   ...
 }: {
   # programs.browserpass.enable = true;
@@ -28,7 +29,7 @@
         };
       };
       bookmarks = {};
-      extensions.packages = with pkgs.inputs.firefox-addons; [
+      extensions.packages = with inputs.firefox-addons.packages.${pkgs.stdenv.hostPlatform.system}; [
         ublock-origin
       ];
       # bookmarks = {};
