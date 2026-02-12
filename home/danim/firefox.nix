@@ -133,10 +133,10 @@
   #         dirtyAreaCache = ["nav-bar" "PersonalToolbar" "toolbar-menubar" "TabsToolbar" "widget-overflow-fixed-list" "vertical-tabs"];
   #         currentVersion = 23;
   #         newElementCount = 10;
-  #       };
-  #     };
-  #   };
-  # };
+    #     };
+    #   };
+    };
+  };
 
   # home = {
   #   persistence = {
