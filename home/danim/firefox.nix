@@ -21,7 +21,7 @@
           kagi = {
             name = "ecosia";
             urls = [{
-              template = "https://ecosia.org/search?q=ducks";}
+              template = "https://ecosia.org/search?q=";}
             ];
             icon = "https://ecosia.org/favicon.ico";
           };
