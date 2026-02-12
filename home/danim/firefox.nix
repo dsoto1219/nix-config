@@ -21,7 +21,7 @@
           ecosia = {
             name = "ecosia";
             urls = [{
-              template = "https://ecosia.org";}
+              template = "https://ecosia.org/search?q={searchTerms}";}
             ];
             icon = "https://ecosia.org/favicon.ico";
           };
