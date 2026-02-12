@@ -9,6 +9,8 @@ in {
     ./onedriver/onedriver.nix
     ./waybar/waybar.nix
     ./hypr/hyprland.nix
+
+    ./firefox.nix
   ];
 
   # Add stuff for your user as you see fit:
@@ -20,8 +22,6 @@ in {
     vesktop
     pamixer
   ];
-
-  programs.firefox.enable = true;
 
   stylix = {
     enable = true;
