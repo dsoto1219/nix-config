@@ -131,12 +131,12 @@
     };
   };
 
-  home = {
-    persistence = {
-      # Not persisting is safer
-      # "/persist".directories = [ ".mozilla/firefox" ];
-    };
-  };
+  # home = {
+  #   persistence = {
+  #     # Not persisting is safer
+  #     # "/persist".directories = [ ".mozilla/firefox" ];
+  #   };
+  # };
 
   xdg.mimeApps.defaultApplications = {
     "text/html" = ["firefox.desktop"];
