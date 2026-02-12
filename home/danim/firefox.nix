@@ -109,7 +109,7 @@
         # Remove close button
         "browser.tabs.inTitlebar" = 0;
         # Vertical tabs
-        "sidebar.verticalTabs" = true;
+        # "sidebar.verticalTabs" = true;
         "sidebar.revamp" = true;
         "sidebar.main.tools" = ["history" "bookmarks"];
         # Layout
