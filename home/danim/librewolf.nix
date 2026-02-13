@@ -33,6 +33,7 @@
             alias = "@g";
           };
         };
+      };
     };
     # Enable WebGL, cookies and history
     settings = {
