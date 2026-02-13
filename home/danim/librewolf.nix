@@ -1,7 +1,10 @@
 { ... }:
 {
+  stylix.targets.librewolf.profileNames = [ "danim" ];
+
   programs.librewolf = {
     enable = true;
+    profiles.danim = {};
     # Enable WebGL, cookies and history
     settings = {
       "webgl.disabled" = false;
