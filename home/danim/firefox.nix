@@ -46,11 +46,11 @@
           zotero-connector
         ];
       };
-    };
-    # Enable WebGL, cookies and history
-    settings = {
-      # Remove close button
-      "browser.tabs.inTitlebar" = 0;
+      # Enable WebGL, cookies and history
+      settings = {
+        # Remove close button
+        "browser.tabs.inTitlebar" = 0;
+      };
     };
   };
 
