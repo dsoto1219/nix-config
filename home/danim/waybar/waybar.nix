@@ -5,7 +5,10 @@
   ];
 
   programs.waybar.enable = true;
-  stylix.targets.waybar.enable = false;
+  stylix.targets.waybar = {
+    enable = false;
+    addCss = true;
+  };
 
   programs.waybar.style = ./style.css;
   
