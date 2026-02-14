@@ -2,6 +2,8 @@
 {
   stylix.targets.librewolf.profileNames = [ "danim" ];
 
+  programs.browserpass.enable = true;
+
   programs.librewolf = {
     enable = true;
     package = pkgs.librewolf.override {
