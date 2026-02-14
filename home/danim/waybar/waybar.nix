@@ -1,4 +1,8 @@
-{ ... }: {
+{ pkgs, ... }: 
+{
+  home.packages = with pkgs; [
+    pavucontrol # volume controller
+  ];
 
   programs.waybar.enable = true;
 
