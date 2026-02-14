@@ -9,8 +9,7 @@ in {
     ./waybar/waybar.nix
     ./hypr/hyprland.nix
 
-    ./librewolf.nix
-    # ./firefox.nix
+    ./firefox.nix
   ];
 
   # Add stuff for your user as you see fit:

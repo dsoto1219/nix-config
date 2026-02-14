@@ -1,15 +1,15 @@
 { inputs, pkgs, ... }:
 {
-  stylix.targets.librewolf = {
+  stylix.targets.firefox = {
     profileNames = [ "danim" ];
     colorTheme.enable = true;
   };
 
   programs.browserpass.enable = true;
 
-  programs.librewolf = {
+  programs.firefox = {
     enable = true;
-    package = pkgs.librewolf.override {
+    package = pkgs.firefox.override {
       # See nixpkgs' firefox/wrapper.nix to check which options you can use
       nativeMessagingHosts = [
         # Gnome shell native connector
@@ -49,11 +49,6 @@
     };
     # Enable WebGL, cookies and history
     settings = {
-      "webgl.disabled" = false;
-      "privacy.resistFingerprinting" = false;
-      "privacy.clearOnShutdown.history" = false;
-      "privacy.clearOnShutdown.cookies" = false;
-      "network.cookie.lifetimePolicy" = 0;
       # Remove close button
       "browser.tabs.inTitlebar" = 0;
     };
