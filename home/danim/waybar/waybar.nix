@@ -76,7 +76,7 @@
       max-length = 25;
     };
 
-    "custom/notification" = {
+    "custom/notifications" = {
       tooltip = true;
       format = "<span size='16pt'>{icon}</span>";
       format-icons = {
