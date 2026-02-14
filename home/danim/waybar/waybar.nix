@@ -168,8 +168,6 @@
       on-click-right = "swaync-client -d -sw";
       escape = true;
     };
-  }];
-
   #   cpu = {
   #     interval = 10;
   #     format = "󰻠 {}%";
@@ -219,6 +217,8 @@
   #     "exec" = "${./mediaplayer.py} 2> /dev/null"; # Script in resources folder
   #     # "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" # Filter player based on name
   #   };
+  }];
+
 }
 
 
