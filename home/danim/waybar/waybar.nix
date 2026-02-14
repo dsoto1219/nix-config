@@ -16,6 +16,7 @@
     ];
     modules-center = [
       "custom/power" 
+      "custom/search"
       "custom/file-manager" 
     ];
     modules-right = [
@@ -41,6 +42,11 @@
         suspend = "systemctl suspend";
         hibernate = "systemctl hibernate";
       };
+    };
+    "custom/search" = {
+      format = "   ";
+      on-click = "rofi -show drun";
+      tooltip-format = "Search Apps";
     };
     "custom/file-manager" = {
       format = "   ";
