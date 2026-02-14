@@ -5,12 +5,7 @@
   ];
 
   programs.waybar.enable = true;
-  stylix.targets.waybar = {
-    enable = true;
-    addCss = false;
-    # enableCenterBackColors = true;
-    colors.override = ./style.css;
-  };
+  stylix.targets.waybar.enable = false;
 
   programs.waybar.settings = [{
     # layer = "top";
