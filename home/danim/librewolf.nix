@@ -52,4 +52,11 @@
       "browser.tabs.inTitlebar" = 0;
     };
   };
+
+  # home = {
+  #   persistence = {
+  #     # Not persisting is safer
+  #     # "/persist".directories = [ ".mozilla/firefox" ];
+  #   };
+  # };
 }
