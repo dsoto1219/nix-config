@@ -1,5 +1,5 @@
-{ inputs, ... }: let
-  fonts = inputs.stylix.fonts;
+{ config, lib, ... }: let
+  fonts = config.stylix.fonts;
 in {
   stylix.targets.waybar = {
     enable = false;
@@ -8,8 +8,8 @@ in {
 
   programs.waybar.style = ''
     * {
-      font-family: "${fonts.${inputs.stylix.config.font}.name}";
-      font-size: ${toString fonts.sizes.desktop}pt;
+      font-family: "${fonts.sansSerif.name}";
+      font-size: ${toString fonts.sizes.applications}px;
 
       border: none;
       border-radius: 0px;
