@@ -29,7 +29,7 @@
     "hyprland/workspaces" = {
       format = "<sub>{icon}</sub>\n{windows}";
       format-window-separator = "\n";
-      window-rewrite-default = "";
+      window-rewrite-default = "";
       window-rewrite = {
         "title<.*youtube.*>" = ""; # Windows whose titles contain "youtube"
         "class<firefox>" = ""; # Windows whose classes are "firefox"
