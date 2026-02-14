@@ -11,7 +11,6 @@
     margin-top = 15;
 
     modules-left = [ 
-      "clock" 
       "hyprland/workspaces" 
     ];
     modules-center = [
@@ -22,6 +21,7 @@
       "tray"
       "pulseaudio"
       "battery"
+      "clock" 
       "custom/notifications"
     ];
     clock = {
