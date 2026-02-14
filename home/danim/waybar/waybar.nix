@@ -78,7 +78,7 @@
 
     "custom/notifications" = {
       tooltip = true;
-      format = "<span size='16pt'>{icon}</span>";
+      format = "{icon} ";
       format-icons = {
         notification = "󱅫";
         none = "󰂜";
