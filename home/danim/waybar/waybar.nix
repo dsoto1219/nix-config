@@ -121,7 +121,7 @@
         warning = 30;
         critical = 15;
       };
-      format = "{capacity}% {icon} ";
+      format = "{capacity}% {icon}";
       format-icons = {
         default  = ["󰂎"  "󰁺"  "󰁻"  "󰁼"  "󰁽"  "󰁾"  "󰁿"  "󰂀"  "󰂁"  "󰂂"  "󰁹"];
         charging = ["󰢟 " "󰢜 " "󰂆 " "󰂇 " "󰂈 " "󰢝 " "󰂉 " "󰢞 " "󰂊 " "󰂋 " "󰂅 "];
