@@ -44,7 +44,7 @@
       };
     };
     "custom/search" = {
-      format = "   ";
+      format = "    ";
       on-click = "rofi -show drun";
       tooltip-format = "Search Apps";
     };
