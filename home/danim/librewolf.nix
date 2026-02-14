@@ -39,10 +39,13 @@
           };
         };
       };
-      extensions.packages = with inputs.firefox-addons.packages.${pkgs.stdenv.hostPlatform.system}; [
-        ublock-origin
-        zotero-connector
-      ];
+      extensions = {
+        force = true;
+        packages = with inputs.firefox-addons.packages.${pkgs.stdenv.hostPlatform.system}; [
+          ublock-origin
+          zotero-connector
+        ];
+      };
     };
     # Enable WebGL, cookies and history
     settings = {
