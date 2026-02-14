@@ -1,6 +1,9 @@
 { inputs, pkgs, ... }:
 {
-  stylix.targets.librewolf.profileNames = [ "danim" ];
+  stylix.targets.librewolf = {
+    profileNames = [ "danim" ];
+    colorTheme.enable = true;
+  };
 
   programs.browserpass.enable = true;
 
