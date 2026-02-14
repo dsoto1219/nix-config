@@ -13,7 +13,9 @@
     modules-left = [ 
       "clock" 
       "hyprland/workspaces" 
-      "custom/power" ];
+      "custom/power" 
+      "custom/file-manager" 
+    ];
     modules-center = [ "tray" ];
     modules-right = [
       "pulseaudio"
@@ -37,6 +39,12 @@
         suspend = "systemctl suspend";
         hibernate = "systemctl hibernate";
       };
+    };
+    "custom/file-manager" = {
+      format = "   ";
+      "on-click" = "dolphin";
+      "tooltip" = true; 
+      "tooltip-format" = "File Manager"; 
     };
 
     tray = {
@@ -252,12 +260,6 @@
   #     format = "_";
   #     interval = "once";
   #     tooltip = false;
-  #   };
-  #   "custom/file-manager" = {
-  #     format = "   ";
-  #     "on-click" = "dolphin";
-  #     "tooltip" = true; 
-  #     "tooltip-format" = "File Manager"; 
   #   };
   #   "custom/media" = {
   #     "format" = "{icon} {text}";
