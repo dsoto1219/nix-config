@@ -27,7 +27,7 @@
       "custom/notifications"
     ];
     "hyprland/workspaces" = {
-      format = "<sub>{icon}</sub>\n{windows}";
+      format = "{windows} ({icon})";
       # format-window-separator = "\n";
       window-rewrite-default = "";
       window-rewrite = {
