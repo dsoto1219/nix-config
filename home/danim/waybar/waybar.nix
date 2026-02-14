@@ -39,7 +39,7 @@
       };
     };
     clock = {
-      format = "{:L:%H:%M}  ";
+      format = "{:%I:%M %p}  ";
       locale = "en_US.UTF-8";
       format-alt = "{:%A; %B %d, %Y (%R)}";
       tooltip-format = "<tt><small>{calendar}</small></tt>";
