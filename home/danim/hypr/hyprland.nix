@@ -22,7 +22,7 @@
   ];
 
   programs.kitty.enable = true;
-  services.dunst.enable = true; # notification manager
+  services.swaync.enable = true; # notification manager
   programs.hyprshot.enable = true; # screenshot manager
 
   # Hyprland Configuration
@@ -66,6 +66,7 @@
         "hyprlock || hyprctl dispatch exit"
         # "$terminal"
         "waybar"
+        "swaync"
         "nm-applet &"
         "systemctl --user start hyprpolkitagent"
         "hypridle"
