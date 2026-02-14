@@ -7,6 +7,8 @@
   programs.waybar.enable = true;
   stylix.targets.waybar.enable = false;
 
+  programs.waybar.style = ./style.css;
+  
   programs.waybar.settings = [{
     # layer = "top";
     position = "top";
