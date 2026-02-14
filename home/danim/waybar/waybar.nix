@@ -10,7 +10,10 @@
     position = "top";
     margin-top = 15;
 
-    modules-left = [ "clock" "hyprland/workspaces" ];
+    modules-left = [ 
+      "clock" 
+      "hyprland/workspaces" 
+      "custom/power" ];
     modules-center = [ "tray" ];
     modules-right = [
       "pulseaudio"
@@ -18,11 +21,22 @@
       "battery"
       "custom/notifications"
     ];
-
     clock = {
       interval = 60;
       format = "{:%H:%M}";
       max-length = 25;
+    };
+    "custom/power" = {
+      format = "⏻ ";
+      tooltip= false;
+      menu = "on-click";
+      menu-file = "${./power_menu.xml}"; # Menu file in resources folder
+      menu-actions = {
+        shutdown = "hyprshutdown --post-cmd 'poweroff'";
+        reboot = "hyprshutdown --post-cmd 'reboot'";
+        suspend = "systemctl suspend";
+        hibernate = "systemctl hibernate";
+      };
     };
 
     tray = {
@@ -257,19 +271,6 @@
   #     "exec" = "${./mediaplayer.py} 2> /dev/null"; # Script in resources folder
   #     # "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" # Filter player based on name
   #   };
-  #   "custom/power" = {
-  #     "format" = "⏻  ";
-  #     "tooltip"= false;
-  #     "menu" = "on-click";
-  #     "menu-file" = "${./power_menu.xml}"; # Menu file in resources folder
-  #     "menu-actions" = {
-  #       "shutdown" = "hyprshutdown --post-cmd 'poweroff'";
-  #       "reboot" = "hyprshutdown --post-cmd 'reboot'";
-  #       "suspend" = "systemctl suspend";
-  #       "hibernate" = "systemctl hibernate";
-  #     };
-  #   };
-  # }];
 }
 
 
