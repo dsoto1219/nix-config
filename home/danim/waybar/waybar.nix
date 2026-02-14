@@ -1,4 +1,4 @@
-{ pkgs, ... }: 
+{ lib, pkgs, ... }: 
 {
   imports = [
     ./style.nix
@@ -9,6 +9,12 @@
   ];
 
   programs.waybar.enable = true;
+
+  stylix.targets.waybar = {
+    enable = false;
+    # addCss = true;
+    style = lib.mkAfter (builtins.readFile ./style.css);
+  };
   
   programs.waybar.settings = [{
     # layer = "top";
