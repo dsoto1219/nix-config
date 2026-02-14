@@ -14,6 +14,7 @@
   home.packages = with pkgs; [
     unstable.hyprshutdown
     rofi # application launcher
+    mpd
     hyprpicker
     brightnessctl
     kdePackages.dolphin # file manager
