@@ -46,7 +46,7 @@
       };
     };
     clock = {
-      format = "{:%I:%M %p}  ";
+      format = " {:%I:%M %p} ";
       locale = "en_US.UTF-8";
       format-alt = "{:%A; %B %d, %Y (%R)}";
       tooltip-format = "<tt><small>{calendar}</small></tt>";
@@ -104,8 +104,8 @@
     };
 
     pulseaudio = {
-      format = "{volume}% {icon}";
-      format-bluetooth = "{volume}% {icon}";
+      format = "{icon} {volume}%";
+      format-bluetooth = "{icon} {volume}%";
       format-muted = "";
       format-icons = {
           headphone = " ";
@@ -123,7 +123,7 @@
     };
     backlight = {
       device = "intel_backlight";
-      format = "{percent}% {icon}";
+      format = "{icon} {percent}%";
       format-icons = [ "" "" ];
     };
     network = {
@@ -145,7 +145,7 @@
         warning = 30;
         critical = 15;
       };
-      format = "{capacity}% {icon}";
+      format = "{icon} {capacity}%";
       format-icons = {
         default  = ["󰂎"  "󰁺"  "󰁻"  "󰁼"  "󰁽"  "󰁾"  "󰁿"  "󰂀"  "󰂁"  "󰂂"  "󰁹"];
         charging = ["󰢟 " "󰢜 " "󰂆 " "󰂇 " "󰂈 " "󰢝 " "󰂉 " "󰢞 " "󰂊 " "󰂋 " "󰂅 "];
