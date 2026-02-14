@@ -1,9 +1,5 @@
 { lib, pkgs, ... }: 
 {
-  imports = [
-    ./style.nix
-  ];
-
   home.packages = with pkgs; [
     pavucontrol # volume controller
   ];
