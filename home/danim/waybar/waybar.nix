@@ -6,12 +6,11 @@
 
   programs.waybar.enable = true;
   stylix.targets.waybar = {
-    enable = false;
+    enable = true;
     addCss = false;
     # enableCenterBackColors = true;
+    colors.override = ./style.css;
   };
-
-  programs.waybar.style = ./style.css;
 
   programs.waybar.settings = [{
     # layer = "top";
