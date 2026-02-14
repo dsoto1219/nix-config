@@ -1,0 +1,65 @@
+* {
+	* border: none;
+	* border-radius: 0px;
+	*
+	* min-height: 0;
+	* padding: 0;
+	* margin: 0;
+}
+
+window#waybar {
+	background-color: transparent;
+}
+
+tooltip {
+	border-width: 1px;
+	border-radius: 12px;	
+}
+
+tooltip label {
+	padding: 6px;
+}
+
+#workspaces {
+	padding: 5px 3px;
+	margin: 0 0 0 12px;
+	border-radius: 18px;
+	border-width: 1px;
+}
+
+#workspaces button {
+	padding: 0px 6px;
+	margin: 0px 3px;
+	border-radius: 50px;
+	color: transparent;
+	transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+	min-width: 50px;
+	transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.hover {
+	border-radius: 16px;
+	min-width: 50px;
+	background-size: 400% 400%;
+}
+
+#workspaces button.urgent {
+	border-radius: 16px;
+	min-width: 50px;
+	background-size: 400% 400%;
+	transition: all 0.3s ease-in-out;
+};
+
+#battery,
+#pulseaudio,
+#network,
+#clock,
+#custom-notifications {
+	padding: 0 15px 0 15px;
+	margin: 0 0 0 12px;
+	border-radius: 50px;
+	border-width: 1px;
+}
