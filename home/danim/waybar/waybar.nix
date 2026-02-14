@@ -44,7 +44,6 @@
       on-click = "activate";
     };
     battery = {
-      bat = "BAT2";
       interval = 60;
       "states" = {
         # "good" = 95;
