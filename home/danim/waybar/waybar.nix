@@ -40,6 +40,7 @@
     };
     clock = {
       format = "{:%H:%M}  ";
+      locale = "en_US.UTF-8";
       format-alt = "{:%A; %B %d, %Y (%R)}";
       tooltip-format = "<tt><small>{calendar}</small></tt>";
       calendar = {
