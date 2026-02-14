@@ -7,7 +7,7 @@
   programs.waybar.enable = true;
 
   stylix.targets.waybar = {
-    enable = true;
+    # enable = true;
     # addCss = true;
   };
 
