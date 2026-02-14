@@ -13,7 +13,7 @@ window#waybar {
 
 tooltip {
 	border-width: 1px;
-	border-radius: 12px;	
+	border-radius: 12px;
 }
 
 tooltip label {
@@ -51,7 +51,7 @@ tooltip label {
 	min-width: 50px;
 	background-size: 400% 400%;
 	transition: all 0.3s ease-in-out;
-};
+}
 
 #battery,
 #pulseaudio,
