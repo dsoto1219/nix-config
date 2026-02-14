@@ -55,12 +55,12 @@
     network = {
       interface = "wlp0s20f3";
       format = "{ifname}";
-      format-wifi = "{essid}  ";
-      format-ethernet = "{ipaddr}/{cidr} 󰊗";
+      format-wifi = "{essid}  ";
+      format-ethernet = "{ipaddr}/{cidr} 󰊗 ";
       format-disconnected = ""; # An empty format will hide the module.
       tooltip-format = "{ifname} via {gwaddr} 󰊗";
-      tooltip-format-wifi = "{essid}  ";
-      tooltip-format-ethernet = "{ifname} ";
+      tooltip-format-wifi = "{essid} ";
+      tooltip-format-ethernet = "{ifname} ";
       tooltip-format-disconnected = "Disconnected";
       max-length = 50;
     };
