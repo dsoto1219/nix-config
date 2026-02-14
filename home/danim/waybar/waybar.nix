@@ -101,7 +101,7 @@
 
     "custom/notifications" = {
       tooltip = true;
-      format = " {icon} ";
+      format = " {icon}  ";
       format-icons = {
         notification = "󱅫";
         none = "󰂜";
