@@ -27,7 +27,7 @@
       max-length = 25;
     };
     "custom/power" = {
-      format = "⏻ ";
+      format = " ⏻ ";
       tooltip-format = "Power Menu";
       menu = "on-click";
       menu-file = "${./power_menu.xml}"; # Menu file in resources folder
