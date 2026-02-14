@@ -124,7 +124,7 @@
     backlight = {
       device = "intel_backlight";
       format = "{icon} {percent}%";
-      format-icons = [ "" "" ];
+      format-icons = [ "󰃚 " "󰃛 " "󰃜 " "󰃝 " "󰃞 " "󰃟 " "󰃠 " ];
     };
     network = {
       interface = "wlp0s20f3";
