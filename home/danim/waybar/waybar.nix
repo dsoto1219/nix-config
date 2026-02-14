@@ -8,7 +8,13 @@
   stylix.targets.waybar.enableCenterBackColors = true;
 
   programs.waybar.settings = [{
+    # layer = "top";
     position = "top";
+    # mod = "dock";
+    # exclusive = true;
+    # passtrough = false;
+    # gtk-layer-shell = true;
+  #   height = 0;
     margin-top = 15;
 
     modules-left = [ 
@@ -102,8 +108,8 @@
       format-muted = "";
       format-icons = {
           headphone = " ";
-          # hands-free = "";
-          # headset = "";
+          # hands-free = "";
+          # headset = "";
           phone = " ";
           phone-muted = " ";
           portable = " ";
@@ -164,60 +170,6 @@
     };
   }];
 
-  #   layer = "top";
-  #   position = "top";
-  #   mod = "dock";
-  #   exclusive = true;
-  #   passtrough = false;
-  #   gtk-layer-shell = true;
-  #   height = 0;
-  #   modules-left = [
-  #     "hyprland/workspaces"
-  #     "custom/file-manager"
-  #     # "custom/divider"
-  #     # "custom/weather"
-  #     "custom/divider"
-  #     "cpu"
-  #     "custom/divider"
-  #     "memory"
-  #     "custom/media"
-  #     "custom/divider"
-  #   ];
-  #   modules-center = [ "hyprland/window" ];
-  #   modules-right = [
-  #     "tray"
-  #     "network"
-  #     "custom/divider"
-  #     "backlight"
-  #     "custom/divider"
-  #     "pulseaudio"
-  #     "pulseaudio/slider"
-  #     "custom/divider"
-  #     "battery"
-  #     "custom/divider"
-  #     "clock"
-  #     "custom/power"
-  #   ];
-  #   "hyprland/window" = { format = "{}"; };
-  #   "wlr/workspaces" = {
-  #     on-scroll-up = "hyprctl dispatch workspace e+1";
-  #     on-scroll-down = "hyprctl dispatch workspace e-1";
-  #     all-outputs = true;
-  #     on-click = "activate";
-  #   };
-  #   battery = {
-  #     interval = 60;
-  #     "states" = {
-  #       # "good" = 95;
-  #       warning = 30;
-  #       critical = 15;
-  #     };
-  #     format = "{capacity}% {icon}";
-  #     format-icons = {
-  #       default  = ["󰂎" "󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹"];
-  #       charging = ["󰢟 " "󰢜 " "󰂆 " "󰂇 " "󰂈 " "󰢝 " "󰂉 " "󰢞 " "󰂊 " "󰂋 " "󰂅 "];
-  #     };
-  #   };
   #   cpu = {
   #     interval = 10;
   #     format = "󰻠 {}%";
@@ -240,51 +192,6 @@
   #   #   restart-interval = 300;
   #   #   exec = "/home/roastbeefer/.cargo/bin/weather";
   #   # };
-  #   tray = {
-  #     icon-size = 13;
-  #     tooltip = false;
-  #   };
-  #   network = {
-  #       interface = "wlp2s0";
-  #       format = "{ifname}";
-  #       format-wifi = "{essid} ({signalStrength}%) ";
-  #       format-ethernet = "{ipaddr}/{cidr} 󰊗";
-  #       format-disconnected = ""; # Empty means no icon
-  #       tooltip-format = "{ifname} via {gwaddr} 󰊗";
-  #       tooltip-format-wifi = "{essid} ({signalStrength}%) ";
-  #       tooltip-format-ethernet = "{ifname} ";
-  #       tooltip-format-disconnected = "Disconnected";
-  #       max-length = 50;
-  #   };
-  #   clock = {
-  #     format = "  {:%I:%M %p    %m/%d} ";
-  #     tooltip-format = ''
-  #       <big>{:%Y %B}</big>
-  #       <tt><small>{calendar}</small></tt>'';
-  #   };
-  #   pulseaudio = {
-  #     format = "{icon}  {volume}%";
-  #     tooltip = false;
-  #     format-muted = " Muted";
-  #     on-click = "pamixer -t";
-  #     on-scroll-up = "pamixer -i 5";
-  #     on-scroll-down = "pamixer -d 5";
-  #     scroll-step = 5;
-  #     format-icons = {
-  #       headphone = "";
-  #       hands-free = "";
-  #       headset = "";
-  #       phone = "";
-  #       portable = "";
-  #       car = "";
-  #       default = [ "" "" "" ];
-  #     };
-  #   };
-  #   "pulseaudio/slider" = {
-  #     min = 0;
-  #     max = 100;
-  #     orientation = "horizontal";
-  #   };
   #   "pulseaudio#microphone" = {
   #     format = "{format_source}";
   #     tooltip = false;
@@ -297,11 +204,6 @@
   #   };
   #   "custom/divider" = {
   #     format = "|";
-  #     interval = "once";
-  #     tooltip = false;
-  #   };
-  #   "custom/endright" = {
-  #     format = "_";
   #     interval = "once";
   #     tooltip = false;
   #   };
