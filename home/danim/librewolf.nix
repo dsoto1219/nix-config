@@ -48,6 +48,8 @@
       "privacy.clearOnShutdown.history" = false;
       "privacy.clearOnShutdown.cookies" = false;
       "network.cookie.lifetimePolicy" = 0;
+      # Remove close button
+      "browser.tabs.inTitlebar" = 0;
     };
   };
 }
