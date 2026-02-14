@@ -28,6 +28,7 @@
     modules-right = [
       "tray"
       "pulseaudio"
+      "backlight"
       "battery"
       "clock" 
       "custom/notifications"
@@ -120,7 +121,11 @@
       on-click = "pavucontrol";
       ignored-sinks = [ "Easy Effects Sink" ];
     };
-
+    backlight = {
+      device = "intel_backlight";
+      format = "{percent}% {icon}";
+      format-icons = [ "" "" ];
+    };
     network = {
       interface = "wlp0s20f3";
       format = "{ifname}";
