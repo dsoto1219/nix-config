@@ -5,7 +5,10 @@
   ];
 
   programs.waybar.enable = true;
-  # stylix.targets.waybar.enableCenterBackColors = true;
+  stylix.targets.waybar = {
+    addCss = false;
+    # enableCenterBackColors = true;
+  };
 
   programs.waybar.style = ./style.css;
 
