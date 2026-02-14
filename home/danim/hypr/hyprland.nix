@@ -128,7 +128,7 @@
         # Please see https://wiki.hypr.land/Configuring/Tearing/ before you turn this on
         allow_tearing = false;
 
-        layout = "master";
+        layout = "dwindle";
       };
 
       # https://wiki.hypr.land/Configuring/Variables/#decoration
