@@ -28,7 +28,7 @@
     ];
     "hyprland/workspaces" = {
       format = "{windows}({icon})";
-      format-window-separator = " ";
+      # format-window-separator = "\n";
       window-rewrite-default = "";
       window-rewrite = {
         "title<.*youtube.*>" = ""; # Windows whose titles contain "youtube"
