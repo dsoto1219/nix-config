@@ -13,13 +13,14 @@
     modules-left = [ 
       "clock" 
       "hyprland/workspaces" 
+    ];
+    modules-center = [
       "custom/power" 
       "custom/file-manager" 
     ];
-    modules-center = [ "tray" ];
     modules-right = [
+      "tray"
       "pulseaudio"
-      "network"
       "battery"
       "custom/notifications"
     ];
