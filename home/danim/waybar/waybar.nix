@@ -7,6 +7,8 @@
   programs.waybar.enable = true;
   # stylix.targets.waybar.enableCenterBackColors = true;
 
+  programs.waybar.style = ./style.css;
+
   programs.waybar.settings = [{
     # layer = "top";
     position = "top";
