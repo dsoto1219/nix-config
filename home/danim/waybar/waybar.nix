@@ -6,6 +6,7 @@
 
   programs.waybar.enable = true;
   stylix.targets.waybar = {
+    enable = false;
     addCss = false;
     # enableCenterBackColors = true;
   };
