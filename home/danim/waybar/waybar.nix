@@ -31,10 +31,10 @@
       format-alt = "{:%A; %B %d, %Y (%R)}  ";
       tooltip-format = "<tt><small>{calendar}</small></tt>";
       calendar = {
-        mode = "year";
-        mode-mon-col  = 3;
-        weeks-pos     = "right";
-        on-scroll     = 1;
+        mode         = "year";
+        mode-mon-col = 3;
+        weeks-pos    = "right";
+        on-scroll    = 1;
         format = {
           months   = "<span color='#ffead3'><b>{}</b></span>";
           days     = "<span color='#ecc6d9'><b>{}</b></span>";
@@ -49,6 +49,7 @@
           on-scroll-up = "shift_up";
           on-scroll-down = "shift_down";
         };
+      };
     };
     "custom/power" = {
       format = " ⏻ ";
