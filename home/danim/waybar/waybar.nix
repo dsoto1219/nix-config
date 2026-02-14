@@ -1,16 +1,14 @@
 { pkgs, ... }: 
 {
+  imports = [
+    ./style.nix
+  ];
+
   home.packages = with pkgs; [
     pavucontrol # volume controller
   ];
 
   programs.waybar.enable = true;
-  stylix.targets.waybar = {
-    # enable = false;
-    addCss = true;
-  };
-
-  programs.waybar.style = ./style.css;
   
   programs.waybar.settings = [{
     # layer = "top";
