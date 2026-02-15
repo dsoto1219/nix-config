@@ -6,6 +6,7 @@
   };
 
   programs.browserpass.enable = true;
+  programs.gpg.enable = true;
   services.pass-secret-service.enable = true;
 
   programs.firefox = {
