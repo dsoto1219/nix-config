@@ -21,7 +21,6 @@ in {
     mission-center
     vesktop
     pamixer
-    cider-2
   ];
 
   programs.onedrive.enable = true;
