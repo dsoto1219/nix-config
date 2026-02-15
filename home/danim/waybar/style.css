@@ -25,6 +25,7 @@ tooltip label {
 	margin: 0 0 0 12px;
 	border-radius: 18px;
 	border-width: 1px;
+	color: white;
 }
 
 #workspaces button {
