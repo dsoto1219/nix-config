@@ -10,7 +10,7 @@
     # enable = true;
     # addCss = true;
     opacity.override = {
-      desktop = 0.25; # override background opacity
+      desktop = 0.75; # override background opacity
     };
   };
 
