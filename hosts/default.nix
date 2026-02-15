@@ -101,7 +101,9 @@
     EDITOR = "vim";
   };
 
-  # programs.firefox.enable = true;
+  # Enable browserpass here, as per docs
+  programs.browserpass.enable = true;
+  programs.firefox.enable = true; # configured in home-manager
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   system.stateVersion = "25.11";
