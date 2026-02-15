@@ -72,6 +72,6 @@ tooltip label {
 	margin: 0 0 0 4px;
 }
 
-.not-power * > {
+.not-power > * {
 	margin: 0 4px;
 }
