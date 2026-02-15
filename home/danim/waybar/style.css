@@ -7,6 +7,11 @@
 	margin: 0;
 }
 
+button.hover {
+	border-radius: 8px;
+	background-size: 400% 400%;
+}
+
 window#waybar {
 	/* background-color: transparent; */
 }
