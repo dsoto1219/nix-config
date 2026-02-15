@@ -127,11 +127,13 @@
       scroll-step = 1;
       on-click = "pavucontrol";
       ignored-sinks = [ "Easy Effects Sink" ];
+      tooltip-format = "Volume";
     };
     backlight = {
       device = "intel_backlight";
       format = "{icon} {percent}%";
       format-icons = [ "󰃚 " "󰃛 " "󰃜 " "󰃝 " "󰃞 " "󰃟 " "󰃠 " ];
+      tooltip-format = "Brightness";
     };
     network = {
       interface = "wlp0s20f3";
@@ -179,6 +181,7 @@
       on-click = "swaync-client -t -sw";
       on-click-right = "swaync-client -d -sw";
       escape = true;
+      tooltip-format = "Notifications";
     };
   #   cpu = {
   #     interval = 10;
