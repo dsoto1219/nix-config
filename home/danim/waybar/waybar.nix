@@ -104,7 +104,7 @@
     };
     "custom/reboot" = {
         format = "󰜉";
-        on-click = "reboot";
+        on-click = "hyprshutdown --post-cmd 'reboot'";
         tooltip-format = "Reboot";
     };
     "custom/power" = {
