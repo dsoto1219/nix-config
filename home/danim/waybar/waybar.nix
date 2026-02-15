@@ -83,7 +83,7 @@
       drawer = {
         transition-duration = 500;
         children-class = "not-power";
-        transition-left-to-right = false;
+        # transition-left-to-right = false;
       };
       modules = [
         "custom/power" # First element is the "group leader" and won't ever be hidden
