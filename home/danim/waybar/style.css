@@ -63,3 +63,7 @@ tooltip label {
 	border-radius: 50px;
 	border-width: 1px;
 }
+
+#group-power {
+	padding: 0 0 0 8px;
+}
