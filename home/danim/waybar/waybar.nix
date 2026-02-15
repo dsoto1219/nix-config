@@ -100,17 +100,17 @@
     "custom/lock" = {
         format = "󰍁";
         on-click = "hyprlock";
-        tooltip = "Lock";
+        tooltip-format = "Lock";
     };
     "custom/reboot" = {
         format = "󰜉";
         on-click = "reboot";
-        tooltip = "Reboot";
+        tooltip-format = "Reboot";
     };
     "custom/power" = {
         format = "";
         on-click = "hyprshutdown --post-cmd 'poweroff'";
-        tooltip = "Power Off";
+        tooltip-format = "Power Off";
     };
     "custom/search" = {
       format = "    ";
