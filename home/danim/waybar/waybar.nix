@@ -9,6 +9,7 @@
   stylix.targets.waybar = {
     # enable = true;
     # addCss = true;
+    opacity.override = 0.25; # override background opacity
   };
 
   programs.waybar.style = lib.mkAfter (builtins.readFile ./style.css);
