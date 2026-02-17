@@ -38,7 +38,7 @@
     }
 
     #workspaces button {
-      padding: 0px 6px;
+      padding: 6px 12px;
       margin: 0px 3px;
       border-radius: 50px;
       transition: all 0.3s ease-in-out;
