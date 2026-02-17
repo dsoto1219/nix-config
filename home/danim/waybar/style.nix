@@ -52,7 +52,7 @@
       color: #${base00};
     }
 
-    #workspaces button.hover {
+    #workspaces button:hover {
       background-color: #${base0B};
       color: #${base00};
       border-radius: 8px;
