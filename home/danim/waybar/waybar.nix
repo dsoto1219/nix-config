@@ -16,7 +16,7 @@
     # passtrough = false;
     # gtk-layer-shell = true;
     # height = 0;
-    # margin-top = 15;
+    margin-top = 15;
 
     modules-left = [ 
       "hyprland/workspaces" 
