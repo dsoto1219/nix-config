@@ -64,11 +64,11 @@
 
     #tray {
       padding: 5px 6px;
-      margin: 0 0 0 6px;
+      margin: 15px 6px;
       border-radius: 36px;
       border-width: 1px;
       background: #${base0D};
-      min-width: 50px;
+      min-width: 32px;
     }
 
     .modules-right {
