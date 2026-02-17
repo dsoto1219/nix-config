@@ -120,9 +120,24 @@
     #network:hover,
     #clock:hover,
     #custom-notifications:hover {
-      background: #${base05};
       color: #${base01};
       transition: all 0.3s ease-in-out;
+    }
+
+    #pulseaudio {
+      background-color: #${base0A};
+    }
+
+    #backlight {
+      background-color: #${base0B};
+    }
+
+    #clock {
+      background-color: #${base0E};
+    }
+
+    #battery {
+      background-color: #${base0F};
     }
 
     .modules-center {
