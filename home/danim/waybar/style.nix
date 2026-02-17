@@ -103,7 +103,7 @@
     }
 
     #backlight {
-      background-color: #${base0B};
+      color: #${base0B};
     }
 
     #clock {
