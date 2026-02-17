@@ -63,8 +63,8 @@
     }
 
     #tray {
-      padding: 5px 3px;
-      margin: 0 0 0 12px;
+      /* padding: 5px 3px; */
+      /* margin: 0 0 0 12px; */
       border-radius: 18px;
       border-width: 1px;
       background: #${base0D};
