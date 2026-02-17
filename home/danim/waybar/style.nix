@@ -103,7 +103,7 @@
     }
 
     .modules-center {
-      padding: 5px 3px;
+      padding: 5px 6px;
       margin: 12px;
       border-radius: 36px;
       border-width: 1px;
@@ -112,7 +112,7 @@
 
     #group-power {
       padding: 0 15px;
-      margin: 0 6px 0 0;
+      margin: 0 3px;
       border-radius: 50px;
     }
 
@@ -130,12 +130,12 @@
 
     #custom-search {
       padding: 0 15px;
-      margin: 0 6px;
+      margin: 0 3px;
     }
 
     #custom-file-manager {
       padding: 0 15px;
-      margin: 0 6px;
+      margin: 0 3px;
     }
   '');
 }
