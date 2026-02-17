@@ -72,7 +72,7 @@
     }
 
     .modules-right {
-      padding: 5px 3px;
+      padding: 5px 6px;
       margin: 12px;
       border-radius: 36px;
       border-width: 1px;
@@ -85,7 +85,7 @@
     #network,
     #clock,
     #custom-notifications {
-      margin: 0 6px;
+      margin: 0 3px;
       padding: 10px 15px;
       border-radius: 50px;
       border-width: 1px;
