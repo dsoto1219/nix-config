@@ -119,10 +119,12 @@
     }
 
     #custom-search {
+      padding: 0 15px;
       margin: 0 6px;
     }
 
     #custom-file-manager {
+      padding: 0 15px;
       margin: 0 6px;
     }
   '');
