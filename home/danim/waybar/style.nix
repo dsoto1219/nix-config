@@ -63,9 +63,9 @@
     }
 
     #tray {
-      /* padding: 5px 3px; */
-      /* margin: 0 0 0 12px; */
-      border-radius: 18px;
+      padding: 5px 6px;
+      margin: 0 0 0 6px;
+      border-radius: 36px;
       border-width: 1px;
       background: #${base0D};
       min-width: 50px;
