@@ -121,22 +121,23 @@
     #clock:hover,
     #custom-notifications:hover {
       color: #${base01};
+      background-color: #${base05};
       transition: all 0.3s ease-in-out;
     }
 
-    #pulseaudio {
+    #pulseaudio:hover {
       background-color: #${base0A};
     }
 
-    #backlight {
+    #backlight:hover {
       background-color: #${base0B};
     }
 
-    #clock {
+    #clock:hover {
       background-color: #${base0E};
     }
 
-    #battery {
+    #battery:hover {
       background-color: #${base0F};
     }
 
