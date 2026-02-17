@@ -34,7 +34,7 @@
       margin: 0 0 0 12px;
       border-radius: 18px;
       border-width: 1px;
-      background: ${base00};
+      background: #${base00};
     }
 
     #workspaces button {
@@ -67,14 +67,14 @@
       margin: 0 0 0 5px;
       border-radius: 18px;
       border-width: 1px;
-      background: ${base00};
+      background: #${base00};
     }
 
     .modules-center {
       padding: 5px 3px;
       border-radius: 18px;
       border-width: 1px;
-      background: ${base00};
+      background: #${base00};
     }
 
     #battery,
@@ -95,8 +95,8 @@
     #network:hover,
     #clock:hover,
     #custom-notifications:hover {
-      background: ${base05};
-      color: ${base01};
+      background: #${base05};
+      color: #${base01};
       transition: all 0.3s ease-in-out;
     }
 
