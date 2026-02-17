@@ -46,6 +46,7 @@
         "code" = "󰨞";
         "class<zotero>" = "󰮩"; 
         "class<kitty>" = ""; 
+        "class<obsidian>" = "󰧑"; 
       };
     };
     clock = {
