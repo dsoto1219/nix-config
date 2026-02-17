@@ -25,13 +25,13 @@ tooltip label {
 	margin: 0 0 0 12px;
 	border-radius: 18px;
 	border-width: 1px;
+	/* background: @base00; */
 }
 
 #workspaces button {
 	padding: 0px 6px;
 	margin: 0px 3px;
 	border-radius: 50px;
-	/* color: transparent; */
 	transition: all 0.3s ease-in-out;
 }
 
@@ -53,25 +53,51 @@ tooltip label {
 	transition: all 0.3s ease-in-out;
 }
 
+.modules-right {
+	padding: 5px 3px;
+	margin: 0 0 0 5px;
+	border-radius: 18px;
+	border-width: 1px;
+	/* background: @base00; */
+}
+
 #battery,
+#backlight,
 #pulseaudio,
 #network,
 #clock,
 #custom-notifications {
-	padding: 0 15px 0 15px;
-	margin: 0 0 0 12px;
+	margin: 0 6px 0 0;
+	padding: 0 15px;
 	border-radius: 50px;
 	border-width: 1px;
 }
 
+#battery:hover,
+#backlight:hover,
+#pulseaudio:hover,
+#network:hover,
+#clock:hover,
+#custom-notifications:hover {
+  /* background: @base05; */
+  /* color: @base01; */
+  transition: all 0.3s ease-in-out;
+}
+
 #group-power {
+	padding: 0 15px;
 	margin: 0 6px 0 0;
+	border-radius: 50px;
+}
+
+#custom-power {
+	margin-right: 6px;
 }
 
 .not-power {
-	margin: 0 0 0 4px;
+	margin-left: 6px;
 }
 
 .not-power > * {
-	margin: 0 4px;
+	margin: 0 6px;
 }
