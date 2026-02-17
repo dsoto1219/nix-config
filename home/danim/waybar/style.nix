@@ -95,6 +95,7 @@
     }
 
     #pulseaudio {
+      min-width: 20px;
       color: #${base0A};
     }
 
