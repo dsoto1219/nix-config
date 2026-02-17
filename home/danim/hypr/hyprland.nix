@@ -64,12 +64,12 @@
       # Autostart necessary processes (like notifications daemons, status bars, etc.)
       # Or execute your favorite apps at launch like this:
       exec-once = [
+        "systemctl --user start hyprpolkitagent"
         "hyprlock || hyprctl dispatch exit"
         # "$terminal"
         "waybar"
         "swaync"
         "nm-applet &"
-        "systemctl --user start hyprpolkitagent"
         "hypridle"
         "udiskie"
         # https://github.com/hyprwm/Hyprland/issues/2614#issuecomment-2395597405
