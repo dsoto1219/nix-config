@@ -6,7 +6,7 @@
     # opacity.override.desktop = 0.80; # override background opacity
   };
 
-  programs.waybar.style = with config.stylix.base16Scheme; (lib.mkAfter ''
+  programs.waybar.style = with config.lib.stylix.colors; (lib.mkAfter ''
     * {
       border: none;
       /* border-radius: 0px; */
