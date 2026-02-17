@@ -47,7 +47,7 @@
           ublock-origin
           zotero-connector
           browserpass
-          tridactyl-native
+          tridactyl
         ];
       };
       # Enable WebGL, cookies and history
