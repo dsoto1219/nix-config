@@ -70,13 +70,6 @@
       background: #${base00};
     }
 
-    .modules-center {
-      padding: 5px 3px;
-      border-radius: 18px;
-      border-width: 1px;
-      background: #${base00};
-    }
-
     #battery,
     #backlight,
     #pulseaudio,
@@ -98,6 +91,13 @@
       background: #${base05};
       color: #${base01};
       transition: all 0.3s ease-in-out;
+    }
+
+    .modules-center {
+      padding: 5px 3px;
+      border-radius: 18px;
+      border-width: 1px;
+      background: #${base00};
     }
 
     #group-power {
