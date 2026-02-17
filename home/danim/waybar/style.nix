@@ -79,7 +79,7 @@
       margin: 8px;
       border-radius: 36px;
       border-width: 1px;
-      background: #${base00};
+      background: #${base01};
     }
 
     #battery,
@@ -142,7 +142,7 @@
       margin: 8px;
       border-radius: 36px;
       border-width: 1px;
-      background: #${base00};
+      background: #${base01};
     }
 
     #group-power {
