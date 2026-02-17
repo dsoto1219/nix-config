@@ -103,7 +103,7 @@
     }
 
     .modules-center {
-      padding: 5px 6px;
+      padding: 5px 10px;
       margin: 8px;
       border-radius: 36px;
       border-width: 1px;
