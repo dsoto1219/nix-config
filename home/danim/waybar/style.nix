@@ -86,7 +86,7 @@
     #clock,
     #custom-notifications {
       margin: 0 6px 0 0;
-      padding: 0 15px;
+      padding: 3px 15px;
       border-radius: 50px;
       border-width: 1px;
     }
