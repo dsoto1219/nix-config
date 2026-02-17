@@ -128,7 +128,7 @@
     }
 
     #backlight:hover {
-      background-color: #${base0B};
+      background-color: #${base0C};
     }
 
     #clock:hover {
