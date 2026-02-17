@@ -107,7 +107,7 @@
     }
 
     #custom-power {
-      margin-right: 6px;
+      margin: 0 6px 0 12px;
     }
 
     .not-power {
