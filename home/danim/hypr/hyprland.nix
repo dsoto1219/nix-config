@@ -13,7 +13,6 @@
 
   home.packages = with pkgs; [
     unstable.hyprshutdown
-    rofi # application launcher
     mpd
     hyprpicker
     brightnessctl
@@ -23,6 +22,7 @@
   ];
 
   programs.kitty.enable = true;
+  programs.rofi.enable = true; # application launcher
   services.swaync.enable = true; # notification manager
   programs.hyprshot.enable = true; # screenshot manager
 
