@@ -63,7 +63,7 @@
     }
 
     #tray {
-      padding: 5px 6px;
+      padding: 5px 12px;
       margin: 15px 6px;
       border-radius: 36px;
       border-width: 1px;
