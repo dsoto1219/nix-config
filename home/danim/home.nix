@@ -12,6 +12,8 @@ in {
     ./firefox.nix
   ];
 
+  xdg.userDirs.createDirectories = true;
+
   # Add stuff for your user as you see fit:
   home.packages = with pkgs; [ 
     onedrivegui
