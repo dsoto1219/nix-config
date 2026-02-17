@@ -107,12 +107,12 @@
         tooltip-format = "Power Off";
     };
     "custom/search" = {
-      format = "";
+      format = " ";
       on-click = "rofi -show drun";
       tooltip-format = "Search Apps";
     };
     "custom/file-manager" = {
-      format = "";
+      format = " ";
       "on-click" = "dolphin";
       "tooltip" = true; 
       "tooltip-format" = "File Manager"; 
@@ -180,7 +180,7 @@
 
     "custom/notifications" = {
       tooltip = true;
-      format = " {icon}";
+      format = " {icon} ";
       format-icons = {
         notification = "󱅫";
         none = "󰂜";
