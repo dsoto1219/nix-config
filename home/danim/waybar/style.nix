@@ -62,6 +62,14 @@
       transition: all 0.3s ease-in-out;
     }
 
+    #tray {
+      padding: 5px 3px;
+      margin: 0 0 0 12px;
+      border-radius: 18px;
+      border-width: 1px;
+      background: #${base0D};
+    }
+
     .modules-right {
       padding: 5px 3px;
       margin: 0 0 0 5px;
