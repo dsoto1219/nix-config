@@ -68,6 +68,7 @@
       border-radius: 18px;
       border-width: 1px;
       background: #${base0D};
+      min-width: 50px;
     }
 
     .modules-right {
