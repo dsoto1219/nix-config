@@ -31,7 +31,7 @@
 
     #workspaces {
       padding: 5px 3px;
-      margin: 6px;
+      margin: 8px;
       border-radius: 36px;
       border-width: 1px;
       background: #${base00};
@@ -73,7 +73,7 @@
 
     .modules-right {
       padding: 5px 6px;
-      margin: 12px;
+      margin: 8px;
       border-radius: 36px;
       border-width: 1px;
       background: #${base00};
@@ -104,7 +104,7 @@
 
     .modules-center {
       padding: 5px 6px;
-      margin: 12px;
+      margin: 8px;
       border-radius: 36px;
       border-width: 1px;
       background: #${base00};
