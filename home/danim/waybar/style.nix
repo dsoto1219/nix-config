@@ -45,7 +45,6 @@
       transition: all 0.3s ease-in-out;
     }
 
-    /* Let stylix handle this
     #workspaces button.active {
       min-width: 50px;
       transition: all 0.3s ease-in-out;
@@ -54,13 +53,12 @@
     }
 
     #workspaces button:hover {
-      background-color: #${base0B};
+      background-color: #${base0C}; 
       color: #${base00};
       border-radius: 8px;
       min-width: 50px;
       background-size: 400% 400%;
     }
-    */
 
     #workspaces button.urgent {
       border-radius: 8px;
