@@ -99,6 +99,10 @@
       color: #${base0A};
     }
 
+    #backlight {
+      background-color: #${base0B};
+    }
+
     #clock {
       color: #${base0E};
     }
