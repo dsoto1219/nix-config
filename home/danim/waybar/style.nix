@@ -111,17 +111,9 @@
     }
 
     #group-power {
-      padding: 0 15px;
+      padding: 0 6px;
       margin: 0 3px;
       border-radius: 50px;
-    }
-
-    #custom-power {
-      margin: 0 6px 0 12px;
-    }
-
-    .not-power {
-      margin-left: 6px;
     }
 
     .not-power > * {
@@ -129,12 +121,12 @@
     }
 
     #custom-search {
-      padding: 0 15px;
+      padding: 0 6px;
       margin: 0 3px;
     }
 
     #custom-file-manager {
-      padding: 0 15px;
+      padding: 0 6px;
       margin: 0 3px;
     }
   '');
