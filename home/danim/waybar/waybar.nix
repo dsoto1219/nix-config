@@ -45,6 +45,7 @@
         "foot" = ""; # Windows that contain "foot" in either class or title. For optimization reasons, it will only match against a title if at least one other window explicitly matches against a title.
         "code" = "󰨞";
         "class<zotero>" = "󰮩"; 
+        "class<kitty>" = ""; 
       };
     };
     clock = {
