@@ -32,7 +32,7 @@
     #workspaces {
       padding: 5px 3px;
       margin: 12px;
-      border-radius: 18px;
+      border-radius: 36px;
       border-width: 1px;
       background: #${base00};
     }
@@ -74,7 +74,7 @@
     .modules-right {
       padding: 5px 3px;
       margin: 12px;
-      border-radius: 18px;
+      border-radius: 36px;
       border-width: 1px;
       background: #${base00};
     }
@@ -86,7 +86,7 @@
     #clock,
     #custom-notifications {
       margin: 0 6px;
-      padding: 6px 15px;
+      padding: 10px 15px;
       border-radius: 50px;
       border-width: 1px;
     }
@@ -105,7 +105,7 @@
     .modules-center {
       padding: 5px 3px;
       margin: 12px;
-      border-radius: 18px;
+      border-radius: 36px;
       border-width: 1px;
       background: #${base00};
     }
