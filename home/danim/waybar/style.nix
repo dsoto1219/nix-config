@@ -21,7 +21,8 @@
     }
 
     tooltip {
-      border-width: 1px;
+      background: #${base00};
+      border: 1px solid #${base03};
       border-radius: 12px;
     }
 
@@ -34,7 +35,7 @@
       margin: 8px;
       border-radius: 36px;
       border-width: 1px;
-      background: #${base00};
+      background: #${base01};
     }
 
     #workspaces button {
@@ -47,9 +48,13 @@
     #workspaces button.active {
       min-width: 50px;
       transition: all 0.3s ease-in-out;
+      background-color: #${base0C};
+      color: #${base00};
     }
 
     #workspaces button.hover {
+      background-color: #${base0B};
+      color: #${base00};
       border-radius: 8px;
       min-width: 50px;
       background-size: 400% 400%;
@@ -89,6 +94,18 @@
       padding: 10px 15px;
       border-radius: 50px;
       border-width: 1px;
+    }
+
+    #pulseaudio {
+      color: #${base0A};
+    }
+
+    #clock {
+      color: #${base0E};
+    }
+
+    #battery {
+      color: #${base0F};
     }
 
     #battery:hover,
