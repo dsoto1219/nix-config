@@ -100,11 +100,11 @@
       background: #${base00};
     }
 
-    custom-search {
+    #custom-search {
       margin: 0 6px;
     }
 
-    custom-file-manager {
+    #custom-file-manager {
       margin: 0 6px;
     }
 
