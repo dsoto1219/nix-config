@@ -6,7 +6,7 @@
     # opacity.override.desktop = 0.80; # override background opacity
   };
 
-  programs.waybar.style = lib.mkAfter ''
+  programs.waybar.style = with config.stylix.base16Scheme; lib.mkAfter ''
     * {
       border: none;
       /* border-radius: 0px; */
@@ -34,7 +34,7 @@
       margin: 0 0 0 12px;
       border-radius: 18px;
       border-width: 1px;
-      /* background: @base00; */
+      background: ${base00};
     }
 
     #workspaces button {
@@ -67,7 +67,7 @@
       margin: 0 0 0 5px;
       border-radius: 18px;
       border-width: 1px;
-      /* background: @base00; */
+      background: ${base00};
     }
 
     #battery,
@@ -88,8 +88,8 @@
     #network:hover,
     #clock:hover,
     #custom-notifications:hover {
-      /* background: @base05; */
-      /* color: @base01; */
+      background: ${base05};
+      color: ${base01};
       transition: all 0.3s ease-in-out;
     }
 
