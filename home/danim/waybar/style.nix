@@ -31,14 +31,14 @@
 
     #workspaces {
       padding: 5px 3px;
-      margin: 12px;
+      margin: 6px;
       border-radius: 36px;
       border-width: 1px;
       background: #${base00};
     }
 
     #workspaces button {
-      padding: 6px 12px;
+      padding: 3px 12px;
       margin: 0px 3px;
       border-radius: 50px;
       transition: all 0.3s ease-in-out;
