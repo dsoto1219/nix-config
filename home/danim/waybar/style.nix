@@ -100,6 +100,14 @@
       background: #${base00};
     }
 
+    custom-search {
+      margin: 0 6px;
+    }
+
+    custom-file-manager {
+      margin: 0 6px;
+    }
+
     #group-power {
       padding: 0 15px;
       margin: 0 6px 0 0;
