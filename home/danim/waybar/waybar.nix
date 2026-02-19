@@ -129,7 +129,7 @@
     backlight = {
       device = "intel_backlight";
       format = "{icon} {percent}%";
-      format-icons = [ "󰃚 " "󰃛 " "󰃜 " "󰃝 " "󰃞 " "󰃟 " "󰃠 " ];
+      format-icons = [ "󰃚" "󰃛" "󰃜" "󰃝" "󰃞" "󰃟" "󰃠" ];
       tooltip-format = "Brightness";
     };
     network = {
