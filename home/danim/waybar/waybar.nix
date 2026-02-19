@@ -77,7 +77,7 @@
     };
     "custom/power" = {
       format = "⏻ ";
-      tooltip = false;
+      tooltip-format = "Power Options";
       menu = "on-click";
       menu-file = ./resources/power_menu.xml; # Menu file in resources folder
       menu-actions = {
