@@ -146,21 +146,8 @@
       background: #${base01};
     }
 
-    #group-power {
-      padding: 0 6px;
-      margin: 0 3px;
-      border-radius: 50px;
-    }
-
-    .not-power > * {
-      margin: 0 6px;
-    }
-
-    #custom-search {
-      padding: 0 6px;
-      margin: 0 3px;
-    }
-
+    #custom-power,
+    #custom-search,
     #custom-file-manager {
       padding: 0 6px;
       margin: 0 3px;
