@@ -88,12 +88,12 @@
       };
     };
     "custom/search" = {
-      format = "";
+      format = " ";
       on-click = "rofi -show drun";
       tooltip-format = "Search Apps";
     };
     "custom/file-manager" = {
-      format = "";
+      format = " ";
       "on-click" = "dolphin";
       "tooltip" = true; 
       "tooltip-format" = "File Manager"; 
