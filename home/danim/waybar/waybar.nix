@@ -105,7 +105,7 @@
         tooltip-format = "Reboot";
     };
     "custom/power" = {
-        format = " ";
+        format = "";
         on-click = "hyprshutdown --post-cmd 'poweroff'";
         tooltip-format = "Power Off";
     };
