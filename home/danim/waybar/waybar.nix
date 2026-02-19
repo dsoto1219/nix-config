@@ -23,7 +23,7 @@
       "tray"
     ];
     modules-center = [
-      "group/group-power" 
+      "custom/power" 
       "custom/search"
       "custom/file-manager" 
     ];
@@ -75,39 +75,17 @@
         };
       };
     };
-    "group/group-power" = {
-      orientation = "inherit";
-      drawer = {
-        transition-duration = 500;
-        children-class = "not-power";
-        # transition-left-to-right = false;
-      };
-      modules = [
-        "custom/power" # First element is the "group leader" and won't ever be hidden
-        "custom/quit"
-        "custom/lock"
-        "custom/reboot"
-      ];
-    };
-    "custom/quit" = {
-        format = "󰗼";
-        on-click = "hyprctl dispatch exit";
-        tooltip-format = "Quit Hyprland";
-    };
-    "custom/lock" = {
-        format = "󰍁";
-        on-click = "hyprlock";
-        tooltip-format = "Lock";
-    };
-    "custom/reboot" = {
-        format = "󰜉";
-        on-click = "hyprshutdown --post-cmd 'reboot'";
-        tooltip-format = "Reboot";
-    };
     "custom/power" = {
-        format = "";
-        on-click = "hyprshutdown --post-cmd 'poweroff'";
-        tooltip-format = "Power Off";
+      format = "⏻ ";
+      tooltip = false;
+      menu = "on-click";
+      menu-file = ./resources/power_menu.xml; # Menu file in resources folder
+      menu-actions = {
+        shutdown = "hyprshutdown --post-cmd 'poweroff'";
+        reboot = "hyprshutdown --post-cmd 'reboot'";
+        suspend = "systemctl suspend";
+        hibernate = "systemctl hibernate";
+      };
     };
     "custom/search" = {
       format = "";
