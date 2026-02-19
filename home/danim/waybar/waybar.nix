@@ -112,14 +112,14 @@
       format-bluetooth = "{icon} {volume}%";
       format-muted = "󰝟";
       format-icons = {
-          headphone = " ";
-          # hands-free = "";
-          # headset = "";
-          phone = " ";
-          phone-muted = " ";
-          portable = " ";
-          car = " ";
-          default = [ "" "" " " ];
+        headphone = " ";
+        # hands-free = "";
+        # headset = "";
+        phone = " ";
+        phone-muted = " ";
+        portable = " ";
+        car = " ";
+        default = [ "" "" " " ];
       };
       scroll-step = 1;
       on-click = "pavucontrol";
