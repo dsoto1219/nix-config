@@ -12,7 +12,7 @@
       margin: 8px;
       border-radius: 36px;
       border: 1px solid #${base01};
-      /* background: #${base01}; /*
+      /* background: #${base01}; */
     }
 
     #tray {
