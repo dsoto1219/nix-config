@@ -58,16 +58,15 @@
       color: #${base0E};
     }
 
-    /* Battery state-based settings */
-    .good {
+    #battery.good {
       color: #${base0C};
     }
 
-    .warning {
+    #battery.warning {
       color: #${base0A};
     }
 
-    .critical {
+    #battery.critical {
       color: #${base0F};
     }
 
