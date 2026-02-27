@@ -79,8 +79,7 @@
     #network,
     #clock,
     #custom-notifications {
-        margin: 0 3px;
-        padding: 10px 15px;
+        margin: 0 6px;
         border-radius: 50px;
         border-width: 1px;
     }
