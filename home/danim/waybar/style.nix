@@ -11,7 +11,7 @@
       /* padding: 5px 3px; */
       margin: 8px;
       border-radius: 36px;
-      border-width: 1px solid #${base01};
+      border: 1px solid #${base01};
       /* background: #${base01}; /*
     }
 
