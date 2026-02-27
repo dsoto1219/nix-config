@@ -10,7 +10,7 @@
     #workspaces {
       /* padding: 5px 3px; */
       margin: 8px;
-      border-radius: 36px;
+      border-radius: 12px;
       border: 1px solid #${base01};
       /* background: #${base01}; */
     }
