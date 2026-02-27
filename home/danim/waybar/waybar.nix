@@ -55,7 +55,7 @@
       format-alt = "{:%A; %B %d, %Y (%R)}";
       tooltip-format = "<tt><small>{calendar}</small></tt>";
       calendar = {
-        mode         = "year";
+        mode         = "month";
         mode-mon-col = 3;
         weeks-pos    = "right";
         on-scroll    = 1;
