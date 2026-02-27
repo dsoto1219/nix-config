@@ -148,8 +148,6 @@
     battery = {
       interval = 60;
       states = {
-        good = 80;
-        ok = 65;
         warning = 40;
         critical = 30;
       };

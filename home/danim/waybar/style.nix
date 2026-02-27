@@ -58,16 +58,16 @@
         color: @base0A;
     }
 
-    #battery.good {
-      color: @base0C;
-    }
-
     #battery.warning {
       color: @base0A;
     }
 
     #battery.critical {
       color: @base0F;
+    }
+
+    #battery.charging {
+      color: @base0C;
     }
 
     #clock {
