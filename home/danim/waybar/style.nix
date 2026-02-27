@@ -7,62 +7,12 @@
   };
 
   programs.waybar.style = with config.lib.stylix.colors; (lib.mkAfter ''
-    * {
-      border: none;
-      /* border-radius: 0px; */
-
-      /* min-height: 0; */
-      padding: 0;
-      margin: 0;
-    }
-
-    window#waybar {
-      background-color: transparent;
-    }
-
-    tooltip {
-      background: #${base00};
-      border: 1px solid #${base03};
-      border-radius: 12px;
-    }
-
-    tooltip label {
-      padding: 6px;
-    }
-
     #workspaces {
-      padding: 5px 3px;
+      /* padding: 5px 3px; */
       margin: 8px;
       border-radius: 36px;
-      border-width: 1px;
-      background: #${base01};
-    }
-
-    #workspaces button {
-      padding: 3px 12px;
-      margin: 0px 3px;
-      border-radius: 50px;
-      transition: all 0.3s ease-in-out;
-    }
-
-    #workspaces button.active {
-      min-width: 50px;
-      transition: all 0.3s ease-in-out;
-      background-color: #${base0C};
-      color: #${base00};
-    }
-
-    #workspaces button:hover {
-      background-color: #${base0C}; 
-      color: #${base00};
-      min-width: 50px;
-      background-size: 400% 400%;
-    }
-
-    #workspaces button.urgent {
-      min-width: 50px;
-      background-size: 400% 400%;
-      transition: all 0.3s ease-in-out;
+      border-width: 1px solid #${base01};
+      /* background: #${base01}; /*
     }
 
     #tray {
