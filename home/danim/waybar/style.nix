@@ -33,6 +33,21 @@
         min-width: 32px;
     }
 
+    .modules-center {
+        padding: 5px 10px;
+        margin: 8px;
+        border-radius: 36px;
+        border-width: 1px;
+        background: @base01;
+    }
+
+    #custom-power,
+    #custom-search,
+    #custom-file-manager {
+        padding: 0 6px;
+        margin: 0 3px;
+    }
+
     .modules-right {
         padding: 5px 6px;
         margin: 8px;
@@ -115,21 +130,6 @@
 
     #battery.charging:hover {
       background-color: @base0C;
-    }
-
-    .modules-center {
-        padding: 5px 10px;
-        margin: 8px;
-        border-radius: 36px;
-        border-width: 1px;
-        background: @base01;
-    }
-
-    #custom-power,
-    #custom-search,
-    #custom-file-manager {
-        padding: 0 6px;
-        margin: 0 3px;
     }
   '';
 }
