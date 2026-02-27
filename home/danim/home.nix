@@ -24,6 +24,7 @@ in {
     mission-center
     vesktop
     pamixer
+    qimgv
   ];
 
   programs.onedrive.enable = true;
