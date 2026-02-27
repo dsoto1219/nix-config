@@ -93,8 +93,16 @@
         background-color: @base0E;
     }
 
-    #battery:hover {
-        background-color: @base0F;
+    #battery.warning:hover {
+      background-color: @base0A;
+    }
+
+    #battery.critical:hover {
+      background-color: @base0F;
+    }
+
+    #battery.charging:hover {
+      background-color: @base0C;
     }
 
     .modules-center {
