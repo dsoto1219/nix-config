@@ -54,10 +54,6 @@
       color: #${base0A};
     }
 
-    #backlight {
-      color: #${base0C};
-    }
-
     #clock {
       color: #${base0E};
     }
@@ -88,10 +84,6 @@
 
     #pulseaudio:hover {
       background-color: #${base0A};
-    }
-
-    #backlight:hover {
-      background-color: #${base0C};
     }
 
     #clock:hover {
