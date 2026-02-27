@@ -89,13 +89,6 @@
         background-color: #${base0A};
     }
 
-<<<<<<< HEAD
-=======
-    #backlight:hover {
-        background-color: #${base0C};
-    }
-
->>>>>>> 0f6542d (Fix css indentation)
     #clock:hover {
         background-color: #${base0E};
     }
