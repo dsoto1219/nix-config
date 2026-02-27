@@ -55,7 +55,7 @@
 
     #pulseaudio {
         min-width: 30px;
-        color: @base0A;
+        color: @base0B;
     }
 
     #backlight {
@@ -90,7 +90,7 @@
     }
 
     #pulseaudio:hover {
-        background-color: @base0A;
+        background-color: @base0B;
     }
 
     #backlight:hover
