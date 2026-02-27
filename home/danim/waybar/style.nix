@@ -97,7 +97,7 @@
         background-color: @base0B;
     }
 
-    #backlight:hover
+    #backlight:hover {
         background-color: @base06;
     }
 
