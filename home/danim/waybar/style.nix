@@ -17,6 +17,7 @@
 
     #workspaces button:hover {
       min-width: 50px;
+      transition: all 0.3s ease-in-out;
     }
 
     #tray {
