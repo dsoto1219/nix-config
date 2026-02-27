@@ -199,6 +199,11 @@
       workspace = [
         "w[tv1], gapsout:0, gapsin:0"
         "f[1], gapsout:0, gapsin:0"
+
+        # Persistent workspaces
+        "1, monitor:eDP-1, persistent:true"
+        "2, monitor:eDP-1, persistent:true"
+        "3, monitor:eDP-1, persistent:true"
       ];
 
       # See https://wiki.hypr.land/Configuring/Dwindle-Layout/ for more
