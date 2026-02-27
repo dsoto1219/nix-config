@@ -110,6 +110,7 @@
 
     #custom-notifications {
         color: @base04;
+        margin-right: 8px;
     }
 
     #battery:hover,
