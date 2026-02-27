@@ -20,6 +20,10 @@
       transition: all 0.3s ease-in-out;
     }
 
+    #workspaces button:not(:hover) {
+      transition: all 0.3s ease-in-out;
+    }
+
     #tray {
       padding: 5px 12px;
       margin: 15px 6px;
