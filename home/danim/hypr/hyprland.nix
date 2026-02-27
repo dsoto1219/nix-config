@@ -196,27 +196,10 @@
       # Ref https://wiki.hypr.land/Configuring/Workspace-Rules/
       # "Smart gaps" / "No gaps when only"
       # uncomment all if you wish to use that.
-      # workspace = [
-      #   "w[tv1], gapsout:0, gapsin:0"
-      #   "f[1], gapsout:0, gapsin:0"
-      # ];
-      # windowrule {
-      #     name = no-gaps-wtv1
-      #     match:float = false
-      #     match:workspace = w[tv1]
-      #
-      #     border_size = 0
-      #     rounding = 0
-      # }
-      #
-      # windowrule {
-      #     name = no-gaps-f1
-      #     match:float = false
-      #     match:workspace = f[1]
-      #
-      #     border_size = 0
-      #     rounding = 0
-      # }
+      workspace = [
+        "w[tv1], gapsout:0, gapsin:0"
+        "f[1], gapsout:0, gapsin:0"
+      ];
 
       # See https://wiki.hypr.land/Configuring/Dwindle-Layout/ for more
       dwindle = {
@@ -306,6 +289,24 @@
 
           move = "20 monitor_h-120";
           float = "yes";
+        }
+
+        {
+          name = "no-gaps-wtv1";
+          "match:float" = false;
+          "match:workspace" = "w[tv1]";
+
+          border_size = 0;
+          rounding = 0;
+        }
+
+        {
+          name = "no-gaps-f1";
+          "match:float" = false;
+          "match:workspace" = "f[1]";
+
+          border_size = 0;
+          rounding = 0;
         }
       ];
     };
