@@ -15,6 +15,10 @@
       /* background: #${base01}; */
     }
 
+    #workspaces button:hover {
+      min-width: 50px;
+    }
+
     #tray {
       padding: 5px 12px;
       margin: 15px 6px;
