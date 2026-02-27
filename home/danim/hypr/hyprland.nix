@@ -200,10 +200,23 @@
       #   "w[tv1], gapsout:0, gapsin:0"
       #   "f[1], gapsout:0, gapsin:0"
       # ];
-      # windowrule = bordersize 0, floating:0, onworkspace:w[tv1]
-      # windowrule = rounding 0, floating:0, onworkspace:w[tv1]
-      # windowrule = bordersize 0, floating:0, onworkspace:f[1]
-      # windowrule = rounding 0, floating:0, onworkspace:f[1]
+      # windowrule {
+      #     name = no-gaps-wtv1
+      #     match:float = false
+      #     match:workspace = w[tv1]
+      #
+      #     border_size = 0
+      #     rounding = 0
+      # }
+      #
+      # windowrule {
+      #     name = no-gaps-f1
+      #     match:float = false
+      #     match:workspace = f[1]
+      #
+      #     border_size = 0
+      #     rounding = 0
+      # }
 
       # See https://wiki.hypr.land/Configuring/Dwindle-Layout/ for more
       dwindle = {
