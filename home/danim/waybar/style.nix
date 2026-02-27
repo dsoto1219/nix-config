@@ -9,7 +9,7 @@
   programs.waybar.style = lib.mkAfter ''
     #workspaces {
         /* padding: 5px 3px; */
-        margin: 8px;
+        margin: 4px;
         border-radius: 12px;
         border: 1px solid @base01;
         /* background: @base01; */
