@@ -20,7 +20,6 @@
 
     modules-left = [ 
       "hyprland/workspaces" 
-      "tray"
     ];
     modules-center = [
       "custom/power" 
@@ -28,6 +27,7 @@
       "custom/file-manager" 
     ];
     modules-right = [
+      "tray"
       "pulseaudio"
       "backlight"
       "battery"
