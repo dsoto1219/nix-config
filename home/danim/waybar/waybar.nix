@@ -149,7 +149,8 @@
       interval = 60;
       states = {
         good = 80;
-        warning = 45;
+        ok = 65;
+        warning = 40;
         critical = 30;
       };
       format = "{icon} {capacity}%";
