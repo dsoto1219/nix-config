@@ -110,7 +110,7 @@
 
     #custom-notifications {
         color: @base04;
-        padding: 0 6px;
+        padding: 0 7px 0 6px;
         margin-right: 8px;
     }
 
