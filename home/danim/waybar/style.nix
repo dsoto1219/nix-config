@@ -6,13 +6,13 @@
     opacity.override.desktop = 0.95; # override background opacity
   };
 
-  programs.waybar.style = with config.lib.stylix.colors; (lib.mkAfter ''
+  programs.waybar.style = lib.mkAfter ''
     #workspaces {
         /* padding: 5px 3px; */
         margin: 8px;
         border-radius: 12px;
-        border: 1px solid #${base01};
-        /* background: #${base01}; */
+        border: 1px solid @base01;
+        /* background: @base01; */
     }
 
     #workspaces button:hover {
@@ -29,7 +29,7 @@
         margin: 15px 6px;
         border-radius: 36px;
         border-width: 1px;
-        background: #${base0D};
+        background: @base0D;
         min-width: 32px;
     }
 
@@ -38,7 +38,7 @@
         margin: 8px;
         border-radius: 36px;
         border-width: 1px;
-        background: #${base01};
+        background: @base01;
     }
 
     #battery,
@@ -55,23 +55,23 @@
 
     #pulseaudio {
         min-width: 30px;
-        color: #${base0A};
+        color: @base0A;
     }
 
     #battery.good {
-      color: #${base0C};
+      color: @base0C;
     }
 
     #battery.warning {
-      color: #${base0A};
+      color: @base0A;
     }
 
     #battery.critical {
-      color: #${base0F};
+      color: @base0F;
     }
 
     #clock {
-        color: #${base0E};
+        color: @base0E;
     }
 
     #battery:hover,
@@ -80,21 +80,21 @@
     #network:hover,
     #clock:hover,
     #custom-notifications:hover {
-        color: #${base01};
-        background-color: #${base05};
+        color: @base01;
+        background-color: @base05;
         transition: all 0.3s ease-in-out;
     }
 
     #pulseaudio:hover {
-        background-color: #${base0A};
+        background-color: @base0A;
     }
 
     #clock:hover {
-        background-color: #${base0E};
+        background-color: @base0E;
     }
 
     #battery:hover {
-        background-color: #${base0F};
+        background-color: @base0F;
     }
 
     .modules-center {
@@ -102,7 +102,7 @@
         margin: 8px;
         border-radius: 36px;
         border-width: 1px;
-        background: #${base01};
+        background: @base01;
     }
 
     #custom-power,
@@ -111,5 +111,5 @@
         padding: 0 6px;
         margin: 0 3px;
     }
-  '');
+  '';
 }
