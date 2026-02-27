@@ -148,8 +148,9 @@
     battery = {
       interval = 60;
       states = {
-        warning = 30;
-        critical = 15;
+        good = 80;
+        warning = 45;
+        critical = 30;
       };
       format = "{icon} {capacity}%";
       format-icons = {
