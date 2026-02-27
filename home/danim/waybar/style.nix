@@ -43,8 +43,26 @@
     #custom-power,
     #custom-search,
     #custom-file-manager {
+        border-radius: 12px;
+    }
+
+    #custom-power {
         padding: 0 6px;
+        margin-right: 3px;
+    }
+
+    #custom-power:hover {
+        background: @base05;
+        color: @base00;
+        transition: 0.3s all ease-in-out;
+    }
+
+    #custom-search {
         margin: 0 3px;
+    }
+
+    #custom-file-manager {
+        margin-left: 3px;
     }
 
     .modules-right {
