@@ -78,6 +78,10 @@
         color: @base0E;
     }
 
+    #custom-notifications {
+        color: @base04;
+    }
+
     #battery:hover,
     #backlight:hover,
     #pulseaudio:hover,
