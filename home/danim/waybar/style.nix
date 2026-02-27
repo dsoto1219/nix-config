@@ -58,6 +58,10 @@
         color: @base0A;
     }
 
+    #backlight {
+        color: @base06;
+    }
+
     #battery.warning {
       color: @base0A;
     }
@@ -87,6 +91,10 @@
 
     #pulseaudio:hover {
         background-color: @base0A;
+    }
+
+    #backlight:hover
+        background-color: @base06;
     }
 
     #clock:hover {
