@@ -30,7 +30,7 @@
         border-radius: 36px;
         border-width: 1px;
         background: @base0D;
-        min-width: 40px;
+        min-width: 24px;
     }
 
     .modules-center {
