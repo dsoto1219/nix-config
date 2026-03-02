@@ -25,6 +25,7 @@
     }
 
     #tray {
+        padding: 0 8px;
         margin: 8px 5px;
         border-radius: 36px;
         border-width: 1px;
