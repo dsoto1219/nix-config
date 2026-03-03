@@ -25,6 +25,7 @@ in {
     vesktop
     pamixer
     qimgv
+    moonlight-qt sunshine
   ];
 
   programs.onedrive.enable = true;
