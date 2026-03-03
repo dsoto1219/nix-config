@@ -26,6 +26,7 @@ in {
     pamixer
     qimgv
     moonlight-qt sunshine
+    immersed
   ];
 
   programs.onedrive.enable = true;
