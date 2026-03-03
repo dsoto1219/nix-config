@@ -3,10 +3,14 @@
   stylix.targets.waybar = {
     # enable = true;
     # addCss = true;
-    opacity.override.desktop = 0; # override background opacity
+    # opacity.override.desktop = 0; # override background and tooltip opacity
   };
 
   programs.waybar.style = lib.mkAfter ''
+    window#waybar {
+        background: transparent;
+    }
+
     #workspaces {
         /* padding: 5px 3px; */
         margin: 4px;
