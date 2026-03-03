@@ -3,7 +3,7 @@
   stylix.targets.waybar = {
     # enable = true;
     # addCss = true;
-    opacity.override.desktop = 0.95; # override background opacity
+    opacity.override.desktop = 0; # override background opacity
   };
 
   programs.waybar.style = lib.mkAfter ''
