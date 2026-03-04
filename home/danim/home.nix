@@ -26,7 +26,7 @@ in {
     pamixer
     qimgv
     moonlight-qt sunshine
-    immersed libva v412loopback
+    immersed libva linuxKernel.packages.linux_zen.v4l2loopback
   ];
 
   programs.onedrive.enable = true;
