@@ -26,7 +26,7 @@ in {
     pamixer
     qimgv
     moonlight-qt sunshine
-    immersed
+    immersed libva v412loopback
   ];
 
   programs.onedrive.enable = true;
