@@ -25,8 +25,6 @@ in {
     vesktop
     pamixer
     qimgv
-    moonlight-qt sunshine
-    immersed libva linuxKernel.packages.linux_zen.v4l2loopback
   ];
 
   programs.onedrive.enable = true;
