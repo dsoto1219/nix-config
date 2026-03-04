@@ -1,4 +1,7 @@
 { ... }:
 {
-  programs.rofi.enable = true; # application launcher
+  programs.rofi = {
+    enable = true; # application launcher
+    theme = "monokai";
+  };
 }
