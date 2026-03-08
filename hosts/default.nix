@@ -49,6 +49,7 @@
       # Workaround for https://github.com/NixOS/nix/issues/9574
       nix-path = config.nix.nixPath;
       trusted-users = [ "root" "@wheel" ];
+      accept-flake-config = true;
     };
     # Opinionated: disable channels
     # channel.enable = false;
