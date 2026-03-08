@@ -1,9 +1,4 @@
 { inputs, pkgs, ... }: {
-  imports = [
-    # Import home-manager's NixOS module
-    inputs.home-manager.nixosModules.home-manager
-  ];
-
   home-manager.extraSpecialArgs = { inherit inputs; };
 
   # Install home-manager tool globally

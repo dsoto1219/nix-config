@@ -68,6 +68,7 @@
         # > Our nixos configuration files <
         modules = [
           inputs.impermanence.nixosModules.impermanence
+          inputs.home-manager.nixosModules.home-manager
           ./hosts
           ./hosts/thinkbook/configuration.nix
         ];
