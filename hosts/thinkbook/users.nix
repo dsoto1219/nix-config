@@ -17,5 +17,8 @@
     };
     defaultUserShell = pkgs.zsh;
   };
+
+  # Import home-manager configuration
+  home-manager.users.danim = import ../../home/danim/home.nix;
 }
 
