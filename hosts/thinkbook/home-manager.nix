@@ -8,7 +8,8 @@
     extraSpecialArgs = { inherit inputs; };
     users = {
       # Import your home-manager configuration
-      your-username = import ../home-manager/home.nix;
+      danim = import ../../home/danim/home.nix;
+      nixos = import ../../home/nixos/home.nix;
     };
   };
 
