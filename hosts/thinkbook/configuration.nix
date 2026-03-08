@@ -56,5 +56,13 @@
 
   networking.hostName = "thinkbook";
 
+  # Import home-manager configuration
+  home-manager.users.danim = {
+    imports = [
+      ../home
+      ../home/danim/home.nix
+    ];
+  };
+
   environment.systemPackages = with pkgs; [ onedriver ];
 }
