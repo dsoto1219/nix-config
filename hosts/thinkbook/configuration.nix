@@ -12,6 +12,10 @@
     # inputs.hardware.nixosModules.common-cpu-amd
     # inputs.hardware.nixosModules.common-ssd
 
+    # Import impermanence for home-manager
+    inputs.impermanence.nixosModules.impermanence
+
+
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
 

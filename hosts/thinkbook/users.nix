@@ -6,11 +6,6 @@
   pkgs,
   ...
 }: {
-  imports = [
-    # Import impermanence for home-manager
-    inputs.impermanence.nixosModules.impermanence
-  ];
-
   programs.zsh.enable = true;
 
   users = {
