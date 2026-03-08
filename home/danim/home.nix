@@ -1,11 +1,13 @@
 # Add things specific to the user danim here
-{ pkgs, ... }: let
+{ inputs, pkgs, ... }: let
   username = "danim";
 in {
   home.username = username;
   home.homeDirectory = "/home/${username}";
 
   imports = [
+    inputs.impermanence.nixosModules.impermanence
+
     ../default.nix
     ./rofi
     ./waybar/waybar.nix
