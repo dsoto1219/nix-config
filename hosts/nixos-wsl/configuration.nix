@@ -15,8 +15,8 @@
 
   home-manager.users.nixos = {
     imports = [
-      ../home
-      ../home/nixos-wsl/home.nix
+      ../../home
+      ../../home/nixos-wsl/home.nix
     ];
   };
 }
