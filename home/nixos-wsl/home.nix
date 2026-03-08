@@ -7,6 +7,10 @@
 }: let
   username = "nixos";
 in {
+  imports = [
+    ../default.nix
+  ];
+
   home.username = username;
   home.homeDirectory = "/home/${username}";
 

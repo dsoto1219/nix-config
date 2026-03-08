@@ -6,6 +6,7 @@ in {
   home.homeDirectory = "/home/${username}";
 
   imports = [
+    ../default.nix
     ./rofi
     ./waybar/waybar.nix
     ./hypr/hyprland.nix
