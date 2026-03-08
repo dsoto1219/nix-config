@@ -4,24 +4,7 @@
     inputs.home-manager.nixosModules.home-manager
   ];
 
-  home-manager = {
-    extraSpecialArgs = { inherit inputs; };
-    users = {
-      # Import your home-manager configuration
-      danim = {
-        imports = [
-          ../home
-          ../home/danim/home.nix
-        ];
-      };
-      nixos = {
-        imports = [
-          ../home
-          ../home/nixos-wsl/home.nix
-        ];
-      };
-    };
-  };
+  home-manager.extraSpecialArgs = { inherit inputs; };
 
   # Install home-manager tool globally
   environment.systemPackages = [ 

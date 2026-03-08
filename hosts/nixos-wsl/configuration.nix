@@ -12,4 +12,11 @@
   wsl.defaultUser = "nixos";
 
   networking.hostName = "nixos";
+
+  home-manager.users.nixos = {
+    imports = [
+      ../home
+      ../home/nixos-wsl/home.nix
+    ];
+  };
 }
