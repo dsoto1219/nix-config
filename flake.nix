@@ -79,28 +79,5 @@
         ];
       };
     };
-
-    # Standalone home-manager configuration entrypoint
-    # Available through 'home-manager --flake .#your-username@your-hostname'
-    homeConfigurations = {
-      "danim@thinkbook" = home-manager.lib.homeManagerConfiguration {
-        # Home-manager requires 'pkgs' instance
-        inherit pkgs;
-        extraSpecialArgs = { inherit inputs; };
-        # > Our main home-manager configuration file <
-        modules = [
-          ./home
-          ./home/danim/home.nix
-        ];
-      };
-      "nixos@nixos" = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-        extraSpecialArgs = { inherit inputs; };
-        modules = [
-          ./home
-          ./home/nixos-wsl/home.nix
-        ];
-      };
-    };
   };
 }
