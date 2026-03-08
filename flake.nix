@@ -77,6 +77,7 @@
         inherit system;
         specialArgs = {inherit inputs;};
         modules = [
+          inputs.home-manager.nixosModules.home-manager
           nixos-wsl.nixosModules.default # Get WSL modules for this configuration
           ./hosts
           ./hosts/nixos-wsl/configuration.nix
