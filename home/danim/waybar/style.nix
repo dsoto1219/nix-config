@@ -33,7 +33,7 @@
         margin: 8px 5px;
         border-radius: 36px;
         border-width: 1px;
-        background: @base0C;
+        background: @base0D;
         min-width: 24px;
     }
 
