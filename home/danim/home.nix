@@ -25,6 +25,7 @@ in {
     vesktop
     pamixer
     qimgv
+    steamcmd steam-tui
   ];
 
   programs.onedrive.enable = true;
