@@ -9,7 +9,7 @@
     users = {
       # Import your home-manager configuration
       danim = import ../../home/danim/home.nix;
-      nixos = import ../../home/nixos/home.nix;
+      nixos = import ../../home/nixos-wsl/home.nix;
     };
   };
 
