@@ -1,5 +1,11 @@
-{ ... }:
+{ lib, ... }:
 {
+  fileSystems."/" = lib.mkForce {
+    device = "none";
+    fsType = "tmpfs";
+    options = [ "defaults" "size=2G" "mode=755" ];
+  };
+
   fileSystems."/persistent" = {
     device = "/dev/root_vg/root";
     neededForBoot = true;
