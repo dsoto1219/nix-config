@@ -16,7 +16,6 @@
     ./hardware-configuration.nix
 
     ./common-drivers.nix
-    ./filesystem.nix
     ./fingerprint.nix
     ./hyprland.nix
     ./steam.nix

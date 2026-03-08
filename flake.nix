@@ -38,8 +38,6 @@
       url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    impermanence.url = "github:nix-community/impermanence";
   };
 
   outputs = {
@@ -67,7 +65,6 @@
         specialArgs = {inherit inputs;};
         # > Our nixos configuration files <
         modules = [
-          inputs.impermanence.nixosModules.impermanence
           inputs.home-manager.nixosModules.home-manager
           ./hosts
           ./hosts/thinkbook/configuration.nix
