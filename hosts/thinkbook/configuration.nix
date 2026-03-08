@@ -17,7 +17,6 @@
 
     ./common-drivers.nix
     ./fingerprint.nix
-    ./home-manager.nix
     ./hyprland.nix
     ./steam.nix
     ./tablets.nix
