@@ -25,6 +25,7 @@ in {
     vesktop
     pamixer
     qimgv
+    steam
   ];
 
   programs.onedrive.enable = true;
