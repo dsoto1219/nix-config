@@ -22,9 +22,6 @@
     ./steam.nix
     ./tablets.nix
     ./users.nix
-
-    # Import impermanence for home-manager
-    inputs.impermanence.nixosModules.impermanence
   ];
 
   # Use the systemd-boot EFI boot loader.
