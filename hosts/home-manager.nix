@@ -8,8 +8,18 @@
     extraSpecialArgs = { inherit inputs; };
     users = {
       # Import your home-manager configuration
-      danim = import ../home/danim/home.nix;
-      nixos = import ../home/nixos-wsl/home.nix;
+      danim = {
+        imports = [
+          ../home
+          ../home/danim/home.nix
+        ];
+      };
+      nixos = {
+        imports = [
+          ../home
+          ../home/nixos-wsl/home.nix
+        ];
+      };
     };
   };
 
