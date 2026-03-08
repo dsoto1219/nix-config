@@ -67,6 +67,7 @@
         specialArgs = {inherit inputs;};
         # > Our nixos configuration files <
         modules = [
+          inputs.impermanence.nixosModules.impermanence
           ./hosts
           ./hosts/thinkbook/configuration.nix
         ];

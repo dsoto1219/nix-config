@@ -6,8 +6,6 @@ in {
   home.homeDirectory = "/home/${username}";
 
   imports = [
-    inputs.impermanence.nixosModules.impermanence
-
     ../default.nix
     ./rofi
     ./waybar/waybar.nix
