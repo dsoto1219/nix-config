@@ -55,6 +55,4 @@
   # };
 
   networking.hostName = "thinkbook";
-
-  environment.systemPackages = with pkgs; [ onedriver ];
 }
