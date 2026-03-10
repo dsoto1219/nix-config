@@ -18,7 +18,6 @@ in {
 
   # Add stuff for your user as you see fit:
   home.packages = with pkgs; [ 
-    onedrivegui
     obsidian 
     kdePackages.ksshaskpass # for obsidian-git auth
     zotero
