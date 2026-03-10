@@ -20,9 +20,10 @@
       "$mainMod, V, togglefloating"
       "$mainMod, R, exec, killall $menuProgram || $menuCommand"
       "$mainMod, P, pseudo, # dwindle"
-      "$shiftMod, J, layoutmsg, togglesplit # dwindle"
+      # "$mainMod, J, layoutmsg, togglesplit # dwindle"
 
       # Custom
+      "$mod, U, layoutmsg, togglesplit # dwindle"
       "$mod, F, fullscreen"
       "$mod, L, exec, hyprctl reload"
       "$mod, W, exec, pkill waybar && waybar"
