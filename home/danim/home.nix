@@ -29,8 +29,6 @@ in {
     steamcmd steam-tui
   ];
 
-  programs.onedrive.enable = true;
-
   stylix = {
     enable = true;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/monokai.yaml";
