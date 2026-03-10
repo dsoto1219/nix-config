@@ -20,7 +20,7 @@
       "$mainMod, V, togglefloating"
       "$mainMod, R, exec, killall $menuProgram || $menuCommand"
       "$mainMod, P, pseudo, # dwindle"
-      "$shiftMod, J, $d toggle split, layoutmsg, togglesplit, # dwindle"
+      "$shiftMod, J, layoutmsg, togglesplit, # dwindle"
 
       # Custom
       "$mod, F, fullscreen"
