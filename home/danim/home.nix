@@ -27,7 +27,6 @@ in {
     pamixer
     qimgv
     steamcmd steam-tui
-    zoom-us
   ];
 
   stylix = {
