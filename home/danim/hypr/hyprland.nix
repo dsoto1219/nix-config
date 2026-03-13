@@ -9,6 +9,7 @@
     # Related config files
     ./hypridle.nix
     ./hyprlock.nix
+    ./hyprpaper.nix
   ];
 
   home.packages = with pkgs; [
@@ -66,6 +67,7 @@
         "systemctl --user start hyprpolkitagent"
         "hyprlock || hyprctl dispatch exit"
         # "$terminal"
+        "hyprpaper"
         "waybar"
         "swaync"
         "nm-applet &"
