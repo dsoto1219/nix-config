@@ -1,8 +1,6 @@
 { inputs, lib, config, pkgs, ... }:
 {
   imports = [
-    inputs.hyprland.homeManagerModules.default # this shouldn't work---it's not how the docs say to do it---but it does
-
     # Split settings
     ./keybinds.nix
 
@@ -27,14 +25,15 @@
   programs.hyprshot.enable = true; # screenshot manager
 
   # Hyprland Configuration
-  wayland.windowManager.hyprland = let
-    hyprland-pkgs = inputs.hyprland.packages."${pkgs.stdenv.hostPlatform.system}";
-  in {
+  wayland.windowManager.hyprland = {
     enable = true;
-    # set the flake package
-    package = hyprland-pkgs.hyprland; 
-    portalPackage = hyprland-pkgs.xdg-desktop-portal-hyprland; 
-    systemd.enable = false;
+
+    # Docs say to do this since we're using home manager
+    # as a nixos module
+    package = null; 
+    portalPackage = null; 
+
+    systemd.enable = false; # Fix potential conflicts with UWSM
 
     settings = {
       ################
