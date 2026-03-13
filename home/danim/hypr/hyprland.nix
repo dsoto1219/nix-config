@@ -33,7 +33,7 @@
     # set the flake package
     package = hyprland-pkgs.hyprland; 
     portalPackage = hyprland-pkgs.xdg-desktop-portal-hyprland; 
-    systemd.variables = ["--all"];
+    systemd.enable = false;
 
     settings = {
       ################
