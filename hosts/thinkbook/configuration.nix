@@ -18,7 +18,7 @@
     ./common-drivers.nix
     ./fingerprint.nix
     ./hyprland.nix
-    # ./onedrive.nix
+    ./onedrive.nix
     ./steam.nix
     ./tablets.nix
     ./users.nix
