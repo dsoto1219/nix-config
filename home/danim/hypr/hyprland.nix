@@ -7,7 +7,7 @@
     # Related config files
     ./hypridle.nix
     ./hyprlock.nix
-    ./hyprpaper.nix
+    # ./hyprpaper.nix
   ];
 
   home.packages = with pkgs; [
