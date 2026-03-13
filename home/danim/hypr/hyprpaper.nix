@@ -7,7 +7,7 @@
   in {
     preload = [ wallpaper-path ];
     wallpaper = [
-      "eDP-1,${wallpaper-path}"
+      ",${wallpaper-path}"
     ];
   };
 }
