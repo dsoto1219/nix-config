@@ -66,7 +66,6 @@
         specialArgs = {inherit inputs;};
         # > Our nixos configuration files <
         modules = [
-          inputs.home-manager.nixosModules.home-manager
           ./hosts/thinkbook/configuration.nix
         ];
       };
@@ -74,7 +73,6 @@
         inherit system;
         specialArgs = {inherit inputs;};
         modules = [
-          inputs.home-manager.nixosModules.home-manager
           nixos-wsl.nixosModules.default # Get WSL modules for this configuration
           ./hosts/nixos-wsl/configuration.nix
         ];
