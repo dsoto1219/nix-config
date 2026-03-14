@@ -30,7 +30,7 @@
   services.greetd.enable = true;
   services.greetd.settings = {
     default_session = {
-      command = "${hyprland-pkgs.hyprland}/bin/start-hyprland";
+      command = "${pkgs.hyprland}/bin/start-hyprland";
       user = "danim";
     };
   };
