@@ -5,10 +5,7 @@
   config,
   pkgs,
   ...
-}: let
-  system = pkgs.stdenv.hostPlatform.system;
-  hyprland-pkgs = inputs.hyprland.packages.${system};
-in {
+}: {
   # Add must-have packages from docs
   environment.systemPackages = with pkgs; [ 
     # notification daemon set in home-manager
@@ -26,10 +23,6 @@ in {
   programs.hyprland = {
     enable = true;
     # set the flake package
-    package = hyprland-pkgs.hyprland;
-    # make sure to also set the portal package, so that they are in sync
-    portalPackage = hyprland-pkgs.xdg-desktop-portal-hyprland;
-    # Use Universal Wayland Session Manager---recommended way of launching Hyprland, as it neatly integrates with systemd.
     withUWSM = true;
     # xwayland enabled true by default
   };
