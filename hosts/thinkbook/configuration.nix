@@ -15,6 +15,10 @@
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
 
+    # Import default settings
+    ../default.nix
+
+    # Split host-specific settings into multiple files
     ./common-drivers.nix
     ./fingerprint.nix
     ./hyprland.nix

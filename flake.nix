@@ -67,7 +67,6 @@
         # > Our nixos configuration files <
         modules = [
           inputs.home-manager.nixosModules.home-manager
-          ./hosts
           ./hosts/thinkbook/configuration.nix
         ];
       };
@@ -77,7 +76,6 @@
         modules = [
           inputs.home-manager.nixosModules.home-manager
           nixos-wsl.nixosModules.default # Get WSL modules for this configuration
-          ./hosts
           ./hosts/nixos-wsl/configuration.nix
         ];
       };

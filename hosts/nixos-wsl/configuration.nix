@@ -8,6 +8,10 @@
 { config, lib, pkgs, ... }:
 
 {
+  imports = [
+    ../default.nix
+  ];
+
   wsl.enable = true;
   wsl.defaultUser = "nixos";
 
