@@ -89,7 +89,7 @@ window#waybar {
 }
 
 #battery.warning {
-	color: @base0A;
+	color: @base09;
 }
 
 #battery.critical {
@@ -97,7 +97,7 @@ window#waybar {
 }
 
 #battery.charging {
-	color: @base0C;
+	color: @base0B;
 }
 
 #clock {
@@ -134,7 +134,7 @@ window#waybar {
 }
 
 #battery.warning:hover {
-	background-color: @base0A;
+	background-color: @base09;
 }
 
 #battery.critical:hover {
@@ -142,5 +142,5 @@ window#waybar {
 }
 
 #battery.charging:hover {
-	background-color: @base0C;
+	background-color: @base0B;
 }
