@@ -8,7 +8,7 @@ in {
   imports = [
     ../default.nix
     ./rofi
-    ./waybar/waybar.nix
+    # ./waybar/waybar.nix
     ./hypr/hyprland.nix
 
     ./firefox.nix
