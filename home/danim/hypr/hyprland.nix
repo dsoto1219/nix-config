@@ -33,8 +33,6 @@
     package = null; 
     portalPackage = null; 
 
-    systemd.enable = false; # Fix potential conflicts with UWSM
-
     settings = {
       ################
       ### MONITORS ###
