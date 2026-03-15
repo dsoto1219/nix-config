@@ -81,7 +81,7 @@ window#waybar {
 }
 
 #pulseaudio {
-	color: @base0B;
+	color: @base0A;
 }
 
 #backlight {
@@ -122,7 +122,7 @@ window#waybar {
 }
 
 #pulseaudio:hover {
-	background-color: @base0B;
+	background-color: @base0A;
 }
 
 #backlight:hover {
