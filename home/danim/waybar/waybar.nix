@@ -12,7 +12,7 @@
     # opacity.override.desktop = 0; # override background and tooltip opacity
   };
 
-  programs.waybar.style = lib.mkAfter builtins.readFile ./style.css;
+  programs.waybar.style = lib.mkAfter (builtins.readFile ./style.css);
 
   programs.waybar.settings = [{
     # layer = "top";
