@@ -7,6 +7,7 @@
     # Related config files
     ./hypridle.nix
     ./hyprlock.nix
+    ./hyprpanel.nix
     ./hyprpaper.nix
   ];
 
