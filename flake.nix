@@ -24,7 +24,7 @@
     hyprland.url = "github:hyprwm/Hyprland";
 
     # Home manager
-    home-manager.url = "github:nix-community/home-manager/release-25.11";
+    home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs-unstable";
 
     # nixvim
