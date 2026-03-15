@@ -1,12 +1,18 @@
 { lib, pkgs, ... }: 
 {
-  imports = [ ./style.nix ];
-
   home.packages = with pkgs; [
     pavucontrol # volume controller
   ];
 
   programs.waybar.enable = true;
+
+  stylix.targets.waybar = {
+    # enable = true;
+    # addCss = true;
+    # opacity.override.desktop = 0; # override background and tooltip opacity
+  };
+
+  programs.waybar.style = lib.mkAfter builtins.readFile ./style.css;
 
   programs.waybar.settings = [{
     # layer = "top";
