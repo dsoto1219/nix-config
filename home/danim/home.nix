@@ -31,7 +31,7 @@ in {
 
   stylix = {
     enable = true;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/monokai.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
     image = ../../assets/sekiro-vs-father-sunset.png;
     cursor = {
       package = pkgs.bibata-cursors;
