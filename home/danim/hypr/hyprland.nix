@@ -69,7 +69,7 @@
         "hyprpaper"
         "waybar"
         "swaync"
-        "nm-applet &"
+        "(nm-applet --indicator) &"
         "hypridle"
         "udiskie"
         # https://github.com/hyprwm/Hyprland/issues/2614#issuecomment-2395597405
