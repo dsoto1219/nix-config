@@ -35,9 +35,9 @@
 
     # theme.bar.transparent = true;
 
-    # theme.font = {
-    #   name = "CaskaydiaCove NF";
-    #   size = "16px";
-    # };
+    theme.font = {
+      name = "CaskaydiaCove NF";
+      size = "16px";
+    };
   };
 }
