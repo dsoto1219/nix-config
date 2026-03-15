@@ -13,8 +13,8 @@
       bar.layouts = {
         "0" = {
           left = [ "dashboard" "workspaces" ];
-          middle = [ "media" ];
-          right = [ "volume" "systray" "notifications" ];
+          middle = [ ];
+          right = [ "volume" "battery" "systray" "notifications" ];
         };
       };
     };
