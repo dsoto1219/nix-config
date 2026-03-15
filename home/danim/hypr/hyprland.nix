@@ -66,7 +66,7 @@
         "systemctl --user start hyprpolkitagent"
         "hyprlock || hyprctl dispatch exit"
         # "$terminal"
-        # "hyprpaper"
+        "hyprpaper"
         "waybar"
         "swaync"
         "nm-applet &"
