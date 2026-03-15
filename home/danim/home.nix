@@ -10,6 +10,7 @@ in {
     ./rofi
     # ./waybar/waybar.nix
     ./hypr/hyprland.nix
+    ./hypr/hyprpanel.nix
 
     ./firefox.nix
   ];
