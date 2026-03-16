@@ -11,7 +11,7 @@
     # Default: null
     layout = {
       bar.layouts = {
-        "0" = {
+        "*" = {
           left = [ "dashboard" "workspaces" ];
           middle = [ ];
           right = [ "volume" "battery" "systray" "notifications" ];
