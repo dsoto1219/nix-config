@@ -21,7 +21,7 @@
   ];
 
   programs.kitty.enable = true;
-  # services.swaync.enable = true; # notification manager
+  services.swaync.enable = true; # notification manager
   programs.hyprshot.enable = true; # screenshot manager
 
   # Hyprland Configuration
@@ -66,7 +66,7 @@
         # "$terminal"
         "hyprpaper"
         # "waybar"
-        # "swaync"
+        "swaync"
         "nm-applet &"
         "blueman-applet &"
         "hypridle"
