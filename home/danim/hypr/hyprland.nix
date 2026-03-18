@@ -33,6 +33,8 @@
     package = null; 
     portalPackage = null; 
 
+    systemd.variables = [ "--all" ];
+
     settings = {
       ################
       ### MONITORS ###
