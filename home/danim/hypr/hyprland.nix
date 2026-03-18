@@ -65,7 +65,7 @@
         "hyprlock || hyprctl dispatch exit"
         # "$terminal"
         "hyprpaper"
-        # "waybar"
+        "waybar"
         "swaync"
         "nm-applet &"
         "blueman-applet &"
