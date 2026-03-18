@@ -108,9 +108,9 @@
     tray = {
       # icon-size = 21;
       spacing = 10;
-      icons = {
-        blueman = "bluetooth";
-      };
+      # icons = {
+      #   blueman = "bluetooth";
+      # };
     };
 
     pulseaudio = {
