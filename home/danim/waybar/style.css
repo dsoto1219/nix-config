@@ -78,11 +78,11 @@ window#waybar {
 }
 
 #pulseaudio {
-	color: @base0A;
+	background-color: @base0A;
 }
 
 #backlight {
-	color: @base06;
+	background-color: @base06;
 }
 
 #battery.warning {
@@ -98,7 +98,7 @@ window#waybar {
 }
 
 #clock {
-	color: @base0E;
+	background-color: @base0E;
 }
 
 #custom-notifications {
@@ -113,31 +113,10 @@ window#waybar {
 #network:hover,
 #clock:hover,
 #custom-notifications:hover {
-	color: @base01;
 	background-color: @base05;
 	transition: all 0.3s ease-in-out;
 }
 
-#pulseaudio:hover {
-	background-color: @base0A;
-}
-
-#backlight:hover {
-	background-color: @base06;
-}
-
-#clock:hover {
-	background-color: @base0E;
-}
-
-#battery.warning:hover {
-	background-color: @base09;
-}
-
-#battery.critical:hover {
-	background-color: @base0F;
-}
-
-#battery.charging:hover {
-	background-color: @base0B;
+#custom-notifications:hover {
+	background-color: @base06
 }
