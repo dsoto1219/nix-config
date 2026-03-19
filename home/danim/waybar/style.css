@@ -62,7 +62,7 @@ window#waybar {
 }
 
 .modules-right {
-	padding: 5px 6px;
+	padding: 0 6px;
 	margin: 8px;
 	border-radius: 36px;
 	border-width: 1px;
