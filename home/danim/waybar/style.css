@@ -19,15 +19,6 @@ window#waybar {
 	transition: all 0.3s ease-in-out;
 }
 
-#tray {
-	padding: 0 8px;
-	margin: 8px 5px;
-	border-radius: 36px;
-	border-width: 1px;
-	background: @base0D;
-	min-width: 24px;
-}
-
 .modules-center {
 	padding: 5px 10px;
 	margin: 8px;
