@@ -73,6 +73,10 @@ window#waybar {
 	color: @base01;
 }
 
+#tray {
+	background-color: @base0D;
+}
+
 #pulseaudio {
 	color: @base0A;
 }
