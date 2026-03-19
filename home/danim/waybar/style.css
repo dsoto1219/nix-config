@@ -70,6 +70,7 @@ window#waybar {
 	margin: 0 6px;
 	border-radius: 50px;
 	border-width: 1px;
+	color: @base01;
 }
 
 #pulseaudio {
