@@ -85,6 +85,11 @@ window#waybar {
 	background-color: @base06;
 }
 
+#battery {
+	background-color: @base05;
+	color: @base01;
+}
+
 #battery.warning {
 	color: @base09;
 }
