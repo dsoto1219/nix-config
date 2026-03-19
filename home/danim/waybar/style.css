@@ -59,6 +59,7 @@ window#waybar {
 	border-width: 1px;
 }
 
+#tray,
 #battery,
 #backlight,
 #pulseaudio,
