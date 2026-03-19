@@ -107,7 +107,8 @@ window#waybar {
 }
 
 #custom-notifications {
-	color: @base06;
+	background-color: @base01;
+	color: @base05;
 	padding: 0 13px 0 12px;
 }
 
@@ -122,5 +123,5 @@ window#waybar {
 }
 
 #custom-notifications:hover {
-	background-color: @base06
+	background-color: @base06;
 }
