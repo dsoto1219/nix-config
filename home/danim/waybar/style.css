@@ -66,7 +66,6 @@ window#waybar {
 	margin: 8px;
 	border-radius: 36px;
 	border-width: 1px;
-	background: @base01;
 }
 
 #battery,
