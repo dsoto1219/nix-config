@@ -19,20 +19,6 @@ window#waybar {
 	transition: all 0.3s ease-in-out;
 }
 
-.modules-center {
-	padding: 5px 10px;
-	margin: 8px;
-	border-radius: 36px;
-	border-width: 1px;
-	background: @base01;
-}
-
-#custom-power,
-#custom-search,
-#custom-file-manager {
-	border-radius: 12px;
-}
-
 #custom-power {
 	padding: 0 6px;
 	margin-right: 3px;
@@ -42,6 +28,19 @@ window#waybar {
 	background: @base05;
 	color: @base00;
 	transition: 0.3s all ease-in-out;
+}
+
+.modules-center {
+	padding: 5px 10px;
+	margin: 8px;
+	border-radius: 36px;
+	border-width: 1px;
+	background: @base01;
+}
+
+#custom-search,
+#custom-file-manager {
+	border-radius: 12px;
 }
 
 #custom-search {
