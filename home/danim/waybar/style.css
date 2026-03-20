@@ -24,10 +24,12 @@ window#waybar {
 	margin-right: 3px;
 	border-radius: 50px;
 	background: @base01;
+	border: 1.5px solid @base03;
 }
 
 #custom-power:hover {
 	background: @base05;
+	border: 1.5px solid @base01;
 	color: @base00;
 	transition: 0.3s all ease-in-out;
 }
