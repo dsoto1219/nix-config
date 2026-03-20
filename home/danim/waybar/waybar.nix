@@ -26,9 +26,9 @@
 
     modules-left = [ 
       "hyprland/workspaces" 
+      "custom/power" 
     ];
     modules-center = [
-      "custom/power" 
       "custom/search"
       "custom/file-manager" 
     ];
