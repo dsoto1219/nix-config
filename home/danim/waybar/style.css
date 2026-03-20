@@ -28,7 +28,7 @@ window#waybar {
 }
 
 #custom-power:hover {
-	background: @base05;
+	background: @base08;
 	border: 1.5px solid @base01;
 	color: @base00;
 	transition: 0.3s all ease-in-out;
