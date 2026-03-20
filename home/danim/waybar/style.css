@@ -21,7 +21,7 @@ window#waybar {
 
 #custom-power {
 	padding: 0 9px 0 8px;
-	margin-right: 3px;
+	margin: 10px 3px;
 	border-radius: 50px;
 	background: @base01;
 	border: 1.5px solid @base03;
