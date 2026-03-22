@@ -8,7 +8,7 @@ in {
   imports = [
     ../default.nix
     ./rofi
-    ./waybar/waybar.nix
+    ./waybar/config.nix
     ./hypr/hyprland.nix
     # ./hyprpanel/hyprpanel.nix
 
