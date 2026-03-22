@@ -107,7 +107,7 @@
 
     tray = {
       # icon-size = 21;
-      spacing = 10;
+      spacing = 6;
       # icons = {
       #   blueman = "bluetooth";
       # };
