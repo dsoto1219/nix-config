@@ -49,10 +49,12 @@ window#waybar {
 
 #custom-search {
 	margin: 0 3px;
+	padding: 0 2px 0 4px;
 }
 
 #custom-file-manager {
 	margin-left: 3px;
+	padding: 0 1px 0 5px;
 }
 
 .modules-right {
