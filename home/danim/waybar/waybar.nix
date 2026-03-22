@@ -31,9 +31,9 @@
     modules-center = [
       "custom/search"
       "custom/file-manager" 
+      "tray"
     ];
     modules-right = [
-      "tray"
       "pulseaudio"
       "backlight"
       "battery"
