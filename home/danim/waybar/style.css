@@ -43,7 +43,8 @@ window#waybar {
 }
 
 #custom-search,
-#custom-file-manager {
+#custom-file-manager,
+#tray {
 	border-radius: 12px;
 }
 
@@ -57,6 +58,11 @@ window#waybar {
 	padding: 0 1px 0 5px;
 }
 
+#tray {
+	background-color: @base0D;
+}
+
+
 .modules-right {
 	padding: 0 6px;
 	margin: 8px;
@@ -64,7 +70,6 @@ window#waybar {
 	border-width: 1px;
 }
 
-#tray,
 #battery,
 #backlight,
 #pulseaudio,
@@ -76,10 +81,6 @@ window#waybar {
 	border-radius: 50px;
 	border-width: 1px;
 	color: @base01;
-}
-
-#tray {
-	background-color: @base0D;
 }
 
 #pulseaudio {
