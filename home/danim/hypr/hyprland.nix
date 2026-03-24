@@ -85,12 +85,13 @@
       #############################
 
       # See https://wiki.hypr.land/Configuring/Environment-variables/
-      # env = let 
-      #   cursor_size = "24";
-      # in [
-      #   "XCURSOR_SIZE,${cursor_size}"
-      #   "HYPRCURSOR_SIZE,${cursor_size}"
-      # ];
+      env = let 
+        cursor_size = "32";
+      in [
+        "GDK_SCALE,2"
+        "XCURSOR_SIZE,${cursor_size}"
+        # "HYPRCURSOR_SIZE,${cursor_size}"
+      ];
 
       ###################
       ### PERMISSIONS ###
