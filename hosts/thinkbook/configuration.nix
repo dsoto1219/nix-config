@@ -24,6 +24,7 @@
     ./fingerprint.nix
     ./hyprland.nix
     # ./onedrive.nix
+    ./persistence.nix
     ./steam.nix
     ./tablets.nix
     ./users.nix
