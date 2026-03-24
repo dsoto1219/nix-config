@@ -45,6 +45,7 @@ window#waybar {
 #custom-search,
 #custom-file-manager,
 #tray {
+	color: @base07;
 	border-radius: 12px;
 }
 
