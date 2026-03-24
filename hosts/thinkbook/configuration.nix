@@ -20,7 +20,6 @@
 
     # Split host-specific settings into multiple files
     ./common-drivers.nix
-    ./filesystems.nix
     ./fingerprint.nix
     ./hyprland.nix
     # ./onedrive.nix
