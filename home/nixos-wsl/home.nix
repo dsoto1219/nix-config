@@ -15,7 +15,7 @@ in {
   home.homeDirectory = "/home/${username}";
 
   stylix.targets.gtk.enable = false;
-  # stylix.targets.dconf.enable = false;
+  dconf.enable = false;
 
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-storm.yaml";
 }
