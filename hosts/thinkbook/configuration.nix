@@ -22,8 +22,8 @@
     ./common-drivers.nix
     ./fingerprint.nix
     ./hyprland.nix
+    ./impermanence.nix
     # ./onedrive.nix
-    ./persistence.nix
     ./steam.nix
     ./tablets.nix
     ./users.nix
