@@ -20,7 +20,7 @@
   networking.hostName = "nixos";
 
   programs.zsh.enable = true;
-  users.users.nixos.defaultUserShell = pkgs.zsh;
+  users.defaultUserShell = pkgs.zsh;
 
   home-manager.users.nixos = import ../../home/nixos-wsl/home.nix;
 }
