@@ -91,7 +91,7 @@ window#waybar {
 }
 
 #battery {
-	background-color: @base03;
+	background-color: @base02;
 	color: @base01;
 }
 
