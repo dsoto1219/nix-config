@@ -264,6 +264,11 @@
       # See https://wiki.hypr.land/Configuring/Window-Rules/ for more
       # See https://wiki.hypr.land/Configuring/Workspace-Rules/ for workspace rules
 
+      xwayland = {
+        force_zero_scaling = true;
+        use_nearest_neighbor = true;
+      };
+
       # Example windowrules that are useful
       windowrule = [
 
