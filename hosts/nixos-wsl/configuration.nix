@@ -19,8 +19,5 @@
 
   networking.hostName = "nixos";
 
-  programs.zsh.enable = true;
-  users.defaultUserShell = pkgs.zsh;
-
   home-manager.users.nixos = import ../../home/nixos-wsl/home.nix;
 }

@@ -6,8 +6,6 @@
   pkgs,
   ...
 }: {
-  programs.zsh.enable = true;
-
   users = {
     users = {
       danim = {
@@ -15,7 +13,6 @@
         extraGroups = [ "networkmanager" "wheel" "input" ]; # Be sure to add any other groups you need (such as networkmanager, audio, docker, etc)
       };
     };
-    defaultUserShell = pkgs.zsh;
   };
 
   # Import home-manager configuration
