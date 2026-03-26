@@ -33,9 +33,9 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  systemd.extraConfig = ''
-    DefaultTimeoutStopSec=10s
-  '';
+  systemd.settings.Manager = {
+    DefaultTimeoutStopSec = "10s";
+  };
 
   boot.initrd.kernelModules = [ "i915" ]; # Attempt to fix driver issue messing with tty font size
   boot.initrd.systemd.enable = true; # ensure console font below is in the initial ramdisk
