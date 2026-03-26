@@ -86,10 +86,10 @@
 
       # See https://wiki.hypr.land/Configuring/Environment-variables/
       env = let 
-        cursor_size = "32";
+        # cursor_size = "32";
       in [
         "GDK_SCALE,2"
-        "XCURSOR_SIZE,${cursor_size}"
+        # "XCURSOR_SIZE,${cursor_size}"
         # "HYPRCURSOR_SIZE,${cursor_size}"
       ];
 
