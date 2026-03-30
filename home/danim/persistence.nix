@@ -2,6 +2,7 @@
 {
   home.persistence."/persistent" = {
     directories = [
+      "Dev"
       "Downloads"
       "Music"
       "Pictures"
