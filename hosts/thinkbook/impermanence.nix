@@ -6,7 +6,7 @@
     wantedBy = [ "initrd.target" ];
     before = [ "sysroot.mount" ];
     path = with pkgs; [ 
-      btrfs-progs btrfs-snap 
+      btrfs-progs
     ];
     unitConfig.DefaultDependencies = "no";
     serviceConfig.Type = "oneshot";
