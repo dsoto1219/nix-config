@@ -92,7 +92,7 @@ window#waybar {
 
 #battery {
 	background-color: @base02;
-	color: @base01;
+	color: @base05;
 }
 
 #battery.warning {
