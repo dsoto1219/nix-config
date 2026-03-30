@@ -5,6 +5,7 @@
     description = "Remove roots older than 30 days";
     wantedBy = [ "initrd.target" ];
     before = [ "sysroot.mount" ];
+    requires = [ "dev-root_vg-root.device" ];  # <-- wait for LVM device node
     path = with pkgs; [ 
       btrfs-progs
     ];
