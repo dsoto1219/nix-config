@@ -26,8 +26,8 @@
 
     modules-left = [ 
       "hyprland/workspaces" 
-      "hyprland/window"
       "custom/power" 
+      "hyprland/window"
     ];
     modules-center = [
       "custom/search"
