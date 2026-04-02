@@ -86,6 +86,10 @@ window#waybar {
 	background-color: @base0A;
 }
 
+#pulseaudio.muted {
+	padding: 0 14px 0 10px;
+}
+
 #backlight {
 	background-color: @base06;
 }
