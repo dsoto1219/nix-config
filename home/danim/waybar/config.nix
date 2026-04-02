@@ -41,6 +41,9 @@
       "clock" 
       "custom/notifications"
     ];
+    "hyprland/window" = {
+      format = "{}"; # show window title
+    };
     "hyprland/workspaces" = {
       format = "{windows}({icon})";
       format-window-separator = "";
