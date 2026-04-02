@@ -53,6 +53,7 @@
         "class<zotero>" = "󰮩 "; 
         "class<kitty>" = " "; 
         "class<obsidian>" = "󰧑 "; 
+        "title<.*vesktop.*>" = "󰙯 ";
       };
     };
     clock = {
