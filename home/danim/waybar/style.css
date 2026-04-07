@@ -95,7 +95,7 @@ window#waybar {
 }
 
 #backlight {
-	background-color: @base06;
+	background-color: @base05;
 }
 
 #battery {
@@ -126,13 +126,16 @@ window#waybar {
 }
 
 #battery:hover,
-#backlight:hover,
 #pulseaudio:hover,
 #network:hover,
 #clock:hover,
 #custom-notifications:hover {
 	background-color: @base05;
 	transition: all 0.3s ease-in-out;
+}
+
+#backlight:hover {
+	background-color: @base07;
 }
 
 #custom-notifications:hover {
