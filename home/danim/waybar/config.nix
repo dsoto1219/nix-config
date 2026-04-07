@@ -60,6 +60,7 @@
         "title<.*discord.*>" = "󰙯 ";
         "title<.*instagram.*>" = " ";
         "title<.*facebook.*>" = " ";
+        "title<.*tasks.*>" = " ";
       };
     };
     clock = {
