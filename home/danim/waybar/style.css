@@ -95,7 +95,7 @@ window#waybar {
 }
 
 #backlight {
-	background-color: @base05;
+	background-color: @base06;
 }
 
 #battery {
