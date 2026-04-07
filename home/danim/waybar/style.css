@@ -126,6 +126,7 @@ window#waybar {
 }
 
 #battery:hover,
+#backlight:hover,
 #pulseaudio:hover,
 #network:hover,
 #clock:hover,
