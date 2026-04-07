@@ -99,7 +99,7 @@ window#waybar {
 }
 
 #battery {
-	background-color: @base02;
+	background-color: @base00;
 	color: @base05;
 }
 
@@ -144,6 +144,10 @@ window#waybar {
 
 #pulseaudio.muted:hover {
 	padding: 0 13px 0 9px;
+}
+
+#battery:hover {
+	background-color: @base02;
 }
 
 #backlight:hover {
