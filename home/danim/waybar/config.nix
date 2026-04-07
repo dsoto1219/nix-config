@@ -59,6 +59,7 @@
         "class<obsidian>" = "󰧑 "; 
         "title<.*discord.*>" = "󰙯 ";
         "title<.*instagram.*>" = " ";
+        "title<.*facebook.*>" = " ";
       };
     };
     clock = {
