@@ -139,6 +139,13 @@ window#waybar {
 	background-color: @base07;
 }
 
+#clock:hover {
+	background-color: @base00;
+	border: 1px solid @base0E;
+	padding: 0 9px;
+	color: @base0E;
+}
+
 #custom-notifications:hover {
 	color: @base01;
 }
