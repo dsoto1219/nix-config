@@ -135,6 +135,13 @@ window#waybar {
 	transition: all 0.3s ease-in-out;
 }
 
+#pulseaudio:hover {
+	background-color: @base00;
+	border: 1px solid @base0A;
+	padding: 0 9px;
+	color: @base0A;
+}
+
 #backlight:hover {
 	background-color: @base07;
 }
