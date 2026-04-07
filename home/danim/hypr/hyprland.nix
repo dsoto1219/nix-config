@@ -244,6 +244,7 @@
 
         touchpad = {
           natural_scroll = true;
+          disable_while_typing = false;
         };
       };
 
