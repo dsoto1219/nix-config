@@ -140,5 +140,5 @@ window#waybar {
 }
 
 #custom-notifications:hover {
-	background-color: @base06;
+	color: @base01;
 }
