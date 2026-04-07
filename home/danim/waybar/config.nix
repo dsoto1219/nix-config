@@ -203,10 +203,6 @@
   #     format-alt = " {used:0.1f}G";
   #     max-length = 10;
   #   };
-  #   backlight = {
-  #     format = "󰖨 {}";
-  #     device = "acpi_video0";
-  #   };
   #   # "custom/weather" = {
   #   #   tooltip = true;
   #   #   format = "{}";
