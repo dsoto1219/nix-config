@@ -161,3 +161,11 @@ window#waybar {
 	color: @base01;
 	background-color: @base05;
 }
+
+#battery:not(:hover),
+#backlight:not(:hover),
+#network:not(:hover),
+#clock:not(:hover),
+#custom-notifications:not(:hover) {
+	transition: all 0.3s ease-in-out;
+}
