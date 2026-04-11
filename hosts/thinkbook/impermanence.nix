@@ -27,6 +27,9 @@
 in {
   boot.initrd.systemd.storePaths = [ rollbackScript ];
   boot.initrd.kernelModules = [ "btrfs" ];
+  boot.initrd.supportedFilesystems = {
+    btrfs = true;
+  };
 
   boot.initrd.systemd.services.rollback = {
     description = "Rollback BTRFS root subvolume to blank snapshot";
