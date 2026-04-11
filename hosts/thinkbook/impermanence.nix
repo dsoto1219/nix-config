@@ -1,14 +1,5 @@
-{ lib, pkgs, ... }:
-{
-  boot.initrd.systemd.services.rollback = {
-    description = "Rollback BTRFS root subvolume to blank snapshot";
-    wantedBy = [ "initrd.target" ];
-    after = [ "systemd-hibernate-resume.service" ];
-    before = [ "sysroot.mount" ];
-    unitConfig.DefaultDependencies = "no";
-    serviceConfig = {
-      Type = "oneshot";
-      ExecStart = pkgs.writeShellScript "rollback" ''
+{ lib, pkgs, ... }: let 
+  rollbackScript = pkgs.writeShellScript "rollback" ''
         mkdir /btrfs_tmp
         mount /dev/root_vg/root /btrfs_tmp
 
@@ -33,6 +24,18 @@
         btrfs subvolume create /btrfs_tmp/root
         umount /btrfs_tmp
       '';
+in {
+  boot.initrd.systemd.storePaths = [ rollbackScript ];
+
+  boot.initrd.systemd.services.rollback = {
+    description = "Rollback BTRFS root subvolume to blank snapshot";
+    wantedBy = [ "initrd.target" ];
+    after = [ "systemd-hibernate-resume.service" ];
+    before = [ "sysroot.mount" ];
+    unitConfig.DefaultDependencies = "no";
+    serviceConfig = {
+      Type = "oneshot";
+      ExecStart = rollbackScript;
     };
   };
 
