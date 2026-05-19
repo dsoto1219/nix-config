@@ -57,6 +57,7 @@
         "class<zotero>" = "󰮩 "; 
         "class<kitty>" = " "; 
         "class<obsidian>" = "󰧑 "; 
+        "class<steam>" = " "; 
         "title<.*discord.*>" = "󰙯 ";
         "title<.*instagram.*>" = " ";
         "title<.*facebook.*>" = " ";
