@@ -59,6 +59,7 @@
         "class<obsidian>" = "󰧑 "; 
         "class<steam>" = " "; 
         "title<.*discord.*>" = "󰙯 ";
+        "title<.*Kerbal Space Program.*>" = "󱓞 ";
         "title<.*instagram.*>" = " ";
         "title<.*facebook.*>" = " ";
         "title<.*tasks.*>" = " ";
