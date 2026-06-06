@@ -28,6 +28,7 @@ in {
     vesktop
     pamixer
     qimgv
+    mono
   ];
 
   stylix = {
