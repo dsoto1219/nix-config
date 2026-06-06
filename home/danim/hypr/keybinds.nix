@@ -1,16 +1,12 @@
-{ ... }: let # Keywords
-    mainMod = "SUPER"; # Sets "Windows" key as main modifier
-    terminal = "kitty";
-    mod = "SUPER"; 
-    shiftMod = "SUPER shift"; 
-    fileManager = "dolphin";
-    menuProgram = "rofi";
-    menuCommand = "rofi -show drun";
-in {
+{ ... }: {
   wayland.windowManager.hyprland.settings = {
     ###################
     ### KEYBINDINGS ###
     ###################
+
+    "$mainMod" = "SUPER"; # Sets "Windows" key as main modifier
+    "$mod" = "SUPER"; 
+    "$shiftMod" = "SUPER shift"; 
 
     # Example binds, see https://wiki.hypr.land/Configuring/Binds/ for more
     bind = [
