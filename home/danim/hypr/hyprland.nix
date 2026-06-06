@@ -41,9 +41,12 @@
       ################
 
       # See https://wiki.hypr.land/Configuring/Monitors/
-      monitor = [
-        ",preferred,auto,auto"
-      ];
+      monitor = {
+        output   = "";
+        mode     = "preferred";
+        position = "auto";
+        scale    = "auto";
+      };
 
       ###################
       ### MY PROGRAMS ###
@@ -51,10 +54,10 @@
 
       # See https://wiki.hypr.land/Configuring/Keywords/
       # Set programs that you use
-      "$terminal" = "kitty";
-      "$fileManager" = "dolphin";
-      "$menuProgram" = "rofi";
-      "$menuCommand" = "rofi -show drun";
+      terminal = "kitty";
+      fileManager = "dolphin";
+      menuProgram = "rofi";
+      menuCommand = "rofi -show drun";
 
       #################
       ### AUTOSTART ###
