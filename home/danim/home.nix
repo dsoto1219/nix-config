@@ -28,7 +28,6 @@ in {
     vesktop
     pamixer
     qimgv
-    steamcmd steam-tui
   ];
 
   stylix = {
