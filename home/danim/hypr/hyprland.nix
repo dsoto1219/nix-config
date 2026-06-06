@@ -35,9 +35,7 @@
 
     systemd.variables = [ "--all" ];
 
-    settings = let
-      terminal = "kitty";
-    in {
+    settings = {
       ################
       ### MONITORS ###
       ################
@@ -54,6 +52,13 @@
       ### MY PROGRAMS ###
       ###################
 
+      # See https://wiki.hypr.land/Configuring/Keywords/
+      # Set programs that you use
+      terminal = "kitty";
+      fileManager = "dolphin";
+      menuProgram = "rofi";
+      menuCommand = "rofi -show drun";
+
       #################
       ### AUTOSTART ###
       #################
@@ -63,7 +68,7 @@
       exec-once = [
         "systemctl --user start hyprpolkitagent"
         "hyprlock || hyprctl dispatch exit"
-        # terminal
+        # "$terminal"
         "hyprpaper"
         "waybar"
         "swaync"
