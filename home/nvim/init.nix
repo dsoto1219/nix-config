@@ -66,7 +66,7 @@
             owner = "Freedzone";
             repo = "kerbovim";
             rev = "c6bdc3a19e0b84085113dafb5b4ab6bf668c698b";
-            hash = "sha256-04qmxhc3cf2p889j5pxyb5d4smgqga6v11dc7nrvivjycqwcfp6s";
+            hash = "sha256-5fa46dq8rscwcbvrv5nxr9gnba7znx71";
         };
     })];
 
