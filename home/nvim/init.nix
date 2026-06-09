@@ -39,11 +39,11 @@
       settings.formatters_by_ft = {
         cpp = [ "clang_format" ];
         nix = [ "nixfmt" ];
-"_" = [
-	  "squeeze_blanks"
-	  "trim_whitespace"
-	  "trim_newlines"
-	];
+        "_" = [
+          "squeeze_blanks"
+          "trim_whitespace"
+          "trim_newlines"
+        ];
       };
     };
 
