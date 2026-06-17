@@ -63,6 +63,8 @@
         "title<.*instagram.*>" = " ";
         "title<.*facebook.*>" = " ";
         "title<.*tasks.*>" = " ";
+        "title<.*rstudio.*>" = " "
+ ";
       };
     };
     clock = {
