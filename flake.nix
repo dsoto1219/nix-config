@@ -27,8 +27,9 @@
     home-manager.url = "github:nix-community/home-manager/release-26.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
-    # nixvim
+    # Neovim-related flakes
     nixvim.url = "github:nix-community/nixvim";
+    mnw.url = "github:Gerg-L/mnw";
 
     # stylix
     stylix.url = "github:nix-community/stylix/release-26.05";
