@@ -59,10 +59,10 @@
     nixPath = lib.mapAttrsToList (n: _: "${n}=flake:${n}") flakeInputs;
 
     # Garbage collection
-    gc = {
-      automatic = true;
-      dates = "daily";
-    };
+    # gc = {
+    #   automatic = true;
+    #   dates = "daily";
+    # };
   };
 
   # Automatic upgrading
