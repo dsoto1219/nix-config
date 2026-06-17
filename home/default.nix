@@ -16,7 +16,7 @@
     # You can also split up your configuration and import pieces of it here:
     ./git.nix
     ./shells.nix
-    ./nvim/init.nix
+    ./nvim
   ];
 
   # Add stuff for your user as you see fit:
