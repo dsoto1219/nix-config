@@ -4,7 +4,7 @@
 
   programs.mnw = {
     enable = true;
-    luaFiles = ./init.lua;
+    luaFiles = [ ./init.lua ];
     aliases = [ "vi" "vim" ];
     extraBinPath = with pkgs; [ 
       ripgrep
