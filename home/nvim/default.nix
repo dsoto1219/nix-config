@@ -9,6 +9,7 @@
     extraBinPath = with pkgs; [ 
       ripgrep
       fzf
+      tree-sitter
     ];
   };
 }
