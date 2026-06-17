@@ -13,6 +13,9 @@
     viAlias = true;
     vimAlias = true;
     vimdiffAlias = true;
+    
+    # Temporary fix for "lib.systems.elaborate: linux-kernel has been removed" error
+    nixpkgs.hostPlatform = pkgs.stdenv.hostPlatform.system;
 
     clipboard.register = "unnamedplus";
 
