@@ -10,7 +10,7 @@
       ripgrep
       fzf
       tree-sitter
-      gcc
+      gcc rpclib
     ];
   };
 }
