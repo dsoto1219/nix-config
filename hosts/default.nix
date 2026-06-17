@@ -99,7 +99,6 @@
     zip unzip
     htop
     ripgrep
-    libuv
   ];
   environment.variables = {
     EDITOR = "vim";

@@ -36,6 +36,7 @@ in {
         xts
       ];
     })
+    libuv
   ];
 
   stylix = {
