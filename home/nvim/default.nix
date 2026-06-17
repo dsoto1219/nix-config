@@ -2,6 +2,9 @@
 {
   imports = [ inputs.mnw.homeManagerModules.mnw ];
 
+  # Enable dynamic linking
+  programs.nix-ld.enable = true;
+
   programs.mnw = {
     enable = true;
     luaFiles = [ ./init.lua ];
