@@ -29,6 +29,13 @@ in {
     pamixer
     qimgv
     mono
+    (rstudioWrapper.override {
+      packages = with pkgs.rPackages; [
+        ggplot2
+        dplyr
+        xts
+      ];
+    })
   ];
 
   stylix = {
