@@ -5,7 +5,7 @@
     luaFiles = ./init.lua;
     aliases = [ "vi" "vim" ];
     extraBinPath = with pkgs; [ 
-      rg
+      ripgrep
       fzf
     ];
   };
