@@ -1,5 +1,7 @@
-{ pkgs, ... }:
+{ inputs, pkgs, ... }:
 {
+  imports = [ inputs.mnw.homeManagerModules.mnw ];
+
   programs.mnw = {
     enable = true;
     luaFiles = ./init.lua;
