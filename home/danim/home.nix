@@ -34,7 +34,8 @@ in {
         ggplot2
         dplyr
         xts
-        sass
+        sass bslib
+        rmarkdown
       ];
     })
     libuv
