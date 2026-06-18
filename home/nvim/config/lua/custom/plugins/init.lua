@@ -9,7 +9,8 @@ local function gh(repo) return 'https://github.com/' .. repo end
 
 vim.pack.add {
   gh 'tpope/vim-surround',
-  gh 'stevearc/oil.nvim'
+  gh 'stevearc/oil.nvim',
+  gh 'Freedzone/kerbovim'
 }
 
 -- Iterate over all Lua files in the plugins directory and load them
