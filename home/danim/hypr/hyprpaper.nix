@@ -3,7 +3,7 @@
   services.hyprpaper.enable = true;
 
   services.hyprpaper.settings = let
-    wallpaper-path = "../../../assets/sekiro-vs-father-sunset.png";
+    wallpaper-path = "../../../assets/ksp-wallpaper.png";
   in {
     preload = [ wallpaper-path ];
     wallpaper = [
