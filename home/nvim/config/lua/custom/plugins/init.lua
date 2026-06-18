@@ -2,9 +2,15 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
+---
+---@param repo string
+---@return string
+local function gh(repo) return 'https://github.com/' .. repo end
 
-vim.pack.add({'https://github.com/tpope/vim-surround'})
-vim.pack.add({'https://github.com/stevearc/oil.nvim'})
+vim.pack.add {
+  gh 'tpope/vim-surround',
+  gh 'stevearc/oil.nvim'
+}
 
 -- Iterate over all Lua files in the plugins directory and load them
 local plugins_dir = vim.fs.joinpath(vim.fn.stdpath 'config', 'lua', 'custom', 'plugins')
