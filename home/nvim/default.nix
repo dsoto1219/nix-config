@@ -4,9 +4,6 @@
 
   programs.mnw = {
     enable = true;
-    initLua = ''
-      require("config")
-    '';
     aliases = [ "vi" "vim" ];
     extraBinPath = with pkgs; [ 
       ripgrep
