@@ -5,8 +5,8 @@
   programs.mnw = {
     enable = true;
     initLua = ''
-      require("custom")
-      require("kickstart")
+      require("custom.plugins")
+      require("kickstart.plugins")
     '';
     luaFiles = [ 
       ./init.lua # Main file
