@@ -10,7 +10,7 @@
       ripgrep
       fzf
       tree-sitter
-      gcc rpclib
+      gcc rpclib gnumake
     ];
     plugins.dev = {
       config = {
