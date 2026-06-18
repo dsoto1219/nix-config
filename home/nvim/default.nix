@@ -12,11 +12,11 @@
       tree-sitter
       gcc rpclib gnumake
     ];
-    plugins.dev = {
+    plugins = {
       start = with pkgs.vimPlugins; [
         oil-nvim
       ];
-      config = {
+      dev.config = {
         pure = ./config;
 	impure = "/home/danim/Dev/nix-config/home/nvim/config/";
       };
