@@ -13,6 +13,9 @@
       gcc rpclib gnumake
     ];
     plugins.dev = {
+      start = with pkgs.vimPlugins; [
+        oil-nvim
+      ];
       config = {
         pure = ./config;
 	impure = "/home/danim/Dev/nix-config/home/nvim/config/";
