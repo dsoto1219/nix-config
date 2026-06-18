@@ -31,7 +31,7 @@
     ffmpeg
     devenv
 
-    mnw.lib.wrap pkgs ./nvim/config.nix;
+    mnw.lib.wrap pkgs ./nvim/config.nix
 
     # Fonts
     nerd-fonts.jetbrains-mono
