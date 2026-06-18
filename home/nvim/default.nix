@@ -14,6 +14,7 @@
     plugins.dev = {
       config = {
         pure = ./config;
+	impure = "/home/danim/Dev/nix-config/home/nvim/config/";
       };
     };
   };
