@@ -12,11 +12,11 @@
     # If you want to use home-manager modules from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModule
     inputs.stylix.homeModules.stylix
+    inputs.mnw.homeManagerModules.mnw
 
     # You can also split up your configuration and import pieces of it here:
     ./git.nix
     ./shells.nix
-    ./nvim
   ];
 
   # Add stuff for your user as you see fit:
@@ -30,6 +30,8 @@
     lazygit
     ffmpeg
     devenv
+
+    mnw.lib.wrap pkgs ./nvim/config.nix;
 
     # Fonts
     nerd-fonts.jetbrains-mono
