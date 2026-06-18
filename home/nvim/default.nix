@@ -14,5 +14,10 @@
       tree-sitter
       gcc rpclib
     ];
+    plugins.dev = {
+      config = {
+        pure = ./config;
+      }
+    }
   };
 }
