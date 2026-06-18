@@ -17,7 +17,7 @@
     plugins.dev = {
       config = {
         pure = ./config;
-      }
-    }
+      };
+    };
   };
 }
