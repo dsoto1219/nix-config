@@ -4,6 +4,10 @@
 
   programs.mnw = {
     enable = true;
+    initLua = ''
+      require("custom")
+      require("kickstart")
+    '';
     luaFiles = [ 
       ./init.lua # Main file
       ./lua/custom/plugins/init.lua 
