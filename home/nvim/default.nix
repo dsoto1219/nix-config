@@ -5,20 +5,8 @@
   programs.mnw = {
     enable = true;
     initLua = ''
-      require(".")
+      require("config")
     '';
-    luaFiles = [ 
-      ./init.lua # Main file
-      ./lua/custom/plugins/init.lua 
-      ./lua/kickstart/health.lua
-      # Extra Provided Plugins
-      ./lua/kickstart/plugins/autopairs.lua
-      ./lua/kickstart/plugins/debug.lua
-      ./lua/kickstart/plugins/gitsigns.lua
-      ./lua/kickstart/plugins/indent_line.lua
-      ./lua/kickstart/plugins/lint.lua
-      ./lua/kickstart/plugins/neo-tree.lua
-    ];
     aliases = [ "vi" "vim" ];
     extraBinPath = with pkgs; [ 
       ripgrep
