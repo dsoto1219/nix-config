@@ -39,6 +39,7 @@ in {
       ];
     })
     libuv
+    unstable.onedriver
   ];
 
   stylix = {
