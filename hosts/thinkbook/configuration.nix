@@ -23,7 +23,7 @@
     ./fingerprint.nix
     ./hyprland.nix
     ./impermanence.nix
-    ./onedrive.nix
+    # ./onedrive.nix
     ./steam.nix
     ./tablets.nix
     ./users.nix
