@@ -37,7 +37,7 @@
     DefaultTimeoutStopSec = "10s";
   };
 
-  boot.initrd.kernelModules = [ "i915" ]; # Attempt to fix driver issue messing with tty font size
+  # boot.initrd.kernelModules = [ "i915" ]; # Attempt to fix driver issue messing with tty font size
   boot.initrd.systemd.enable = true; # ensure console font below is in the initial ramdisk
 
   services.blueman.enable = true; # Enable gui tools for bluetooth
@@ -49,7 +49,7 @@
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
   console = {
-    font = "ter-v32n";
+    # font = "ter-v32n";
     packages = with pkgs; [ terminus_font ]; # Add the Terminus font package
     keyMap = "us";
     # useXkbConfig = true; # use xkb.options in tty.
