@@ -58,6 +58,7 @@
         "class<kitty>" = " "; 
         "class<obsidian>" = "󰧑 "; 
         "class<steam>" = " "; 
+        "class<dolphin>" = " ";
         "title<.*discord.*>" = "󰙯 ";
         "title<.*Kerbal Space Program.*>" = "󱓞 ";
         "title<.*instagram.*>" = " ";
