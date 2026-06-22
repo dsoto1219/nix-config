@@ -39,6 +39,7 @@ in {
         mice
         car gt lubridate
         tidyverse
+        quarto
       ];
     })
     libuv
