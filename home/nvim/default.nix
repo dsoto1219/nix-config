@@ -12,6 +12,7 @@
       tree-sitter
       gcc rpclib gnumake
       nodejs
+      delve
     ];
     plugins = {
       start = with pkgs.vimPlugins; [
