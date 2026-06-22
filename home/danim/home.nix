@@ -37,6 +37,7 @@ in {
         sass bslib
         rmarkdown
         mice
+        car gt lubridate
       ];
     })
     libuv
