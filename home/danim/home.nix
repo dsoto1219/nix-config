@@ -36,6 +36,7 @@ in {
         xts
         sass bslib
         rmarkdown
+        mice
       ];
     })
     libuv
