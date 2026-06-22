@@ -32,13 +32,12 @@ in {
     (rstudioWrapper.override {
       packages = with pkgs.rPackages; [
         ggplot2
-        dplyr
+        dplyr tidyverse broom
         xts
         sass bslib
         rmarkdown
         mice
         car gt lubridate
-        tidyverse
         quarto
       ];
     })
