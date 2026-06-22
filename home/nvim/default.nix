@@ -13,6 +13,7 @@
       gcc rpclib gnumake
       nodejs
       delve
+      markdownlint-cli
     ];
     plugins = {
       start = with pkgs.vimPlugins; [
