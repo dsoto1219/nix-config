@@ -38,6 +38,7 @@ in {
         rmarkdown
         mice
         car gt lubridate
+        tidyverse
       ];
     })
     libuv
