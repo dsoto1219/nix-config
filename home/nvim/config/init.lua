@@ -173,6 +173,7 @@ do
   vim.o.confirm = true
 
   --- Folding
+  vim.o.foldmethod = 'expr';
   vim.o.foldlevel = 99 -- Open all folds by default upon opening a file
   vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()' -- Use Treesitter for folding
   vim.opt.foldtext = '' -- Syntax highlight first line of fold
