@@ -11,6 +11,7 @@
       fzf
       tree-sitter
       gcc rpclib gnumake
+      nodejs
     ];
     plugins = {
       start = with pkgs.vimPlugins; [
