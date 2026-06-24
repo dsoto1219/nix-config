@@ -41,7 +41,7 @@ in {
         quarto
       ];
     })
-    libuv
+    libuv icu
   ];
 
   stylix = {
