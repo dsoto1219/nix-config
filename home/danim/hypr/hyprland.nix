@@ -22,7 +22,10 @@
 
   programs.kitty.enable = true;
   services.swaync.enable = true; # notification manager
-  programs.hyprshot.enable = true; # screenshot manager
+  programs.hyprshot = {
+    enable = true; # screenshot manager
+    saveLocation = "$HOME/Pictures/Screenshots";
+  };
 
   # Hyprland Configuration
   wayland.windowManager.hyprland = {
