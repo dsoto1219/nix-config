@@ -29,8 +29,8 @@ in {
     pamixer
     qimgv
     mono
-    (rstudioWrapper.override {
-      packages = with pkgs.rPackages; [
+    (unstable.rstudioWrapper.override {
+      packages = with pkgs.unstable.rPackages; [
         ggplot2
         dplyr tidyverse broom
         xts
