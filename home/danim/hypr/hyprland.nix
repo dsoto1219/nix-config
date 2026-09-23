@@ -38,7 +38,6 @@
 
     systemd.variables = [ "--all" ];
 
-    configType = "hyprlang";
     settings = let
       terminal = "kitty";
     in {
