@@ -24,6 +24,7 @@ in {
     terminal    = { _var = "kitty"; };
     fileManager = { _var = "dolphin"; };
     menu        = { _var = "rofi"; };
+    menuOpts    = { _var = "-show drun"; };
 
     ###################
     ### KEYBINDINGS ###
@@ -39,7 +40,7 @@ in {
       (bind (mod "C") "hl.dsp.window.close()")
       (bind (mod "E") (execVar "fileManager"))
       (bind (mod "V") ''hl.dsp.window.float({ action = "toggle"})'')
-      (bind (mod "R") (execVar "menu"))
+      (bind (mod "R") (execVar "menu" + "menuOpts"))
       (bind (mod "P") ("hl.dsp.window.pseudo()"))
       (bind (mod "SHIFT + J") ''hl.dsp.layout("togglesplit")'') # dwindle only
 
