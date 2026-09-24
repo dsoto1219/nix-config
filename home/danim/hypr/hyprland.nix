@@ -159,31 +159,31 @@
 
           layout = "dwindle";
         };
-      };
 
-      # https://wiki.hypr.land/Configuring/Variables/#decoration
-      decoration = {
-        rounding = 10;
-        rounding_power = 2;
+        # https://wiki.hypr.land/Configuring/Variables/#decoration
+        decoration = {
+          rounding = 10;
+          rounding_power = 2;
 
-        # Change transparency of focused and unfocused windows
-        active_opacity = 1.0;
-        inactive_opacity = 1.0;
+          # Change transparency of focused and unfocused windows
+          active_opacity = 1.0;
+          inactive_opacity = 1.0;
 
-        shadow = {
-          enabled = true;
-          range = 4;
-          render_power = 3;
-          color = "0xee1a1a1a";
-        };
+          shadow = {
+            enabled = true;
+            range = 4;
+            render_power = 3;
+            color = "0xee1a1a1a";
+          };
 
           # https://wiki.hypr.land/Configuring/Variables/#blur
-        blur = {
-          enabled = true;
-          size = 3;
-          passes = 1;
+          blur = {
+            enabled = true;
+            size = 3;
+            passes = 1;
 
-          vibrancy = 0.1696;
+            vibrancy = 0.1696;
+          };
         };
 
         animations = {
@@ -234,6 +234,8 @@
           use_nearest_neighbor = true;
         };
       };
+    };
+
 
       # Default curves, see https://wiki.hypr.land/Configuring/Animations/#curves
       curve = [
