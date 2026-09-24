@@ -74,8 +74,8 @@ in {
       (bind "mainMod + SHIFT + 0" (mvws "10"))
 
       # Example special workspace (scratchpad)
-      (bind "mainMod + S" (lua "hl.dsp.workspace.toggle_special(\"magic\")")
-      (bind "mainMod + SHIFT + S" (lua "hl.dsp.window.move({ workspace = \"special:magic\" })")
+      (bind "mainMod + S" (lua "hl.dsp.workspace.toggle_special(\"magic\")"))
+      (bind "mainMod + SHIFT + S" (lua "hl.dsp.window.move({ workspace = \"special:magic\" })"))
 
       # Scroll through existing workspaces with mainMod + scroll
       (bind "mainMod + mouse_down" (lua ''hl.dsp.focus({ workspace = "e-1" })''))
