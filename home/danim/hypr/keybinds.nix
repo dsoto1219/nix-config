@@ -29,11 +29,11 @@ in {
       mod = key: lua ''mainMod .. " + ${key}"'';
     in [
       # Example binds, see https://wiki.hypr.land/Configuring/Binds/ for more
-      (bind (mod "Q") (exec (lua "terminal")))
+      (bind (mod "Q") (lua (exec "terminal")))
       (bind (mod "C") "hl.dsp.window.close()")
-      (bind (mod "E") (exec (lua  "fileManager")))
+      (bind (mod "E") (lua (exec "fileManager")))
       (bind (mod "V") ''hl.dsp.window.float({ action = "toggle"})'')
-      (bind (mod "R") (exec (lua "menu")))
+      (bind (mod "R") (lua (exec "menu")))
       (bind (mod "P") ("hl.dsp.window.psuedo()"))
       (bind (mod "SHIFT + J") "hl.dsp.layout(\"togglesplit\")") # dwindle only
 
