@@ -34,7 +34,7 @@ in {
       (bind (mod "C") "hl.dsp.window.close()")
       (bind (mod "E") (execVar "fileManager"))
       (bind (mod "V") ''hl.dsp.window.float({ action = "toggle"})'')
-      (bind (mod "R") (execVar "menu")))
+      (bind (mod "R") (execVar "menu"))
       (bind (mod "P") ("hl.dsp.window.psuedo()"))
       (bind (mod "SHIFT + J") ''hl.dsp.layout("togglesplit")'') # dwindle only
 
