@@ -126,7 +126,7 @@ in {
         ''{ locked = true }'')
 
       # Custom
-      (bind (mod "F") "fullscreen")
+      (bind (mod "F") ''hl.dsp.window.fullscreen({ action = "toggle" })'')
       (bind (mod "W") (exec "pkill waybar && waybar"))
       (bind (mod "D") (exec "pkill hyprpicker || hyprpicker --autocopy"))
       # Bind power key: https://github.com/hyprwm/Hyprland/issues/2614#issuecomment-2395597405
