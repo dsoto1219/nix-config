@@ -44,10 +44,10 @@ in {
       (bind (mod "SHIFT + J") ''hl.dsp.layout("togglesplit")'') # dwindle only
 
       # Move focus with mainMod + vim direction keys
-      (bind (mod "H") ''hl.dsp.focus({ direction = "left"}))''
-      (bind (mod "L") ''hl.dsp.focus({ direction = "right"})'')
-      (bind (mod "K") ''hl.dsp.focus({ direction = "up"})'')
-      (bind (mod "J") ''hl.dsp.focus({ direction = "down"})'')
+      (bind (mod "H") ''hl.dsp.focus({ direction = "left" }))''
+      (bind (mod "L") ''hl.dsp.focus({ direction = "right" })'')
+      (bind (mod "K") ''hl.dsp.focus({ direction = "up" })'')
+      (bind (mod "J") ''hl.dsp.focus({ direction = "down" })'')
 
       # Switch workspaces with mainMod + [0-9]
       (bind (mod "1") (ws "1"))
