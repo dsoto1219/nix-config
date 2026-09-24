@@ -42,6 +42,7 @@ in {
       ];
     })
     libuv
+    gp-saml-gui
   ];
 
   stylix = {
