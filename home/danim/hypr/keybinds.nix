@@ -9,6 +9,7 @@
     ]; 
   };
   exec = cmd: ''hl.dsp.exec_cmd("${cmd}")'';
+  execVar = cmd: ''hl.dsp.exec_cmd(${cmd})'';
   ws   = n:   ''hl.dsp.focus({ workspace = "${n}" })'';
   mvws = n:   ''hl.dsp.window.move({ workspace = "${n}" })'';
 in {
@@ -29,19 +30,19 @@ in {
       mod = key: lua ''mainMod .. " + ${key}"'';
     in [
       # Example binds, see https://wiki.hypr.land/Configuring/Binds/ for more
-      (bind (mod "Q") (lua (exec "terminal")))
+      (bind (mod "Q") (execVar "terminal"))
       (bind (mod "C") "hl.dsp.window.close()")
-      (bind (mod "E") (lua (exec "fileManager")))
+      (bind (mod "E") (execVar "fileManager"))
       (bind (mod "V") ''hl.dsp.window.float({ action = "toggle"})'')
-      (bind (mod "R") (lua (exec "menu")))
+      (bind (mod "R") (execVar "menu")))
       (bind (mod "P") ("hl.dsp.window.psuedo()"))
-      (bind (mod "SHIFT + J") "hl.dsp.layout(\"togglesplit\")") # dwindle only
+      (bind (mod "SHIFT + J") ''hl.dsp.layout("togglesplit")'') # dwindle only
 
       # Move focus with mainMod + vim direction keys
-      (bind (mod "H") "hl.dsp.focus({ direction = \"left\"})")
-      (bind (mod "L") "hl.dsp.focus({ direction = \"right\"})")
-      (bind (mod "K") "hl.dsp.focus({ direction = \"up\"})")
-      (bind (mod "J") "hl.dsp.focus({ direction = \"down\"})")
+      (bind (mod "H") ''hl.dsp.focus({ direction = "left"}))''
+      (bind (mod "L") ''hl.dsp.focus({ direction = "right"})'')
+      (bind (mod "K") ''hl.dsp.focus({ direction = "up"})'')
+      (bind (mod "J") ''hl.dsp.focus({ direction = "down"})'')
 
       # Switch workspaces with mainMod + [0-9]
       (bind (mod "1") (ws "1"))
@@ -70,8 +71,8 @@ in {
       (bind (mod "SHIFT + 0") (mvws "10"))
 
       # Example special workspace (scratchpad)
-      (bind (mod "S") "hl.dsp.workspace.toggle_special(\"magic\")")
-      (bind (mod "SHIFT + S") "hl.dsp.window.move({ workspace = \"special:magic\" })")
+      (bind (mod "S") ''hl.dsp.workspace.toggle_special("magic")'')
+      (bind (mod "SHIFT + S") ''hl.dsp.window.move({ workspace = "special:magic" })'')
 
       # Scroll through existing workspaces with mainMod + scroll
       (bind (mod "mouse_down") ''hl.dsp.focus({ workspace = "e-1" })'')
@@ -129,7 +130,7 @@ in {
 
       # hyprshot
       # Screenshot a window with SUPER + PrintScr
-      (bindo "PRINT" 
+      (bindo "PRINT"
         (exec "hyprshot -m output --clipboard-only")
         ''{ locked = true }'')
       (bindo "SHIFT + PRINT" 
