@@ -34,18 +34,18 @@ in {
     bind = [
       # Example binds, see https://wiki.hypr.land/Configuring/Binds/ for more
       (bind "mainMod .. Q" (exec "terminal"))
-      (bind "mainMod .. C" (lua "hl.dsp.window.close()"))
+      (bind "mainMod .. C" "hl.dsp.window.close()")
       (bind "mainMod .. E" (exec "fileManager"))
-      (bind "mainMod .. V" (lua "hl.dsp.window.float({ action = \"toggle\"})"))
+      (bind "mainMod .. V" "hl.dsp.window.float({ action = \"toggle\"})")
       (bind "mainMod .. R" (exec "menu"))
-      (bind "mainMod .. P" (lua "hl.dsp.window.psuedo()"))
-      (bind "mainMod .. J" (lua "hl.dsp.layout(\"togglesplit\")")) # dwindle only
+      (bind "mainMod .. P" ("hl.dsp.window.psuedo()"))
+      (bind "mainMod .. J" "hl.dsp.layout(\"togglesplit\")") # dwindle only
 
       # Move focus with mainMod + vim direction keys
-      (bind "mainMod .. H" (lua "hl.dsp.focus({ direction = \"left\"})"))
-      (bind "mainMod .. L" (lua "hl.dsp.focus({ direction = \"right\"})"))
-      (bind "mainMod .. K" (lua "hl.dsp.focus({ direction = \"up\"})"))
-      (bind "mainMod .. J" (lua "hl.dsp.focus({ direction = \"down\"})"))
+      (bind "mainMod .. H" "hl.dsp.focus({ direction = \"left\"})")
+      (bind "mainMod .. L" "hl.dsp.focus({ direction = \"right\"})")
+      (bind "mainMod .. K" "hl.dsp.focus({ direction = \"up\"})")
+      (bind "mainMod .. J" "hl.dsp.focus({ direction = \"down\"})")
 
       # Switch workspaces with mainMod + [0-9]
       (bind "mainMod + 1" (ws "1"))
@@ -74,16 +74,16 @@ in {
       (bind "mainMod + SHIFT + 0" (mvws "10"))
 
       # Example special workspace (scratchpad)
-      (bind "mainMod + S" (lua "hl.dsp.workspace.toggle_special(\"magic\")"))
-      (bind "mainMod + SHIFT + S" (lua "hl.dsp.window.move({ workspace = \"special:magic\" })"))
+      (bind "mainMod + S" "hl.dsp.workspace.toggle_special(\"magic\")")
+      (bind "mainMod + SHIFT + S" "hl.dsp.window.move({ workspace = \"special:magic\" })")
 
       # Scroll through existing workspaces with mainMod + scroll
-      (bind "mainMod + mouse_down" (lua ''hl.dsp.focus({ workspace = "e-1" })''))
-      (bind "mainMod + mouse_up" (lua ''hl.dsp.focus({ workspace = "e+1" })''))
+      (bind "mainMod + mouse_down" ''hl.dsp.focus({ workspace = "e-1" })'')
+      (bind "mainMod + mouse_up" ''hl.dsp.focus({ workspace = "e+1" })'')
 
       # Move/resize windows with mainMod + LMB/RMB and dragging
-      (bind "mainMod + mouse:272" (lua ''hl.dsp.window.drag(),   { mouse = true }''))
-      (bind "mainMod + mouse:273" (lua ''hl.dsp.window.resize(), { mouse = true }''))
+      (bind "mainMod + mouse:272" ''hl.dsp.window.drag(),   { mouse = true }'')
+      (bind "mainMod + mouse:273" ''hl.dsp.window.resize(), { mouse = true }'')
 
       # Laptop multimedia keys for volume and LCD brightness
       (bindo "XF86AudioRaiseVolume"
