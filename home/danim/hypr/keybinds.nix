@@ -23,7 +23,7 @@ in {
     # Set programs that you use
     terminal    = { _var = "kitty"; };
     fileManager = { _var = "dolphin"; };
-    menu        = { _var = "hyprlauncher"; };
+    menu        = { _var = "rofi"; };
 
     ###################
     ### KEYBINDINGS ###
