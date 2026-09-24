@@ -79,11 +79,11 @@ in {
 
       # Move/resize windows with mainMod + LMB/RMB and dragging
       (bindo (mod "mouse:272") 
-        ''hl.dsp.window.drag()''   
-        ''mouse = true }'')
+        ''hl.dsp.window.drag()''
+        ''{ mouse = true }'')
       (bindo (mod "mouse:273") 
         ''hl.dsp.window.resize()''
-        ''mouse = true }'')
+        ''{ mouse = true }'')
 
       # Laptop multimedia keys for volume and LCD brightness
       (bindo "XF86AudioRaiseVolume"
