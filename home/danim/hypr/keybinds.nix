@@ -29,7 +29,6 @@ in {
     ###################
 
     mainMod = { _var = "SUPER"; }; # Sets "Windows" key as main modifier 
-    shiftMod = { _var = "SUPER shift"; }; 
 
     bind = [
       # Example binds, see https://wiki.hypr.land/Configuring/Binds/ for more
