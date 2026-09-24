@@ -26,7 +26,7 @@ in {
     mainMod = { _var = "SUPER"; }; # Sets "Windows" key as main modifier 
 
     bind = let 
-      mod = key: (lua "mainMod .." + "+ ${key}");
+      mod = key: lua ''mainMod .. " + ${key}"'';
     in [
       # Example binds, see https://wiki.hypr.land/Configuring/Binds/ for more
       (bind (mod "Q") (exec (lua "terminal")))
