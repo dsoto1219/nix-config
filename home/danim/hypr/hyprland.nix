@@ -329,7 +329,7 @@
           leaf = "windows";
           enabled = true;
           speed = 4.79; 
-          spring = "easy" 
+          spring = "easy";
         }
         {
           leaf = "windowsIn";
