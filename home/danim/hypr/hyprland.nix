@@ -234,7 +234,6 @@
           use_nearest_neighbor = true;
         };
       };
-    };
 
 
       # Default curves, see https://wiki.hypr.land/Configuring/Animations/#curves
