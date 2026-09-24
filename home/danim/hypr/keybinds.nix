@@ -79,7 +79,7 @@ in {
 
       # Scroll through existing workspaces with mainMod + scroll
       (bind "mainMod + mouse_down" (lua ''hl.dsp.focus({ workspace = "e-1" })''))
-      (bind "mainMod + mouse_up" (lua ''hl.dsp.focus({ workspace = "e-1" })''))
+      (bind "mainMod + mouse_up" (lua ''hl.dsp.focus({ workspace = "e+1" })''))
 
       # Move/resize windows with mainMod + LMB/RMB and dragging
       (bind "mainMod + mouse:272" (lua ''hl.dsp.window.drag(),   { mouse = true }''))
