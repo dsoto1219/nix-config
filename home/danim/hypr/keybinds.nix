@@ -29,7 +29,7 @@ in {
       mod = key: (lua "mainMod .." + "+ ${key}");
     in [
       # Example binds, see https://wiki.hypr.land/Configuring/Binds/ for more
-      (bind (mod "Q") (exec (lua "terminal"))))
+      (bind (mod "Q") (exec (lua "terminal")))
       (bind (mod "C") "hl.dsp.window.close()")
       (bind (mod "E") (exec (lua  "fileManager")))
       (bind (mod "V") hl.dsp.window.float({ action = \"toggle\"})")
