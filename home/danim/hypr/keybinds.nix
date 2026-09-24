@@ -81,8 +81,12 @@ in {
       (bind "mainMod + mouse_up" ''hl.dsp.focus({ workspace = "e+1" })'')
 
       # Move/resize windows with mainMod + LMB/RMB and dragging
-      (bind "mainMod + mouse:272" ''hl.dsp.window.drag(),   { mouse = true }'')
-      (bind "mainMod + mouse:273" ''hl.dsp.window.resize(), { mouse = true }'')
+      (bindo "mainMod + mouse:272" 
+        ''hl.dsp.window.drag()''   
+        ''mouse = true }'')
+      (bindo "mainMod + mouse:273" 
+        ''hl.dsp.window.resize()''
+        ''mouse = true }'')
 
       # Laptop multimedia keys for volume and LCD brightness
       (bindo "XF86AudioRaiseVolume"
