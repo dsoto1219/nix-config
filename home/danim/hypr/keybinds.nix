@@ -32,7 +32,7 @@ in {
       (bind (mod "Q") (exec (lua "terminal")))
       (bind (mod "C") "hl.dsp.window.close()")
       (bind (mod "E") (exec (lua  "fileManager")))
-      (bind (mod "V") hl.dsp.window.float({ action = \"toggle\"})")
+      (bind (mod "V") ''hl.dsp.window.float({ action = "toggle"})'')
       (bind (mod "R") (exec (lua "menu")))
       (bind (mod "P") ("hl.dsp.window.psuedo()"))
       (bind (mod "SHIFT + J") "hl.dsp.layout(\"togglesplit\")") # dwindle only
