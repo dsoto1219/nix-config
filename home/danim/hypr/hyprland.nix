@@ -96,7 +96,7 @@
 
       # See https://wiki.hypr.land/Configuring/Environment-variables/
       env = let
-        cursor_size = 32;
+        cursor_size = "32";
       in [
         {
           _args = [
