@@ -1,6 +1,11 @@
 { lib, ... }: let 
   lua = lib.generators.mkLuaInline;
-  bind = key: action: { _args = [ key action ]; };
+  bind = key: action: { 
+    _args = [ 
+      key 
+      (lua action)
+    ]; 
+  };
   bindo = key: action: opts: { 
     _args = [ 
       key 
@@ -39,7 +44,7 @@ in {
       (bind (mod "SHIFT + J") ''hl.dsp.layout("togglesplit")'') # dwindle only
 
       # Move focus with mainMod + vim direction keys
-      (bind (mod "H") ''hl.dsp.focus({ direction = "left"}))'')
+      (bind (mod "H") ''hl.dsp.focus({ direction = "left"}))''
       (bind (mod "L") ''hl.dsp.focus({ direction = "right"})'')
       (bind (mod "K") ''hl.dsp.focus({ direction = "up"})'')
       (bind (mod "J") ''hl.dsp.focus({ direction = "down"})'')
