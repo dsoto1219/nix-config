@@ -491,7 +491,7 @@
         # Hyprland-run windowrule
         {
           name = "move-hyprland-run";
-          match = { class = "hyprland-run"; },
+          match = { class = "hyprland-run"; };
 
           move = "20 monitor_h-120";
           float = "yes";
