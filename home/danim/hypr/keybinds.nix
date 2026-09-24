@@ -1,4 +1,4 @@
-{ ... }: let 
+{ lib, ... }: let 
   lua = lib.generators.mkLuaInLine;
   bind = key: action: { 
     _args = [ 
