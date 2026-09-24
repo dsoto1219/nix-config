@@ -463,7 +463,7 @@
       # See https://wiki.hypr.land/Configuring/Workspace-Rules/ for workspace rules
 
       # Example windowrules that are useful
-      windowrule = [
+      window_rule = [
 
         # Ignore maximize requests from all apps. You'll probably like this.
         {
