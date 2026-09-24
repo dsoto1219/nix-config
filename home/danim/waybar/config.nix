@@ -1,10 +1,11 @@
-{ lib, pkgs, ... }: 
+{ inputs, lib, pkgs, ... }: 
 {
   home.packages = with pkgs; [
     pavucontrol # volume controller
   ];
 
   programs.waybar.enable = true;
+  programs.waybar.package = inputs.waybar.packages.${pkgs.stdenv.hostPlatform.system}.default;
 
   stylix.targets.waybar = {
     # enable = true;

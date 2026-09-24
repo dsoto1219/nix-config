@@ -40,6 +40,11 @@
     };
 
     impermanence.url = "github:nix-community/impermanence";
+
+    waybar = {
+      url = "github:alexays/waybar";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };  
   };
 
   outputs = {
