@@ -432,12 +432,6 @@
         # "w[tv1], gapsout:0, gapsin:0"
         # "f[1], gapsout:0, gapsin:0"
 
-        # Persistent workspaces
-        # "1, monitor:eDP-1, persistent:true"
-        # "2, monitor:eDP-1, persistent:true"
-        # "3, monitor:eDP-1, persistent:true"
-      # ];
-
       #####################
       ### INPUT (CONT.) ###
       #####################
@@ -496,6 +490,24 @@
 
           move = "20 monitor_h-120";
           float = true;
+        }
+      ];
+
+      workspace_rule = [
+        {
+          workspace = "1";
+          monitor = "monitor:eDP-1";
+          persistent = true;
+        }
+        {
+          workspace = "2";
+          monitor = "monitor:eDP-1";
+          persistent = true;
+        }
+        {
+          workspace = "3";
+          monitor = "monitor:eDP-1";
+          persistent = true;
         }
       ];
     };
