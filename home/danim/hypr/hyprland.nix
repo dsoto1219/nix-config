@@ -63,7 +63,7 @@
         {
           _args = [
             "hyprland.start"
-            (lib.generators.mkLuaInLine ''
+            (lib.generators.mkLuaInline ''
               function()
                 hl.exec_cmd("systemctl --user start hyprpolkitagent")
                 hl.exec_cmd("hyprlock || hyprctl dispatch exit")
@@ -81,7 +81,7 @@
         {
           _args = [
             "hyprland.shutdown"
-            (lib.generators.mkLuaInLine ''
+            (lib.generators.mkLuaInline ''
               function()
                 hl.exec_cmd("kill -9 \"$(cat /tmp/.hyprland-systemd-inhibit)\"")
               end
