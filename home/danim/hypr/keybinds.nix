@@ -40,7 +40,7 @@ in {
       (bind (mod "E") (execVar "fileManager"))
       (bind (mod "V") ''hl.dsp.window.float({ action = "toggle"})'')
       (bind (mod "R") (execVar "menu"))
-      (bind (mod "P") ("hl.dsp.window.psuedo()"))
+      (bind (mod "P") ("hl.dsp.window.pseudo()"))
       (bind (mod "SHIFT + J") ''hl.dsp.layout("togglesplit")'') # dwindle only
 
       # Move focus with mainMod + vim direction keys
