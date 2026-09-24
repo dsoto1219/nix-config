@@ -306,7 +306,7 @@
               type = "spring";
               mass = 1;
               stiffness = 238.1191;
-              damping = 24.21279333;
+              dampening = 24.21279333;
             }
           ];
         }
