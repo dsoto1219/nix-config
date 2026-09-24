@@ -468,7 +468,7 @@
         # Ignore maximize requests from all apps. You'll probably like this.
         {
           name = "suppress-maximize-events";
-          match = { class = ".*" };
+          match = { class = ".*"; };
 
           suppress_event = "maximize";
         }
@@ -491,7 +491,7 @@
         # Hyprland-run windowrule
         {
           name = "move-hyprland-run";
-          match = { class = "hyprland-run" },
+          match = { class = "hyprland-run"; },
 
           move = "20 monitor_h-120";
           float = "yes";
