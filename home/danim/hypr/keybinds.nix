@@ -1,11 +1,6 @@
 { lib, ... }: let 
   lua = lib.generators.mkLuaInline;
-  bind = key: action: { 
-    _args = [ 
-      key 
-      (lua action) 
-    ]; 
-  };
+  bind = key: action: { _args = [ key action ]; };
   bindo = key: action: opts: { 
     _args = [ 
       key 
@@ -30,61 +25,63 @@ in {
 
     mainMod = { _var = "SUPER"; }; # Sets "Windows" key as main modifier 
 
-    bind = [
+    bind = let 
+      mod = key: (lua "mainMod .." + "+ ${key}")
+    in [
       # Example binds, see https://wiki.hypr.land/Configuring/Binds/ for more
-      (bind "mainMod .. Q" (exec "terminal"))
-      (bind "mainMod .. C" "hl.dsp.window.close()")
-      (bind "mainMod .. E" (exec "fileManager"))
-      (bind "mainMod .. V" "hl.dsp.window.float({ action = \"toggle\"})")
-      (bind "mainMod .. R" (exec "menu"))
-      (bind "mainMod .. P" ("hl.dsp.window.psuedo()"))
-      (bind "mainMod .. J" "hl.dsp.layout(\"togglesplit\")") # dwindle only
+      (bind (mod "Q") (exec (lua "terminal"))))
+      (bind (mod "C") "hl.dsp.window.close()")
+      (bind (mod "E") (exec (lua  "fileManager")))
+      (bind (mod "V") hl.dsp.window.float({ action = \"toggle\"})")
+      (bind (mod "R") (exec (lua "menu")))
+      (bind (mod "P") ("hl.dsp.window.psuedo()"))
+      (bind (mod "SHIFT + J") "hl.dsp.layout(\"togglesplit\")") # dwindle only
 
       # Move focus with mainMod + vim direction keys
-      (bind "mainMod .. H" "hl.dsp.focus({ direction = \"left\"})")
-      (bind "mainMod .. L" "hl.dsp.focus({ direction = \"right\"})")
-      (bind "mainMod .. K" "hl.dsp.focus({ direction = \"up\"})")
-      (bind "mainMod .. J" "hl.dsp.focus({ direction = \"down\"})")
+      (bind (mod "H") "hl.dsp.focus({ direction = \"left\"})")
+      (bind (mod "L") "hl.dsp.focus({ direction = \"right\"})")
+      (bind (mod "K") "hl.dsp.focus({ direction = \"up\"})")
+      (bind (mod "J") "hl.dsp.focus({ direction = \"down\"})")
 
       # Switch workspaces with mainMod + [0-9]
-      (bind "mainMod + 1" (ws "1"))
-      (bind "mainMod + 2" (ws "2"))
-      (bind "mainMod + 3" (ws "3"))
-      (bind "mainMod + 4" (ws "4"))
-      (bind "mainMod + 5" (ws "5"))
-      (bind "mainMod + 6" (ws "6"))
-      (bind "mainMod + 7" (ws "7"))
-      (bind "mainMod + 8" (ws "8"))
-      (bind "mainMod + 9" (ws "9"))
-      (bind "mainMod + 0" (ws "10"))
+      (bind (mod "1") (ws "1"))
+      (bind (mod "2") (ws "2"))
+      (bind (mod "3") (ws "3"))
+      (bind (mod "4") (ws "4"))
+      (bind (mod "5") (ws "5"))
+      (bind (mod "6") (ws "6"))
+      (bind (mod "7") (ws "7"))
+      (bind (mod "8") (ws "8"))
+      (bind (mod "9") (ws "9"))
+      (bind (mod "0") (ws "10"))
       # Move through existing workspaces with tab
-      (bind "mainMod + Tab" ''hl.dsp.focus({ workspace = "e+1" })'')
+      (bind (mod "Tab") ''hl.dsp.focus({ workspace = "e+1" })'')
 
       # Move window to workspace
-      (bind "mainMod + SHIFT + 1" (mvws "1"))
-      (bind "mainMod + SHIFT + 2" (mvws "2"))
-      (bind "mainMod + SHIFT + 3" (mvws "3"))
-      (bind "mainMod + SHIFT + 4" (mvws "4"))
-      (bind "mainMod + SHIFT + 5" (mvws "5"))
-      (bind "mainMod + SHIFT + 6" (mvws "6"))
-      (bind "mainMod + SHIFT + 7" (mvws "7"))
-      (bind "mainMod + SHIFT + 8" (mvws "8"))
-      (bind "mainMod + SHIFT + 9" (mvws "9"))
-      (bind "mainMod + SHIFT + 0" (mvws "10"))
+      (bind (mod "SHIFT + 1") (mvws "1"))
+      (bind (mod "SHIFT + 2") (mvws "2"))
+      (bind (mod "SHIFT + 3") (mvws "3"))
+      (bind (mod "SHIFT + 4") (mvws "4"))
+      (bind (mod "SHIFT + 5") (mvws "5"))
+      (bind (mod "SHIFT + 6") (mvws "6"))
+      (bind (mod "SHIFT + 7") (mvws "7"))
+      (bind (mod "SHIFT + 8") (mvws "8"))
+      (bind (mod "SHIFT + 9") (mvws "9"))
+      (bind (mod "SHIFT + 0") (mvws "10"))
 
       # Example special workspace (scratchpad)
-      (bind "mainMod + S" "hl.dsp.workspace.toggle_special(\"magic\")")
-      (bind "mainMod + SHIFT + S" "hl.dsp.window.move({ workspace = \"special:magic\" })")
+      (bind (mod "S") "hl.dsp.workspace.toggle_special(\"magic\")")
+      (bind (mod "SHIFT + S") "hl.dsp.window.move({ workspace = \"special:magic\" })")
 
       # Scroll through existing workspaces with mainMod + scroll
-      (bind "mainMod + mouse_down" ''hl.dsp.focus({ workspace = "e-1" })'')
-      (bind "mainMod + mouse_up" ''hl.dsp.focus({ workspace = "e+1" })'')
+      (bind (mod "mouse_down") ''hl.dsp.focus({ workspace = "e-1" })'')
+      (bind (mod "mouse_up") ''hl.dsp.focus({ workspace = "e+1" })'')
 
       # Move/resize windows with mainMod + LMB/RMB and dragging
-      (bindo "mainMod + mouse:272" 
+      (bindo (mod "mouse:272") 
         ''hl.dsp.window.drag()''   
         ''mouse = true }'')
-      (bindo "mainMod + mouse:273" 
+      (bindo (mod "mouse:273") 
         ''hl.dsp.window.resize()''
         ''mouse = true }'')
 
@@ -123,9 +120,9 @@ in {
         ''{ locked = true }'')
 
       # Custom
-      (bind "$mainMod + F" "fullscreen")
-      (bind "$mainMod + W" (exec "pkill waybar && waybar"))
-      (bind "$mainMod + D" (exec "pkill hyprpicker || hyprpicker --autocopy"))
+      (bind (mod "F") "fullscreen")
+      (bind (mod "W") (exec "pkill waybar && waybar"))
+      (bind (mod "D") (exec "pkill hyprpicker || hyprpicker --autocopy"))
       # Bind power key: https://github.com/hyprwm/Hyprland/issues/2614#issuecomment-2395597405
       (bind "XF86PowerOff" (exec "hyprshutdown --post-cmd 'poweroff'"))
       # "$mainMod, U, layoutmsg, togglesplit # dwindle" ???
