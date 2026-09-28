@@ -23,7 +23,6 @@ in {
     # unstable.onedrivegui
     obsidian 
     kdePackages.ksshaskpass # for obsidian-git auth
-    kdePackages.kdeconnect-kde
     zotero
     mission-center
     (discord.override {
@@ -57,5 +56,13 @@ in {
       name = "Bibata-Modern-Classic";
       size = 16;
     };
+  };
+
+  # KDE Connect
+  services.kdeconnect.enable = true;
+
+  networking.firewall = rec {
+    allowedTCPPortRanges = [ { from = 1714; to = 1764; } ];
+    allowedUDPPortRanges = allowedTCPPortRanges;
   };
 }
