@@ -57,6 +57,4 @@ in {
       size = 16;
     };
   };
-
-  services.kdeconnect.enable = true;
 }
