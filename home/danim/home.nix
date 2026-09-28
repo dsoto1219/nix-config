@@ -7,7 +7,6 @@ in {
 
   imports = [
     ../default.nix
-    ./dark-theme.nix
     ./rofi
     ./persistence.nix
     ./waybar/config.nix
