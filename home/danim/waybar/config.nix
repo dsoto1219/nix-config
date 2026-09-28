@@ -49,6 +49,9 @@
       format = "{windows}({icon})";
       format-window-separator = "";
       window-rewrite-default = "󰣆 ";
+      persistent-workspaces = {
+        "*" = 5;
+      };
       window-rewrite = {
         "title<.*youtube.*>" = " "; # Windows whose titles contain "youtube"
         "class<firefox>" = " "; # Windows whose classes are "firefox"
