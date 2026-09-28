@@ -46,6 +46,7 @@
       format = "{}"; # show window title
     };
     "hyprland/workspaces" = {
+      tooltip = false;
       format = "{windows}({icon})";
       format-window-separator = "";
       window-rewrite-default = "󰣆 ";
