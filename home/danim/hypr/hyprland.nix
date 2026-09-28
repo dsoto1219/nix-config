@@ -18,6 +18,7 @@
     kdePackages.dolphin # file manager
     wl-clipboard
     udiskie
+    hypr-kdeconnect-fix
   ];
 
   programs.kitty.enable = true;

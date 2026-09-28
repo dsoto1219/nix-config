@@ -41,10 +41,15 @@
 
     impermanence.url = "github:nix-community/impermanence";
 
+    hypr-kdeconnect-fix = {
+      url = "github:gfhdhytghd/hypr-kdeconnect-fix";
+      flake = false;
+    };
+
     waybar = {
       url = "github:alexays/waybar";
       inputs.nixpkgs.follows = "nixpkgs";
-    };  
+    };
   };
 
   outputs = {
