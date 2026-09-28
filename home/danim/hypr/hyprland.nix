@@ -112,12 +112,6 @@
             "${cursor_size}"
           ];
         }
-        {
-          _args = [
-            "HYPRCURSOR_THEME"
-            "Adwaita"
-          ];
-        }
       ];
 
       ###################
