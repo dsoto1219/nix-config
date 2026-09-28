@@ -67,6 +67,7 @@
               function()
                 hl.exec_cmd("systemctl --user start hyprpolkitagent")
                 hl.exec_cmd("hyprlock || hyprctl dispatch exit")
+                hl.exec_cmd("kdeconnectd & kdeconnect-indicator")
                 hl.exec_cmd("waybar & hyprpaper & swaync")
                 hl.exec_cmd("nm-applet &")
                 hl.exec_cmd("blueman-applet &")
