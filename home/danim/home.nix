@@ -25,7 +25,9 @@ in {
     kdePackages.ksshaskpass # for obsidian-git auth
     zotero
     mission-center
-    vesktop
+    (discord.override {
+      withVencord = true;
+    })
     pamixer
     qimgv
     mono
