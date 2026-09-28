@@ -28,6 +28,8 @@ stdenv.mkDerivation {
     libei
   ];
 
+  dontWrapQtApps = true;
+
   cmakeFlags = [
     "-DBUILD_TESTING=OFF"
   ];
