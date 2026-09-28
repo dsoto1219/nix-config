@@ -23,6 +23,7 @@ in {
     # unstable.onedrivegui
     obsidian 
     kdePackages.ksshaskpass # for obsidian-git auth
+    kdePackages.kdeconnect-kde
     zotero
     mission-center
     (discord.override {
