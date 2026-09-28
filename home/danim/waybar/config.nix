@@ -43,6 +43,7 @@
       "custom/notifications"
     ];
     "hyprland/window" = {
+      tooltip = false;
       format = "{}"; # show window title
     };
     "hyprland/workspaces" = {
