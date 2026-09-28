@@ -17,7 +17,7 @@
     # You can add overlays here
     overlays = [
       # Add overlays to your own flake exports (from overlays and pkgs dir)
-      # inputs.self.overlays.additions
+      inputs.self.overlays.additions
       inputs.self.overlays.modifications
       inputs.self.overlays.unstable-packages
 
