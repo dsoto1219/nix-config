@@ -283,6 +283,22 @@
         "type": "github"
       }
     },
+    "hypr-kdeconnect-fix": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1790301701,
+        "narHash": "sha256-fswdn3iq1iCXALLWC/p5EgRYbHIMgNHWEhxEtbHtCFY=",
+        "owner": "gfhdhytghd",
+        "repo": "hypr-kdeconnect-fix",
+        "rev": "362b904235c1b1d679eef73cbd5ad08d313d8954",
+        "type": "github"
+      },
+      "original": {
+        "owner": "gfhdhytghd",
+        "repo": "hypr-kdeconnect-fix",
+        "type": "github"
+      }
+    },
     "hyprcursor": {
       "inputs": {
         "hyprlang": [
@@ -786,6 +802,7 @@
       "inputs": {
         "firefox-addons": "firefox-addons",
         "home-manager": "home-manager",
+        "hypr-kdeconnect-fix": "hypr-kdeconnect-fix",
         "hyprland": "hyprland",
         "impermanence": "impermanence",
         "mnw": "mnw",
