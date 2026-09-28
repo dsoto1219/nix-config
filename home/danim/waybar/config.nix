@@ -50,7 +50,7 @@
       format-window-separator = "";
       window-rewrite-default = "󰣆 ";
       persistent-workspaces = {
-        "*" = 5;
+        "*" = 3;
       };
       window-rewrite = {
         "title<.*youtube.*>" = " "; # Windows whose titles contain "youtube"
