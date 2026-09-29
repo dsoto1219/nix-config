@@ -506,6 +506,7 @@
           workspace = "1";
           monitor = "monitor:eDP-1";
           persistent = true;
+          default = true;
         }
         {
           workspace = "2";
