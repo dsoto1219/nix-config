@@ -15,6 +15,7 @@ in {
     wireplumber # pipewire: needed for screensharing
     # qt5-wayland and qt6-wayland should be installed by default
     hyprpolkitagent #  authentication agent
+    inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
   ];
 
   services.pipewire.enable = true;
