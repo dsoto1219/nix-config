@@ -115,7 +115,7 @@
         {
           _args = [
             "HYPRCURSOR_THEME"
-            "Adwaita"
+            "rose-pine-hyprcursor"
           ];
         }
       ];
