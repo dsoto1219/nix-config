@@ -50,5 +50,10 @@ in {
   stylix = {
     base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
     image = ../../assets/sekiro-vs-father-sunset.png;
+    cursor = {
+      package = pkgs.rose-pine-cursor;
+      name = "BreezX-RosePine-Linux";
+      size = 24;
+    };
   };
 }
