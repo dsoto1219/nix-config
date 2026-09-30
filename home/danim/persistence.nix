@@ -9,6 +9,16 @@
       "Documents"
       "Videos"
       "OneDrive" "Zotero"
+
+      # General Application States
+      ".local"
+      ".cache"
+      ".config"
+
+      # Applications that store in $HOME
+      ".mozilla"
+      ".librewolf"
+
       # "VirtualBox VMs"
       { directory = ".gnupg"; mode = "0700"; }
       { directory = ".ssh"; mode = "0700"; }
