@@ -34,11 +34,15 @@ in {
   boot.initrd.systemd.services.rollback = {
     description = "Rollback BTRFS root subvolume to blank snapshot";
     wantedBy = [ "initrd.target" ];
+    requires = [ "initrd-root-device.target" ];
     after = [ 
+      "initrd-root-device.target" 
       "systemd-hibernate-resume.service"  
-      "lvm2-activation.service" 
     ];
-    before = [ "sysroot.mount" ];
+    before = [ 
+      "sysroot.mount"
+      "create-needed-for-boot-dirs.service"
+    ];
     unitConfig.DefaultDependencies = "no";
     serviceConfig = {
       Type = "oneshot";
