@@ -65,10 +65,19 @@
     # };
   };
 
-  # Automatic upgrading
+  # Automatic upgrading: 
+  # https://discourse.nixos.org/t/best-practices-for-auto-upgrades-of-flake-enabled-nixos-systems/31255/2?u=dsoto1219
   system.autoUpgrade = {
     enable = true;
-    dates = "weekly";
+    flake = inputs.self.outPath;
+    flags = [
+      "--update-input"
+      "nixpkgs"
+      "--no-write-lock-file"
+      "-L" # print build logs
+    ];
+    dates = "02:00";
+    randomizedDelaySec = "45min";
   };
 
   # Set your time zone.
