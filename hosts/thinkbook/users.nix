@@ -7,11 +7,12 @@
   ...
 }: {
   users = {
-    users = {
-      danim = {
-        isNormalUser = true;
-        extraGroups = [ "networkmanager" "wheel" "input" ]; # Be sure to add any other groups you need (such as networkmanager, audio, docker, etc)
-      };
+    mutableUsers = false;
+
+    users.danim = {
+      isNormalUser = true;
+      extraGroups = [ "networkmanager" "wheel" "input" ]; # Be sure to add any other groups you need (such as networkmanager, audio, docker, etc)
+      hashedPasswordFile = "/persistent/passwords/danim";
     };
   };
 
