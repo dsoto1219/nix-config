@@ -31,18 +31,6 @@ in {
     pamixer
     qimgv
     mono
-    (unstable.rstudioWrapper.override {
-      packages = with pkgs.unstable.rPackages; [
-        ggplot2
-        dplyr tidyverse broom
-        xts
-        sass bslib
-        rmarkdown
-        mice
-        car gt lubridate
-        quarto
-      ];
-    })
     libuv
     gpclient
   ];
