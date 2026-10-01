@@ -19,7 +19,10 @@
   networking.networkmanager.wifi.powersave = true;
 
   # Enable bluetooth
-  hardware.bluetooth.enable = true;
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true; # On boot, turn bluetooth on
+  };
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
