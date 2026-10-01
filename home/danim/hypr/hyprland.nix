@@ -504,18 +504,18 @@
       workspace_rule = [
         {
           workspace = "1";
-          monitor = "monitor:eDP-1";
+          monitor = "eDP-1";
           persistent = true;
           default = true;
         }
         {
           workspace = "2";
-          monitor = "monitor:eDP-1";
+          monitor = "eDP-1";
           persistent = true;
         }
         {
           workspace = "3";
-          monitor = "monitor:eDP-1";
+          monitor = "eDP-1";
           persistent = true;
         }
       ];
