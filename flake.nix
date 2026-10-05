@@ -56,6 +56,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.hyprlang.follows = "hyprland/hyprlang";
     };
+
+    dolphin-overlay.url = "github:rumboon/dolphin-overlay";
   };
 
   outputs = {
