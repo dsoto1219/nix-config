@@ -17,7 +17,7 @@ in {
     hyprpolkitagent #  authentication agent
 
     # Misc
-    inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default # Cursor
+    inputs.rose-pine-hyprcursor.packages.${system}.default # Cursor
     kdePackages.qtsvg # Support Dolphin SVG Icons
   ];
 
