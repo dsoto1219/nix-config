@@ -21,9 +21,17 @@ in {
     kdePackages.qtsvg # Support Dolphin SVG Icons
   ];
 
-  services.udisks2.enable = true;
+  services.udisks2.enable = true; # For Dolphin
 
-  services.pipewire.enable = true;
+  # Recommended config for pipewire: https://nixos.wiki/wiki/PipeWire
+  security.rtkit.enable = true;
+
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+  };
 
   ## ENABLE HYPRLAND ##
   # Docs say that enabling the program enables
