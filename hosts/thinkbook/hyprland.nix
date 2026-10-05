@@ -9,14 +9,19 @@
   system = pkgs.stdenv.hostPlatform.system;
   hyprland-pkgs = inputs.hyprland.packages.${system};
 in {
-  # Add must-have packages from docs
   environment.systemPackages = with pkgs; [ 
+    ## Add must-have packages from docs ##
     # notification daemon set in home-manager
     wireplumber # pipewire: needed for screensharing
     # qt5-wayland and qt6-wayland should be installed by default
     hyprpolkitagent #  authentication agent
-    inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
+
+    # Misc
+    inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default # Cursor
+    kdePackages.qtsvg # Support Dolphin SVG Icons
   ];
+
+  services.udisks2.enable = true;
 
   services.pipewire.enable = true;
 
