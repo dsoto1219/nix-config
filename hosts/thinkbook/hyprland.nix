@@ -21,8 +21,6 @@ in {
     kdePackages.qtsvg # Support Dolphin SVG Icons
   ];
 
-  nixpkgs.overlays = [ inputs.dolphin-overlay.overlays.default ];
-
   services.udisks2.enable = true; # For Dolphin
 
   # Recommended config for pipewire: https://nixos.wiki/wiki/PipeWire
