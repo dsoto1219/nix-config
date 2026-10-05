@@ -19,7 +19,6 @@ in {
     # Misc
     inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default # Cursor
     kdePackages.qtsvg # Support Dolphin SVG Icons
-    kdePackages.kservice # For Dolphin KDE support
   ];
 
   nixpkgs.overlays = [ inputs.dolphin-overlay.overlays.default ];
