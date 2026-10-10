@@ -73,6 +73,7 @@
         "title<.*tasks.*>" = " ";
         "title<.*RStudio.*>" = " ";
         "title<.*VSCodium.*>" = " ";
+        "title<.*Anki.*>" = "󰘸 ";
       };
     };
     clock = {
