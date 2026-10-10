@@ -33,6 +33,7 @@ in {
     mono
     libuv
     gpclient
+    vscodium
   ];
 
   stylix = {
