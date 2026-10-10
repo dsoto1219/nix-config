@@ -72,6 +72,7 @@
         "title<.*facebook.*>" = " ";
         "title<.*tasks.*>" = " ";
         "title<.*RStudio.*>" = " ";
+        "title<.*VSCodium.*>" = " ";
       };
     };
     clock = {
