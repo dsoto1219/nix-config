@@ -35,6 +35,7 @@ in {
     libuv
     gpclient
     vscodium
+    texFull
   ];
 
   stylix = {
