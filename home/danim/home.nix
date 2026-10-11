@@ -43,6 +43,6 @@ in {
   };
 
   dconf.settings."org/gnome/desktop/interface" = {
-    color-scheme = "prefer-dark";
+    color-scheme = lib.mkForce "prefer-dark";
   };
 }
