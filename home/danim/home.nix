@@ -1,5 +1,5 @@
 # Add things specific to the user danim here
-{ inputs, pkgs, ... }: let
+{ inputs, lib, pkgs, ... }: let
   username = "danim";
 in {
   home.username = username;
