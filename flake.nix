@@ -56,6 +56,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.hyprlang.follows = "hyprland/hyprlang";
     };
+
+    nixpkgs-python.url = "github:cachix/nixpkgs-python";
   };
 
   outputs = {
