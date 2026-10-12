@@ -30,7 +30,6 @@
     lazygit
     ffmpeg
     devenv
-    conda
 
     # Fonts
     nerd-fonts.jetbrains-mono

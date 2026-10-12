@@ -19,7 +19,6 @@
       ".mozilla"
       ".librewolf"
       ".vscode-oss"
-      ".conda"
 
       # "VirtualBox VMs"
       { directory = ".gnupg"; mode = "0700"; }
