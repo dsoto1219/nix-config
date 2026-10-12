@@ -18,6 +18,7 @@
       # Applications that store in $HOME
       ".mozilla"
       ".librewolf"
+      ".vscode-oss"
 
       # "VirtualBox VMs"
       { directory = ".gnupg"; mode = "0700"; }
