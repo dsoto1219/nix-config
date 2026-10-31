@@ -22,6 +22,7 @@ in {
   home.packages = with pkgs; [ 
     # unstable.onedrivegui
     anki
+    rnote
     obsidian 
     kdePackages.ksshaskpass # for obsidian-git auth
     zotero
