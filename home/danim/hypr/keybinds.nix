@@ -131,7 +131,7 @@ in {
       (bind (mod "W") (exec "pkill waybar && waybar"))
       (bind (mod "D") (exec "pkill hyprpicker || hyprpicker --autocopy"))
       # Bind power key: https://github.com/hyprwm/Hyprland/issues/2614#issuecomment-2395597405
-      (bindo "code:124" # code:124 corresponds to the power key, XF86PowerOff isn't working
+      (bindo "XF86PowerOff" 
         (exec "hyprshutdown --dry-run'")
         ''{ locked = true }'')
       # "$mainMod, U, layoutmsg, togglesplit # dwindle" ???
