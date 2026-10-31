@@ -59,6 +59,7 @@ in {
       "/var/lib/nixos"
       "/var/lib/systemd"
       "/etc/NetworkManager/system-connections"
+      "/etc/wpa_supplicant/eduroam/"
       { directory = "/var/lib/private/secrets"; user = "root"; group = "root"; mode = "0700"; }
       { directory = "/var/lib/colord"; user = "colord"; group = "colord"; mode = "u=rwx,g=rx,o="; }
     ];

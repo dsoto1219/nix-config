@@ -10,6 +10,8 @@
       "Videos"
       "OneDrive" "Zotero"
 
+      ".joinnow" # Eduroam
+
       # General Application States
       ".local"
       ".cache"
