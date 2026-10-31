@@ -132,7 +132,7 @@ in {
       (bind (mod "D") (exec "pkill hyprpicker || hyprpicker --autocopy"))
       # Bind power key: https://github.com/hyprwm/Hyprland/issues/2614#issuecomment-2395597405
       (bindo "XF86PowerOff" 
-        (exec "hyprshutdown --dry-run'")
+        (exec "hyprshutdown --dry-run")
         ''{ locked = true }'')
       # "$mainMod, U, layoutmsg, togglesplit # dwindle" ???
 
