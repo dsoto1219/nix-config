@@ -1,4 +1,4 @@
-{ lib, ... }: let 
+{ pkgs, lib, ... }: let 
   lua = lib.generators.mkLuaInline;
   bind = key: action: { 
     _args = [ 
@@ -131,7 +131,9 @@ in {
       (bind (mod "W") (exec "pkill waybar && waybar"))
       (bind (mod "D") (exec "pkill hyprpicker || hyprpicker --autocopy"))
       # Bind power key: https://github.com/hyprwm/Hyprland/issues/2614#issuecomment-2395597405
-      (bind "XF86PowerOff" (exec "hyprshutdown --post-cmd 'poweroff'"))
+      (bind "XF86PowerOff" 
+        (exec "hyprshutdown --dry-run'")
+        ''{ locked = true }'')
       # "$mainMod, U, layoutmsg, togglesplit # dwindle" ???
 
       # hyprshot
