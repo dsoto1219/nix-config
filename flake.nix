@@ -42,7 +42,7 @@
     impermanence.url = "github:nix-community/impermanence";
 
     hypr-kdeconnect-fix = {
-      url = "github:gfhdhytghd/hypr-kdeconnect-fix";
+      url = "github:gfhdhytghd/hypr-kdeconnect-fix?submodules=1";
       flake = false;
     };
 
