@@ -302,11 +302,11 @@
     "hypr-kdeconnect-fix": {
       "flake": false,
       "locked": {
-        "lastModified": 1792180940,
-        "narHash": "sha256-B48HclHpqfHjKbLDBkv8wUPJJWzf7gBAz5o/6YWUk3g=",
+        "lastModified": 1794534194,
+        "narHash": "sha256-uvdfE/R91ydm4Sx+QtUuBCtcAAWY7pt1XWRaWJ2iDAU=",
         "owner": "gfhdhytghd",
         "repo": "hypr-kdeconnect-fix",
-        "rev": "809c1ea83ca71f94df929ccea04043f0c47c0c32",
+        "rev": "0b28d8389e248595968276b7121127a664cee618",
         "type": "github"
       },
       "original": {
