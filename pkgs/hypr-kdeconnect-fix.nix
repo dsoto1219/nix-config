@@ -2,6 +2,9 @@
   stdenv,
   cmake,
   pkg-config,
+  meson,
+  ninja,
+  python3,
   qt6,
   wayland,
   libxkbcommon,
@@ -15,10 +18,17 @@ stdenv.mkDerivation {
 
   inherit src;
 
+  postPatch = ''
+    patchShebangs --build third_party/libei/proto/ei-scanner
+  '';
+
   nativeBuildInputs = [
     cmake
     pkg-config
-    wayland
+    meson
+    ninja
+    python3
+    python3.pkgs.jinja2
   ];
 
   buildInputs = [
