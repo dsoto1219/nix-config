@@ -303,16 +303,18 @@
       "flake": false,
       "locked": {
         "lastModified": 1794534194,
-        "narHash": "sha256-uvdfE/R91ydm4Sx+QtUuBCtcAAWY7pt1XWRaWJ2iDAU=",
-        "owner": "gfhdhytghd",
-        "repo": "hypr-kdeconnect-fix",
+        "narHash": "sha256-YKvg9cWXt34lQ8lFw6YuKZhUOOMjDaJnGIxTAQOOKf4=",
+        "ref": "refs/heads/master",
         "rev": "0b28d8389e248595968276b7121127a664cee618",
-        "type": "github"
+        "revCount": 34,
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/gfhdhytghd/hypr-kdeconnect-fix.git"
       },
       "original": {
-        "owner": "gfhdhytghd",
-        "repo": "hypr-kdeconnect-fix",
-        "type": "github"
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/gfhdhytghd/hypr-kdeconnect-fix.git"
       }
     },
     "hyprcursor": {
