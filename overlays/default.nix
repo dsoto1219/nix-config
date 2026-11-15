@@ -15,9 +15,11 @@
     # ...
     # });
     waybar = prev.waybar.overrideAttrs (old: {
-      mesonFlags = (old.mesonFlags or []) ++ [
-        "-Dcava=disabled"
-      ];
+      mesonFlags =
+        builtins.filter
+          (flag: !(builtins.match ".*cava=.*" flag != null))
+          (old.mesonFlags or [])
+        ++ [ "-Dcava=disabled" ];
     });
   };
 
