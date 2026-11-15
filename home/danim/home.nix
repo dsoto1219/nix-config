@@ -22,6 +22,7 @@ in {
   home.packages = with pkgs; [ 
     # unstable.onedrivegui
     anki
+    galaxy-buds-client
     rnote
     obsidian 
     kdePackages.ksshaskpass # for obsidian-git auth
