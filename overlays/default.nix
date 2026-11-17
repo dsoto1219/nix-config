@@ -14,9 +14,8 @@
     # example = prev.example.overrideAttrs (oldAttrs: rec {
     # ...
     # });
-      waybar = prev.waybar.override {
-        cavaSupport = false;
-      };
+    waybar = prev.waybar.override {
+      cavaSupport = false;
     };
   };
 
