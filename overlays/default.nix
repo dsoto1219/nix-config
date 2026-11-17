@@ -14,13 +14,10 @@
     # example = prev.example.overrideAttrs (oldAttrs: rec {
     # ...
     # });
-    waybar = prev.waybar.overrideAttrs (old: {
-      mesonFlags =
-        builtins.filter
-          (flag: !(builtins.match ".*cava=.*" flag != null))
-          (old.mesonFlags or [])
-        ++ [ "-Dcava=disabled" ];
-    });
+      waybar = prev.waybar.override {
+        cavaSupport = false;
+      };
+    };
   };
 
   # When applied, the unstable nixpkgs set (declared in the flake inputs) will be accessible through 'pkgs.unstable'
